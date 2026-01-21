@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERoom SDK: neroom::INERoomAnnotationController类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERoom SDK<span id="projectnumber">&#160;V1.44.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceneroom.html">neroom</a></li><li class="navelem"><a class="el" href="classneroom_1_1_i_n_e_room_annotation_controller.html">INERoomAnnotationController</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classneroom_1_1_i_n_e_room_annotation_controller-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">neroom::INERoomAnnotationController类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>批注制器接口类  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="annotation__ctrl__interface_8h_source.html">annotation_ctrl_interface.h</a>&gt;</code></p>
+<div class="dynheader">
+类 neroom::INERoomAnnotationController 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classneroom_1_1_i_n_e_room_annotation_controller__inherit__graph.png" border="0" usemap="#aneroom_1_1_i_n_e_room_annotation_controller_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+neroom::INERoomAnnotationController 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classneroom_1_1_i_n_e_room_annotation_controller__coll__graph.png" border="0" usemap="#aneroom_1_1_i_n_e_room_annotation_controller_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ade8a2fcea6c50e1fcb759b1f6a7eda30" id="r_ade8a2fcea6c50e1fcb759b1f6a7eda30"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade8a2fcea6c50e1fcb759b1f6a7eda30">NEAnnotationCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt;</td></tr>
+<tr class="memdesc:ade8a2fcea6c50e1fcb759b1f6a7eda30"><td class="mdescLeft">&#160;</td><td class="mdescRight">批注操作结果回调  <br /></td></tr>
+<tr class="separator:ade8a2fcea6c50e1fcb759b1f6a7eda30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae36238d15ba316d82b18b661ec85d6b4" id="r_ae36238d15ba316d82b18b661ec85d6b4"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae36238d15ba316d82b18b661ec85d6b4">~INERoomAnnotationController</a> ()=default</td></tr>
+<tr class="memdesc:ae36238d15ba316d82b18b661ec85d6b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:ae36238d15ba316d82b18b661ec85d6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79bd681212e29bac6eb8e6a786cad802" id="r_a79bd681212e29bac6eb8e6a786cad802"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79bd681212e29bac6eb8e6a786cad802">getAnnotationUrl</a> ()=0</td></tr>
+<tr class="memdesc:a79bd681212e29bac6eb8e6a786cad802"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取批注加载地址  <br /></td></tr>
+<tr class="separator:a79bd681212e29bac6eb8e6a786cad802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf65d950b4e6de18dadd773fd3c06d42" id="r_aaf65d950b4e6de18dadd773fd3c06d42"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf65d950b4e6de18dadd773fd3c06d42">login</a> ()=0</td></tr>
+<tr class="memdesc:aaf65d950b4e6de18dadd773fd3c06d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">登录批注  <br /></td></tr>
+<tr class="separator:aaf65d950b4e6de18dadd773fd3c06d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad636321d71db0fee411aa59d2927720a" id="r_ad636321d71db0fee411aa59d2927720a"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad636321d71db0fee411aa59d2927720a">logout</a> ()=0</td></tr>
+<tr class="memdesc:ad636321d71db0fee411aa59d2927720a"><td class="mdescLeft">&#160;</td><td class="mdescRight">登出批注  <br /></td></tr>
+<tr class="separator:ad636321d71db0fee411aa59d2927720a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf0a0ad272a47e0b9be70b97e6e996e4" id="r_aaf0a0ad272a47e0b9be70b97e6e996e4"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf0a0ad272a47e0b9be70b97e6e996e4">auth</a> ()=0</td></tr>
+<tr class="memdesc:aaf0a0ad272a47e0b9be70b97e6e996e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">身份认证  <br /></td></tr>
+<tr class="separator:aaf0a0ad272a47e0b9be70b97e6e996e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60f1038db155dd1274accb32b1cb2d1c" id="r_a60f1038db155dd1274accb32b1cb2d1c"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60f1038db155dd1274accb32b1cb2d1c">setEnableDraw</a> (bool enable)=0</td></tr>
+<tr class="memdesc:a60f1038db155dd1274accb32b1cb2d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置批注是否可绘制  <br /></td></tr>
+<tr class="separator:a60f1038db155dd1274accb32b1cb2d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a716071390c927a41cce4d85fe39f6" id="r_ab4a716071390c927a41cce4d85fe39f6"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4a716071390c927a41cce4d85fe39f6">setupAnnotationCanvas</a> (<a class="el" href="classneroom_1_1_i_n_e_annotation_view.html">INEAnnotationView</a> *view)=0</td></tr>
+<tr class="memdesc:ab4a716071390c927a41cce4d85fe39f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置批注视图  <br /></td></tr>
+<tr class="separator:ab4a716071390c927a41cce4d85fe39f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac28c67de8cc64fd14effcf00b7fd0872" id="r_ac28c67de8cc64fd14effcf00b7fd0872"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac28c67de8cc64fd14effcf00b7fd0872">resetAnnotationCanvas</a> (<a class="el" href="classneroom_1_1_i_n_e_annotation_view.html">INEAnnotationView</a> *view)=0</td></tr>
+<tr class="memdesc:ac28c67de8cc64fd14effcf00b7fd0872"><td class="mdescLeft">&#160;</td><td class="mdescRight">重置批注视图  <br /></td></tr>
+<tr class="separator:ac28c67de8cc64fd14effcf00b7fd0872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ee2e9d97308fca9b7af09aacd8cfbf" id="r_a76ee2e9d97308fca9b7af09aacd8cfbf"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76ee2e9d97308fca9b7af09aacd8cfbf">getIsAnnotationEnabled</a> ()=0</td></tr>
+<tr class="memdesc:a76ee2e9d97308fca9b7af09aacd8cfbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">正在批注共享的用户状态  <br /></td></tr>
+<tr class="separator:a76ee2e9d97308fca9b7af09aacd8cfbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b3c66ca2ea72acbf3286af25a642f76" id="r_a7b3c66ca2ea72acbf3286af25a642f76"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b3c66ca2ea72acbf3286af25a642f76">startAnnotationShare</a> (const <a class="el" href="#ade8a2fcea6c50e1fcb759b1f6a7eda30">NEAnnotationCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a7b3c66ca2ea72acbf3286af25a642f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始批注共享  <br /></td></tr>
+<tr class="separator:a7b3c66ca2ea72acbf3286af25a642f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50d4d1648b75098dc5da4a5bc6d431c" id="r_ad50d4d1648b75098dc5da4a5bc6d431c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad50d4d1648b75098dc5da4a5bc6d431c">stopAnnotationShare</a> (const <a class="el" href="#ade8a2fcea6c50e1fcb759b1f6a7eda30">NEAnnotationCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ad50d4d1648b75098dc5da4a5bc6d431c"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭批注共享  <br /></td></tr>
+<tr class="separator:ad50d4d1648b75098dc5da4a5bc6d431c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classneroom_1_1_i_n_e_base_controller"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classneroom_1_1_i_n_e_base_controller')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classneroom_1_1_i_n_e_base_controller.html">neroom::INEBaseController</a></td></tr>
+<tr class="memitem:ad173bfaf8ba2c6ff692f26b298333076 inherit pub_methods_classneroom_1_1_i_n_e_base_controller" id="r_ad173bfaf8ba2c6ff692f26b298333076"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_base_controller.html#ad173bfaf8ba2c6ff692f26b298333076">INEBaseController</a> ()=default</td></tr>
+<tr class="memdesc:ad173bfaf8ba2c6ff692f26b298333076 inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:ad173bfaf8ba2c6ff692f26b298333076 inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b910876c22d9281cf46f64ebfc339d inherit pub_methods_classneroom_1_1_i_n_e_base_controller" id="r_a32b910876c22d9281cf46f64ebfc339d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_base_controller.html#a32b910876c22d9281cf46f64ebfc339d">~INEBaseController</a> ()=default</td></tr>
+<tr class="memdesc:a32b910876c22d9281cf46f64ebfc339d inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:a32b910876c22d9281cf46f64ebfc339d inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0915c4408553b65960f0ca9e53b4fc2c inherit pub_methods_classneroom_1_1_i_n_e_base_controller" id="r_a0915c4408553b65960f0ca9e53b4fc2c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_base_controller.html#a0915c4408553b65960f0ca9e53b4fc2c">isSupported</a> () const =0</td></tr>
+<tr class="memdesc:a0915c4408553b65960f0ca9e53b4fc2c inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">功能是否支持  <br /></td></tr>
+<tr class="separator:a0915c4408553b65960f0ca9e53b4fc2c inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>批注制器接口类 </p>
+
+<p class="definition">在文件 <a class="el" href="annotation__ctrl__interface_8h_source.html">annotation_ctrl_interface.h</a> 第 <a class="el" href="annotation__ctrl__interface_8h_source.html#l00034">34</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="ade8a2fcea6c50e1fcb759b1f6a7eda30" name="ade8a2fcea6c50e1fcb759b1f6a7eda30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade8a2fcea6c50e1fcb759b1f6a7eda30">&#9670;&#160;</a></span>NEAnnotationCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ade8a2fcea6c50e1fcb759b1f6a7eda30">neroom::INERoomAnnotationController::NEAnnotationCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>批注操作结果回调 </p>
+
+<p class="definition">在文件 <a class="el" href="annotation__ctrl__interface_8h_source.html">annotation_ctrl_interface.h</a> 第 <a class="el" href="annotation__ctrl__interface_8h_source.html#l00039">39</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ae36238d15ba316d82b18b661ec85d6b4" name="ae36238d15ba316d82b18b661ec85d6b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae36238d15ba316d82b18b661ec85d6b4">&#9670;&#160;</a></span>~INERoomAnnotationController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual neroom::INERoomAnnotationController::~INERoomAnnotationController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aaf0a0ad272a47e0b9be70b97e6e996e4" name="aaf0a0ad272a47e0b9be70b97e6e996e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf0a0ad272a47e0b9be70b97e6e996e4">&#9670;&#160;</a></span>auth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int neroom::INERoomAnnotationController::auth </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>身份认证 </p>
+<dl class="section return"><dt>返回</dt><dd>int 0成功 其它失败 </dd></dl>
+
+</div>
+</div>
+<a id="a79bd681212e29bac6eb8e6a786cad802" name="a79bd681212e29bac6eb8e6a786cad802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79bd681212e29bac6eb8e6a786cad802">&#9670;&#160;</a></span>getAnnotationUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string neroom::INERoomAnnotationController::getAnnotationUrl </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取批注加载地址 </p>
+<dl class="section return"><dt>返回</dt><dd>std::string 批注地址 </dd></dl>
+
+</div>
+</div>
+<a id="a76ee2e9d97308fca9b7af09aacd8cfbf" name="a76ee2e9d97308fca9b7af09aacd8cfbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76ee2e9d97308fca9b7af09aacd8cfbf">&#9670;&#160;</a></span>getIsAnnotationEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomAnnotationController::getIsAnnotationEnabled </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>正在批注共享的用户状态 </p>
+<dl class="section return"><dt>返回</dt><dd>std::string 用户状态 </dd></dl>
+
+</div>
+</div>
+<a id="aaf65d950b4e6de18dadd773fd3c06d42" name="aaf65d950b4e6de18dadd773fd3c06d42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf65d950b4e6de18dadd773fd3c06d42">&#9670;&#160;</a></span>login()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int neroom::INERoomAnnotationController::login </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>登录批注 </p>
+<dl class="section return"><dt>返回</dt><dd>int 0成功 其它失败 </dd></dl>
+
+</div>
+</div>
+<a id="ad636321d71db0fee411aa59d2927720a" name="ad636321d71db0fee411aa59d2927720a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad636321d71db0fee411aa59d2927720a">&#9670;&#160;</a></span>logout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int neroom::INERoomAnnotationController::logout </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>登出批注 </p>
+<dl class="section return"><dt>返回</dt><dd>int 0成功 其它失败 </dd></dl>
+
+</div>
+</div>
+<a id="ac28c67de8cc64fd14effcf00b7fd0872" name="ac28c67de8cc64fd14effcf00b7fd0872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac28c67de8cc64fd14effcf00b7fd0872">&#9670;&#160;</a></span>resetAnnotationCanvas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int neroom::INERoomAnnotationController::resetAnnotationCanvas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classneroom_1_1_i_n_e_annotation_view.html">INEAnnotationView</a> *</td>          <td class="paramname"><span class="paramname"><em>view</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重置批注视图 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td>批注视图 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int 0成功 其它失败 </dd></dl>
+
+</div>
+</div>
+<a id="a60f1038db155dd1274accb32b1cb2d1c" name="a60f1038db155dd1274accb32b1cb2d1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60f1038db155dd1274accb32b1cb2d1c">&#9670;&#160;</a></span>setEnableDraw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int neroom::INERoomAnnotationController::setEnableDraw </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置批注是否可绘制 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>是否允许绘制 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int 0成功 其它失败 </dd></dl>
+
+</div>
+</div>
+<a id="ab4a716071390c927a41cce4d85fe39f6" name="ab4a716071390c927a41cce4d85fe39f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a716071390c927a41cce4d85fe39f6">&#9670;&#160;</a></span>setupAnnotationCanvas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int neroom::INERoomAnnotationController::setupAnnotationCanvas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classneroom_1_1_i_n_e_annotation_view.html">INEAnnotationView</a> *</td>          <td class="paramname"><span class="paramname"><em>view</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置批注视图 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td>批注视图 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int 0成功 其它失败 </dd></dl>
+
+</div>
+</div>
+<a id="a7b3c66ca2ea72acbf3286af25a642f76" name="a7b3c66ca2ea72acbf3286af25a642f76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b3c66ca2ea72acbf3286af25a642f76">&#9670;&#160;</a></span>startAnnotationShare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomAnnotationController::startAnnotationShare </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ade8a2fcea6c50e1fcb759b1f6a7eda30">NEAnnotationCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>开始批注共享 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ad50d4d1648b75098dc5da4a5bc6d431c" name="ad50d4d1648b75098dc5da4a5bc6d431c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad50d4d1648b75098dc5da4a5bc6d431c">&#9670;&#160;</a></span>stopAnnotationShare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomAnnotationController::stopAnnotationShare </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ade8a2fcea6c50e1fcb759b1f6a7eda30">NEAnnotationCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>关闭批注共享 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="annotation__ctrl__interface_8h_source.html">annotation_ctrl_interface.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

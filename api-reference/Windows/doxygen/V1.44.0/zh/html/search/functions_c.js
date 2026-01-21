@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['leavechatroom_0',['leaveChatroom',['../classneroom_1_1_i_n_e_room_chat_controller.html#a4bfb3206c1db7674a4297369447ef63e',1,'neroom::INERoomChatController']]],
+  ['leaveroom_1',['leaveRoom',['../classneroom_1_1_i_n_e_room_context.html#aea6781e2adf0624d36e0941358173731',1,'neroom::INERoomContext::leaveRoom(const NERoomContextCallback &amp;callback)=0'],['../classneroom_1_1_i_n_e_room_context.html#ae61f659e919b6ca07660db34447f225a',1,'neroom::INERoomContext::leaveRoom(NERoomLeaveRoomType leaveRoomType, const NERoomContextCallback &amp;callback)=0']]],
+  ['leavertcchannel_2',['leaveRtcChannel',['../classneroom_1_1_i_n_e_room_rtc_controller.html#a56969d20302b5d164f15616c144423bd',1,'neroom::INERoomRtcController::leaveRtcChannel(const NERtcCallback &amp;callback)=0'],['../classneroom_1_1_i_n_e_room_rtc_controller.html#a86c2d55da43042dc17277ccc10e76b9a',1,'neroom::INERoomRtcController::leaveRtcChannel(const std::string &amp;channelName, const NERtcCallback &amp;callback)=0']]],
+  ['loadextension_3',['loadExtension',['../classneroom_1_1_i_n_e_extension_service.html#a108d67dbff0805136288a0a6458cecf2',1,'neroom::INEExtensionService']]],
+  ['lockroom_4',['lockRoom',['../classneroom_1_1_i_n_e_room_context.html#a94090f2702cb391c6682474e0544d09b',1,'neroom::INERoomContext']]],
+  ['login_5',['login',['../classneroom_1_1_i_n_e_auth_service.html#a312c0570449adc92247811018964ac54',1,'neroom::INEAuthService::login()'],['../classneroom_1_1_i_n_e_room_annotation_controller.html#aaf65d950b4e6de18dadd773fd3c06d42',1,'neroom::INERoomAnnotationController::login()'],['../classneroom_1_1_i_n_e_room_whiteboard_controller.html#a89407aa3abec4d937aac93ee67746145',1,'neroom::INERoomWhiteboardController::login()']]],
+  ['loginbydynamictoken_6',['loginByDynamicToken',['../classneroom_1_1_i_n_e_auth_service.html#a275384db603423e634a7ee6ae4dcb2a5',1,'neroom::INEAuthService']]],
+  ['logout_7',['logout',['../classneroom_1_1_i_n_e_auth_service.html#a27345c30c709bcd8832f1365e02f2101',1,'neroom::INEAuthService::logout()'],['../classneroom_1_1_i_n_e_room_annotation_controller.html#ad636321d71db0fee411aa59d2927720a',1,'neroom::INERoomAnnotationController::logout()'],['../classneroom_1_1_i_n_e_room_whiteboard_controller.html#a1384860cafc1a47155b2ced16a3fbfc8',1,'neroom::INERoomWhiteboardController::logout()']]]
+];

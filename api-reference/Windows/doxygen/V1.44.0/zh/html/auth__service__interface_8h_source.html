@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERoom SDK: auth_service_interface.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERoom SDK<span id="projectnumber">&#160;V1.44.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">auth_service_interface.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="auth__service__interface_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2022 NetEase, Inc. All rights reserved.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Use of this source code is governed by a MIT license that can be</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// found in the LICENSE file.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef AUTH_SERVICE_INTERFACE_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define AUTH_SERVICE_INTERFACE_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="base__service__interface_8h.html">base_service_interface.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="base__type__defines_8h.html">base_type_defines.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="error__code__defines_8h.html">error_code_defines.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="namespaceneroom.html">   18</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceneroom.html">neroom</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespaceneroom.html#ae2e4dc8cc2464b074943b4fee3eb55f7">   23</a></span><span class="keyword">typedef</span> <span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespaceneroom.html#ae2e4dc8cc2464b074943b4fee3eb55f7">tagNEAuthEvent</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_enumvalue" href="namespaceneroom.html#ae2e4dc8cc2464b074943b4fee3eb55f7ab44ebaefd27d9925e26db7686027963c">kAuthKickOut</a>,           </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_enumvalue" href="namespaceneroom.html#ae2e4dc8cc2464b074943b4fee3eb55f7ac5bd1c8dbd404edd1336610e6d0cf94b">kAuthUnauthorized</a>,      </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_enumvalue" href="namespaceneroom.html#ae2e4dc8cc2464b074943b4fee3eb55f7af6ca32f9efd615d42e392529d447abac">kAuthForbidden</a>,         </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_enumvalue" href="namespaceneroom.html#ae2e4dc8cc2464b074943b4fee3eb55f7a1d4e23cd3af5118aba13a727e1f70c6d">kAuthAccountTokenError</a>, </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_enumvalue" href="namespaceneroom.html#ae2e4dc8cc2464b074943b4fee3eb55f7afbb62ae8c44f494b84014ae00e527679">kAuthLoggedIn</a>,          </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_enumvalue" href="namespaceneroom.html#ae2e4dc8cc2464b074943b4fee3eb55f7ae16f3c555de59be93ac654183edc5eb4">kAuthLoggedOut</a>,         </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespaceneroom.html#ae2c65ff262a91f3054c9a8487a95a3e5">   30</a></span>} <a class="code hl_typedef" href="namespaceneroom.html#ae2c65ff262a91f3054c9a8487a95a3e5">NEAuthEvent</a>;</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">class </span>INEAuthListener;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_auth_service.html">   37</a></span><span class="keyword">class </span><a class="code hl_class" href="classneroom_1_1_i_n_e_auth_service.html">INEAuthService</a> : <span class="keyword">public</span> <a class="code hl_class" href="classneroom_1_1_i_n_e_base_service.html">INEBaseService</a> {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_auth_service.html#afe2c7b56005cfb2ecfe9ee49f8bdcab3">   42</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classneroom_1_1_i_n_e_auth_service.html#afe2c7b56005cfb2ecfe9ee49f8bdcab3">NEAuthCallback</a> = <a class="code hl_typedef" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback&lt;&gt;</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_auth_service.html#a2b3a68c73685e3f5e2e3b6517c99a4a8">   48</a></span>    <a class="code hl_function" href="classneroom_1_1_i_n_e_auth_service.html#a2b3a68c73685e3f5e2e3b6517c99a4a8">INEAuthService</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_auth_service.html#a57978172ef968280e9ac709e5ded2fad">   53</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_auth_service.html#a57978172ef968280e9ac709e5ded2fad">~INEAuthService</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_auth_service.html#a312c0570449adc92247811018964ac54">   62</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_auth_service.html#a312c0570449adc92247811018964ac54">login</a>(<span class="keyword">const</span> std::string&amp; account, <span class="keyword">const</span> std::string&amp; token, <span class="keyword">const</span> <a class="code hl_typedef" href="classneroom_1_1_i_n_e_auth_service.html#afe2c7b56005cfb2ecfe9ee49f8bdcab3">NEAuthCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_auth_service.html#a275384db603423e634a7ee6ae4dcb2a5">   70</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_auth_service.html#a275384db603423e634a7ee6ae4dcb2a5">loginByDynamicToken</a>(<span class="keyword">const</span> std::string&amp; account, <span class="keyword">const</span> std::string&amp; token, std::string&amp; authType, <span class="keyword">const</span> <a class="code hl_typedef" href="classneroom_1_1_i_n_e_auth_service.html#afe2c7b56005cfb2ecfe9ee49f8bdcab3">NEAuthCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_auth_service.html#a27345c30c709bcd8832f1365e02f2101">   77</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_auth_service.html#a27345c30c709bcd8832f1365e02f2101">logout</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="classneroom_1_1_i_n_e_auth_service.html#afe2c7b56005cfb2ecfe9ee49f8bdcab3">NEAuthCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_auth_service.html#ac71bce46d7dd23e3fda5348050534f5e">   83</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_auth_service.html#ac71bce46d7dd23e3fda5348050534f5e">isLoggedIn</a>() = 0;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_auth_service.html#a6146aa4f2b1e48bf37730912aa8edaa0">   90</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_auth_service.html#a6146aa4f2b1e48bf37730912aa8edaa0">addAuthListener</a>(<a class="code hl_class" href="classneroom_1_1_i_n_e_auth_listener.html">INEAuthListener</a>* listener) = 0;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_auth_service.html#a05f5c0f5eb904349d1256515a5e3114b">   97</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_auth_service.html#a05f5c0f5eb904349d1256515a5e3114b">removeAuthListener</a>(<a class="code hl_class" href="classneroom_1_1_i_n_e_auth_listener.html">INEAuthListener</a>* listener) = 0;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>};</div>
+</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="foldopen" id="foldopen00105" data-start="{" data-end="};">
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_auth_listener.html">  105</a></span><span class="keyword">class </span><a class="code hl_class" href="classneroom_1_1_i_n_e_auth_listener.html">INEAuthListener</a> {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_auth_listener.html#a98213e886eb93ac5f0a93e8f5f29c92f">  110</a></span>    <a class="code hl_function" href="classneroom_1_1_i_n_e_auth_listener.html#a98213e886eb93ac5f0a93e8f5f29c92f">INEAuthListener</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_auth_listener.html#a24a2bec499b514c583ca20d82de8280e">  115</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_auth_listener.html#a24a2bec499b514c583ca20d82de8280e">~INEAuthListener</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_auth_listener.html#aed55f413cc089734f7efd23ba9d854e2">  122</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_auth_listener.html#aed55f413cc089734f7efd23ba9d854e2">onAuthEvent</a>(<a class="code hl_typedef" href="namespaceneroom.html#ae2c65ff262a91f3054c9a8487a95a3e5">NEAuthEvent</a> authEvent) { (void)authEvent; };</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>};</div>
+</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}  <span class="comment">// namespace neroom</span></div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="preprocessor">#endif  </span><span class="comment">// AUTH_SERVICE_INTERFACE_H</span></div>
+<div class="ttc" id="abase__service__interface_8h_html"><div class="ttname"><a href="base__service__interface_8h.html">base_service_interface.h</a></div><div class="ttdoc">基础服务接口头文件</div></div>
+<div class="ttc" id="abase__type__defines_8h_html"><div class="ttname"><a href="base__type__defines_8h.html">base_type_defines.h</a></div><div class="ttdoc">基本类型定义头文件</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_auth_listener_html"><div class="ttname"><a href="classneroom_1_1_i_n_e_auth_listener.html">neroom::INEAuthListener</a></div><div class="ttdoc">登录状态等事件监听</div><div class="ttdef"><b>Definition</b> <a href="#l00105">auth_service_interface.h:105</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_auth_listener_html_a24a2bec499b514c583ca20d82de8280e"><div class="ttname"><a href="classneroom_1_1_i_n_e_auth_listener.html#a24a2bec499b514c583ca20d82de8280e">neroom::INEAuthListener::~INEAuthListener</a></div><div class="ttdeci">virtual ~INEAuthListener()=default</div><div class="ttdoc">析构函数</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_auth_listener_html_a98213e886eb93ac5f0a93e8f5f29c92f"><div class="ttname"><a href="classneroom_1_1_i_n_e_auth_listener.html#a98213e886eb93ac5f0a93e8f5f29c92f">neroom::INEAuthListener::INEAuthListener</a></div><div class="ttdeci">INEAuthListener()=default</div><div class="ttdoc">构造函数</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_auth_listener_html_aed55f413cc089734f7efd23ba9d854e2"><div class="ttname"><a href="classneroom_1_1_i_n_e_auth_listener.html#aed55f413cc089734f7efd23ba9d854e2">neroom::INEAuthListener::onAuthEvent</a></div><div class="ttdeci">virtual void onAuthEvent(NEAuthEvent authEvent)</div><div class="ttdoc">登录状态</div><div class="ttdef"><b>Definition</b> <a href="#l00122">auth_service_interface.h:122</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_auth_service_html"><div class="ttname"><a href="classneroom_1_1_i_n_e_auth_service.html">neroom::INEAuthService</a></div><div class="ttdoc">登录服务</div><div class="ttdef"><b>Definition</b> <a href="#l00037">auth_service_interface.h:37</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_auth_service_html_a05f5c0f5eb904349d1256515a5e3114b"><div class="ttname"><a href="classneroom_1_1_i_n_e_auth_service.html#a05f5c0f5eb904349d1256515a5e3114b">neroom::INEAuthService::removeAuthListener</a></div><div class="ttdeci">virtual void removeAuthListener(INEAuthListener *listener)=0</div><div class="ttdoc">移除鉴权事件监听</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_auth_service_html_a27345c30c709bcd8832f1365e02f2101"><div class="ttname"><a href="classneroom_1_1_i_n_e_auth_service.html#a27345c30c709bcd8832f1365e02f2101">neroom::INEAuthService::logout</a></div><div class="ttdeci">virtual void logout(const NEAuthCallback &amp;callback)=0</div><div class="ttdoc">退出登录</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_auth_service_html_a275384db603423e634a7ee6ae4dcb2a5"><div class="ttname"><a href="classneroom_1_1_i_n_e_auth_service.html#a275384db603423e634a7ee6ae4dcb2a5">neroom::INEAuthService::loginByDynamicToken</a></div><div class="ttdeci">virtual void loginByDynamicToken(const std::string &amp;account, const std::string &amp;token, std::string &amp;authType, const NEAuthCallback &amp;callback)=0</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_auth_service_html_a2b3a68c73685e3f5e2e3b6517c99a4a8"><div class="ttname"><a href="classneroom_1_1_i_n_e_auth_service.html#a2b3a68c73685e3f5e2e3b6517c99a4a8">neroom::INEAuthService::INEAuthService</a></div><div class="ttdeci">INEAuthService()=default</div><div class="ttdoc">构造函数</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_auth_service_html_a312c0570449adc92247811018964ac54"><div class="ttname"><a href="classneroom_1_1_i_n_e_auth_service.html#a312c0570449adc92247811018964ac54">neroom::INEAuthService::login</a></div><div class="ttdeci">virtual void login(const std::string &amp;account, const std::string &amp;token, const NEAuthCallback &amp;callback)=0</div><div class="ttdoc">实名登录</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_auth_service_html_a57978172ef968280e9ac709e5ded2fad"><div class="ttname"><a href="classneroom_1_1_i_n_e_auth_service.html#a57978172ef968280e9ac709e5ded2fad">neroom::INEAuthService::~INEAuthService</a></div><div class="ttdeci">virtual ~INEAuthService()=default</div><div class="ttdoc">析构函数</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_auth_service_html_a6146aa4f2b1e48bf37730912aa8edaa0"><div class="ttname"><a href="classneroom_1_1_i_n_e_auth_service.html#a6146aa4f2b1e48bf37730912aa8edaa0">neroom::INEAuthService::addAuthListener</a></div><div class="ttdeci">virtual void addAuthListener(INEAuthListener *listener)=0</div><div class="ttdoc">添加鉴权事件监听</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_auth_service_html_ac71bce46d7dd23e3fda5348050534f5e"><div class="ttname"><a href="classneroom_1_1_i_n_e_auth_service.html#ac71bce46d7dd23e3fda5348050534f5e">neroom::INEAuthService::isLoggedIn</a></div><div class="ttdeci">virtual bool isLoggedIn()=0</div><div class="ttdoc">查询当前登录状态</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_auth_service_html_afe2c7b56005cfb2ecfe9ee49f8bdcab3"><div class="ttname"><a href="classneroom_1_1_i_n_e_auth_service.html#afe2c7b56005cfb2ecfe9ee49f8bdcab3">neroom::INEAuthService::NEAuthCallback</a></div><div class="ttdeci">NECallback&lt;&gt; NEAuthCallback</div><div class="ttdoc">账户操作结果回调</div><div class="ttdef"><b>Definition</b> <a href="#l00042">auth_service_interface.h:42</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_base_service_html"><div class="ttname"><a href="classneroom_1_1_i_n_e_base_service.html">neroom::INEBaseService</a></div><div class="ttdoc">基础服务</div><div class="ttdef"><b>Definition</b> <a href="base__service__interface_8h_source.html#l00019">base_service_interface.h:19</a></div></div>
+<div class="ttc" id="aerror__code__defines_8h_html"><div class="ttname"><a href="error__code__defines_8h.html">error_code_defines.h</a></div><div class="ttdoc">错误码定义头文件</div></div>
+<div class="ttc" id="anamespaceneroom_html"><div class="ttname"><a href="namespaceneroom.html">neroom</a></div><div class="ttdef"><b>Definition</b> <a href="#l00018">auth_service_interface.h:18</a></div></div>
+<div class="ttc" id="anamespaceneroom_html_a995982a9fd7493f2a6d7257216437945"><div class="ttname"><a href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">neroom::NECallback</a></div><div class="ttdeci">std::function&lt; void(int, const std::string &amp;, const TResultParam &amp;...)&gt; NECallback</div><div class="ttdoc">通用回调</div><div class="ttdef"><b>Definition</b> <a href="base__type__defines_8h_source.html#l00037">base_type_defines.h:37</a></div></div>
+<div class="ttc" id="anamespaceneroom_html_ae2c65ff262a91f3054c9a8487a95a3e5"><div class="ttname"><a href="namespaceneroom.html#ae2c65ff262a91f3054c9a8487a95a3e5">neroom::NEAuthEvent</a></div><div class="ttdeci">enum neroom::tagNEAuthEvent NEAuthEvent</div><div class="ttdoc">登录状态</div></div>
+<div class="ttc" id="anamespaceneroom_html_ae2e4dc8cc2464b074943b4fee3eb55f7"><div class="ttname"><a href="namespaceneroom.html#ae2e4dc8cc2464b074943b4fee3eb55f7">neroom::tagNEAuthEvent</a></div><div class="ttdeci">tagNEAuthEvent</div><div class="ttdoc">登录状态</div><div class="ttdef"><b>Definition</b> <a href="#l00023">auth_service_interface.h:23</a></div></div>
+<div class="ttc" id="anamespaceneroom_html_ae2e4dc8cc2464b074943b4fee3eb55f7a1d4e23cd3af5118aba13a727e1f70c6d"><div class="ttname"><a href="namespaceneroom.html#ae2e4dc8cc2464b074943b4fee3eb55f7a1d4e23cd3af5118aba13a727e1f70c6d">neroom::tagNEAuthEvent::kAuthAccountTokenError</a></div><div class="ttdeci">@ kAuthAccountTokenError</div></div>
+<div class="ttc" id="anamespaceneroom_html_ae2e4dc8cc2464b074943b4fee3eb55f7ab44ebaefd27d9925e26db7686027963c"><div class="ttname"><a href="namespaceneroom.html#ae2e4dc8cc2464b074943b4fee3eb55f7ab44ebaefd27d9925e26db7686027963c">neroom::tagNEAuthEvent::kAuthKickOut</a></div><div class="ttdeci">@ kAuthKickOut</div></div>
+<div class="ttc" id="anamespaceneroom_html_ae2e4dc8cc2464b074943b4fee3eb55f7ac5bd1c8dbd404edd1336610e6d0cf94b"><div class="ttname"><a href="namespaceneroom.html#ae2e4dc8cc2464b074943b4fee3eb55f7ac5bd1c8dbd404edd1336610e6d0cf94b">neroom::tagNEAuthEvent::kAuthUnauthorized</a></div><div class="ttdeci">@ kAuthUnauthorized</div></div>
+<div class="ttc" id="anamespaceneroom_html_ae2e4dc8cc2464b074943b4fee3eb55f7ae16f3c555de59be93ac654183edc5eb4"><div class="ttname"><a href="namespaceneroom.html#ae2e4dc8cc2464b074943b4fee3eb55f7ae16f3c555de59be93ac654183edc5eb4">neroom::tagNEAuthEvent::kAuthLoggedOut</a></div><div class="ttdeci">@ kAuthLoggedOut</div></div>
+<div class="ttc" id="anamespaceneroom_html_ae2e4dc8cc2464b074943b4fee3eb55f7af6ca32f9efd615d42e392529d447abac"><div class="ttname"><a href="namespaceneroom.html#ae2e4dc8cc2464b074943b4fee3eb55f7af6ca32f9efd615d42e392529d447abac">neroom::tagNEAuthEvent::kAuthForbidden</a></div><div class="ttdeci">@ kAuthForbidden</div></div>
+<div class="ttc" id="anamespaceneroom_html_ae2e4dc8cc2464b074943b4fee3eb55f7afbb62ae8c44f494b84014ae00e527679"><div class="ttname"><a href="namespaceneroom.html#ae2e4dc8cc2464b074943b4fee3eb55f7afbb62ae8c44f494b84014ae00e527679">neroom::tagNEAuthEvent::kAuthLoggedIn</a></div><div class="ttdeci">@ kAuthLoggedIn</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

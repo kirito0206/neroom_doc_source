@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERoom SDK: neroom::INEWaitingRoomListener类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERoom SDK<span id="projectnumber">&#160;V1.44.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceneroom.html">neroom</a></li><li class="navelem"><a class="el" href="classneroom_1_1_i_n_e_waiting_room_listener.html">INEWaitingRoomListener</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classneroom_1_1_i_n_e_waiting_room_listener-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">neroom::INEWaitingRoomListener类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="waiting__room__listener_8h_source.html">waiting_room_listener.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a4b44c4799b08a282bbe6fc7fff0ca463" id="r_a4b44c4799b08a282bbe6fc7fff0ca463"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b44c4799b08a282bbe6fc7fff0ca463">~INEWaitingRoomListener</a> ()=default</td></tr>
+<tr class="separator:a4b44c4799b08a282bbe6fc7fff0ca463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d2ea704aa6569b22ae9c97b9ae2f323" id="r_a8d2ea704aa6569b22ae9c97b9ae2f323"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d2ea704aa6569b22ae9c97b9ae2f323">onWaitingRoomInfoUpdated</a> (const <a class="el" href="structneroom_1_1_n_e_waiting_room_info.html">NEWaitingRoomInfo</a> &amp;info)</td></tr>
+<tr class="memdesc:a8d2ea704aa6569b22ae9c97b9ae2f323"><td class="mdescLeft">&#160;</td><td class="mdescRight">等候室信息更新通知  <br /></td></tr>
+<tr class="separator:a8d2ea704aa6569b22ae9c97b9ae2f323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7463f154859f530598523c14d1a53f76" id="r_a7463f154859f530598523c14d1a53f76"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7463f154859f530598523c14d1a53f76">onMemberJoin</a> (const <a class="el" href="namespaceneroom.html#a96d4be4ce1aeed0277b096532ad90d65">NEWaitingRoomMemberPtr</a> &amp;member, <a class="el" href="namespaceneroom.html#a7d805ec8980d8839fe6554b27711bc00">NEWaitingRoomMemberStateChangeReason</a> reason)</td></tr>
+<tr class="memdesc:a7463f154859f530598523c14d1a53f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">等候室有新成员加入事件  <br /></td></tr>
+<tr class="separator:a7463f154859f530598523c14d1a53f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c86c2226c11b08df522485c29bc7b29" id="r_a6c86c2226c11b08df522485c29bc7b29"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c86c2226c11b08df522485c29bc7b29">onMemberLeave</a> (const std::string &amp;userUuid, <a class="el" href="namespaceneroom.html#a7d805ec8980d8839fe6554b27711bc00">NEWaitingRoomMemberStateChangeReason</a> reason)</td></tr>
+<tr class="memdesc:a6c86c2226c11b08df522485c29bc7b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">成员离开等候室事件，可能是被移除、超时等  <br /></td></tr>
+<tr class="separator:a6c86c2226c11b08df522485c29bc7b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d151d6ad0ee215bdfab3a359d94f898" id="r_a7d151d6ad0ee215bdfab3a359d94f898"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d151d6ad0ee215bdfab3a359d94f898">onMemberAdmitted</a> (const std::string &amp;userUuid)</td></tr>
+<tr class="memdesc:a7d151d6ad0ee215bdfab3a359d94f898"><td class="mdescLeft">&#160;</td><td class="mdescRight">成员被准入房间事件  <br /></td></tr>
+<tr class="separator:a7d151d6ad0ee215bdfab3a359d94f898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c45bb925219d5bc5fbc8622cbb96ef" id="r_a79c45bb925219d5bc5fbc8622cbb96ef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79c45bb925219d5bc5fbc8622cbb96ef">onAllMembersKicked</a> ()</td></tr>
+<tr class="memdesc:a79c45bb925219d5bc5fbc8622cbb96ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">所有成员均被移除等候室  <br /></td></tr>
+<tr class="separator:a79c45bb925219d5bc5fbc8622cbb96ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011db5a6ba6e72e60ee3a27eaa927c8b" id="r_a011db5a6ba6e72e60ee3a27eaa927c8b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a011db5a6ba6e72e60ee3a27eaa927c8b">onManagersUpdated</a> (const std::list&lt; <a class="el" href="namespaceneroom.html#a8241d9fea23e2159c0f5df03048c25d1">NEWaitingRoomManagerPtr</a> &gt; member)</td></tr>
+<tr class="memdesc:a011db5a6ba6e72e60ee3a27eaa927c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">主持人信息变更事件  <br /></td></tr>
+<tr class="separator:a011db5a6ba6e72e60ee3a27eaa927c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69a43758cbe0c40b655bbb2da253e0b" id="r_af69a43758cbe0c40b655bbb2da253e0b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af69a43758cbe0c40b655bbb2da253e0b">onMemberNameChanged</a> (const std::string &amp;userUuid, const std::string &amp;newName)</td></tr>
+<tr class="memdesc:af69a43758cbe0c40b655bbb2da253e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">成员列表更新通知  <br /></td></tr>
+<tr class="separator:af69a43758cbe0c40b655bbb2da253e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17504ae8eff12ddc33e6d0ce2f506195" id="r_a17504ae8eff12ddc33e6d0ce2f506195"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17504ae8eff12ddc33e6d0ce2f506195">onMyWaitingRoomStatusChanged</a> (<a class="el" href="namespaceneroom.html#a8fda837e747e3b59b57183b6fe0db63b">NEWaitingRoomState</a> state, <a class="el" href="namespaceneroom.html#a7d805ec8980d8839fe6554b27711bc00">NEWaitingRoomMemberStateChangeReason</a> reason)</td></tr>
+<tr class="memdesc:a17504ae8eff12ddc33e6d0ce2f506195"><td class="mdescLeft">&#160;</td><td class="mdescRight">等候室状态变更通知  <br /></td></tr>
+<tr class="separator:a17504ae8eff12ddc33e6d0ce2f506195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="waiting__room__listener_8h_source.html">waiting_room_listener.h</a> 第 <a class="el" href="waiting__room__listener_8h_source.html#l00017">17</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a4b44c4799b08a282bbe6fc7fff0ca463" name="a4b44c4799b08a282bbe6fc7fff0ca463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b44c4799b08a282bbe6fc7fff0ca463">&#9670;&#160;</a></span>~INEWaitingRoomListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual neroom::INEWaitingRoomListener::~INEWaitingRoomListener </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a79c45bb925219d5bc5fbc8622cbb96ef" name="a79c45bb925219d5bc5fbc8622cbb96ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79c45bb925219d5bc5fbc8622cbb96ef">&#9670;&#160;</a></span>onAllMembersKicked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomListener::onAllMembersKicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>所有成员均被移除等候室 </p>
+<dl class="section since"><dt>自从</dt><dd>v1.27.0 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="waiting__room__listener_8h_source.html">waiting_room_listener.h</a> 第 <a class="el" href="waiting__room__listener_8h_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a011db5a6ba6e72e60ee3a27eaa927c8b" name="a011db5a6ba6e72e60ee3a27eaa927c8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a011db5a6ba6e72e60ee3a27eaa927c8b">&#9670;&#160;</a></span>onManagersUpdated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomListener::onManagersUpdated </td>
+          <td>(</td>
+          <td class="paramtype">const std::list&lt; <a class="el" href="namespaceneroom.html#a8241d9fea23e2159c0f5df03048c25d1">NEWaitingRoomManagerPtr</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>member</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>主持人信息变更事件 </p>
+<dl class="section since"><dt>自从</dt><dd>v1.29.0 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="waiting__room__listener_8h_source.html">waiting_room_listener.h</a> 第 <a class="el" href="waiting__room__listener_8h_source.html#l00051">51</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7d151d6ad0ee215bdfab3a359d94f898" name="a7d151d6ad0ee215bdfab3a359d94f898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d151d6ad0ee215bdfab3a359d94f898">&#9670;&#160;</a></span>onMemberAdmitted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomListener::onMemberAdmitted </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>成员被准入房间事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>成员信息 <code><a class="el" href="namespaceneroom.html#a96d4be4ce1aeed0277b096532ad90d65">NEWaitingRoomMemberPtr</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="waiting__room__listener_8h_source.html">waiting_room_listener.h</a> 第 <a class="el" href="waiting__room__listener_8h_source.html#l00041">41</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7463f154859f530598523c14d1a53f76" name="a7463f154859f530598523c14d1a53f76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7463f154859f530598523c14d1a53f76">&#9670;&#160;</a></span>onMemberJoin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomListener::onMemberJoin </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a96d4be4ce1aeed0277b096532ad90d65">NEWaitingRoomMemberPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>member</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceneroom.html#a7d805ec8980d8839fe6554b27711bc00">NEWaitingRoomMemberStateChangeReason</a></td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>等候室有新成员加入事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">member</td><td>成员信息 <code><a class="el" href="namespaceneroom.html#a96d4be4ce1aeed0277b096532ad90d65">NEWaitingRoomMemberPtr</a></code> </td></tr>
+    <tr><td class="paramname">reason</td><td>成员状态变更原因 <code><a class="el" href="namespaceneroom.html#a7d805ec8980d8839fe6554b27711bc00">NEWaitingRoomMemberStateChangeReason</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="waiting__room__listener_8h_source.html">waiting_room_listener.h</a> 第 <a class="el" href="waiting__room__listener_8h_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6c86c2226c11b08df522485c29bc7b29" name="a6c86c2226c11b08df522485c29bc7b29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c86c2226c11b08df522485c29bc7b29">&#9670;&#160;</a></span>onMemberLeave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomListener::onMemberLeave </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceneroom.html#a7d805ec8980d8839fe6554b27711bc00">NEWaitingRoomMemberStateChangeReason</a></td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>成员离开等候室事件，可能是被移除、超时等 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>成员信息 <code><a class="el" href="namespaceneroom.html#a96d4be4ce1aeed0277b096532ad90d65">NEWaitingRoomMemberPtr</a></code> </td></tr>
+    <tr><td class="paramname">reason</td><td>成员状态变更原因 <code><a class="el" href="namespaceneroom.html#a7d805ec8980d8839fe6554b27711bc00">NEWaitingRoomMemberStateChangeReason</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="waiting__room__listener_8h_source.html">waiting_room_listener.h</a> 第 <a class="el" href="waiting__room__listener_8h_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af69a43758cbe0c40b655bbb2da253e0b" name="af69a43758cbe0c40b655bbb2da253e0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af69a43758cbe0c40b655bbb2da253e0b">&#9670;&#160;</a></span>onMemberNameChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomListener::onMemberNameChanged </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>newName</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>成员列表更新通知 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>成员信息 <code><a class="el" href="namespaceneroom.html#a96d4be4ce1aeed0277b096532ad90d65">NEWaitingRoomMemberPtr</a></code> </td></tr>
+    <tr><td class="paramname">newName</td><td>成员新名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="waiting__room__listener_8h_source.html">waiting_room_listener.h</a> 第 <a class="el" href="waiting__room__listener_8h_source.html#l00057">57</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a17504ae8eff12ddc33e6d0ce2f506195" name="a17504ae8eff12ddc33e6d0ce2f506195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17504ae8eff12ddc33e6d0ce2f506195">&#9670;&#160;</a></span>onMyWaitingRoomStatusChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomListener::onMyWaitingRoomStatusChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceneroom.html#a8fda837e747e3b59b57183b6fe0db63b">NEWaitingRoomState</a></td>          <td class="paramname"><span class="paramname"><em>state</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceneroom.html#a7d805ec8980d8839fe6554b27711bc00">NEWaitingRoomMemberStateChangeReason</a></td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>等候室状态变更通知 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>变更状态 <code><a class="el" href="namespaceneroom.html#a8fda837e747e3b59b57183b6fe0db63b">NEWaitingRoomState</a></code> </td></tr>
+    <tr><td class="paramname">reason</td><td>状态变更原因 <code><a class="el" href="namespaceneroom.html#a7d805ec8980d8839fe6554b27711bc00">NEWaitingRoomMemberStateChangeReason</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="waiting__room__listener_8h_source.html">waiting_room_listener.h</a> 第 <a class="el" href="waiting__room__listener_8h_source.html#l00063">63</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8d2ea704aa6569b22ae9c97b9ae2f323" name="a8d2ea704aa6569b22ae9c97b9ae2f323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d2ea704aa6569b22ae9c97b9ae2f323">&#9670;&#160;</a></span>onWaitingRoomInfoUpdated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomListener::onWaitingRoomInfoUpdated </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structneroom_1_1_n_e_waiting_room_info.html">NEWaitingRoomInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>info</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>等候室信息更新通知 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>等候室信息 <code><a class="el" href="structneroom_1_1_n_e_waiting_room_info.html">NEWaitingRoomInfo</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="waiting__room__listener_8h_source.html">waiting_room_listener.h</a> 第 <a class="el" href="waiting__room__listener_8h_source.html#l00024">24</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="waiting__room__listener_8h_source.html">waiting_room_listener.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

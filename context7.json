@@ -1,0 +1,30 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "NERoom SDK",
+  "description": "网易云信房间组件（简称 NERoom）以房间为基础，提供网易云信全系列能力，包括即时消息、音视频通话、直播、互动白板等，是一个易接入、强扩展、高效部署且覆盖多场景的服务。 (Android/iOS/Web/Windows/macOS/Flutter)",
+  "folders": [],
+  "excludeFolders": [
+    ".claude",
+    "node_modules",
+    ".git"
+  ],
+  "excludeFiles": [
+    ".DS_Store"
+  ],
+  "rules": [
+    "NERoom SDK 支持 6 个平台：Android、iOS、Web、Windows、macOS 和 Flutter",
+    "每个平台都有自己的集成指南，位于 guides/[Platform]/ 目录下，包含房间管理、成员管理、音视频通话、即时消息、互动白板、互动直播等功能文档",
+    "对于初学者：从快速开始指南开始，路径为 guides/[Platform]/快速开始/",
+    "SDK 功能涵盖房间管理、成员管理、音视频通话、即时消息、互动白板、互动直播、麦位管理及业务组件等核心功能",
+    "不同平台的功能和 API 可能略有差异 - 请参考特定平台的文档",
+    "在生产环境中使用时，需实现适当的错误处理和状态管理",
+    "各平台均提供最佳实践指南，帮助开发者进行性能优化和问题排查",
+    "完整 API 参考文档可在 api-reference/ 目录中找到，按平台和版本分类组织"
+  ],
+  "previousVersions": [
+    {
+      "tag": "v1.44.0",
+      "description": "NERoom SDK 1.44.0 stable release"
+    }
+  ]
+}

@@ -1,0 +1,608 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERoom SDK: neroom::INERoomWhiteboardController类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERoom SDK<span id="projectnumber">&#160;V1.44.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceneroom.html">neroom</a></li><li class="navelem"><a class="el" href="classneroom_1_1_i_n_e_room_whiteboard_controller.html">INERoomWhiteboardController</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classneroom_1_1_i_n_e_room_whiteboard_controller-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">neroom::INERoomWhiteboardController类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>白板控制器接口类  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="whiteboard__ctrl__interface_8h_source.html">whiteboard_ctrl_interface.h</a>&gt;</code></p>
+<div class="dynheader">
+类 neroom::INERoomWhiteboardController 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classneroom_1_1_i_n_e_room_whiteboard_controller__inherit__graph.png" border="0" usemap="#aneroom_1_1_i_n_e_room_whiteboard_controller_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+neroom::INERoomWhiteboardController 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classneroom_1_1_i_n_e_room_whiteboard_controller__coll__graph.png" border="0" usemap="#aneroom_1_1_i_n_e_room_whiteboard_controller_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a8f88e60fbf39ee2afb5e3859a1db2f1f" id="r_a8f88e60fbf39ee2afb5e3859a1db2f1f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt;</td></tr>
+<tr class="memdesc:a8f88e60fbf39ee2afb5e3859a1db2f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">白板操作结果回调  <br /></td></tr>
+<tr class="separator:a8f88e60fbf39ee2afb5e3859a1db2f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aef0bfe618440eefd6e556332c5c2deb6" id="r_aef0bfe618440eefd6e556332c5c2deb6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef0bfe618440eefd6e556332c5c2deb6">~INERoomWhiteboardController</a> ()=default</td></tr>
+<tr class="memdesc:aef0bfe618440eefd6e556332c5c2deb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:aef0bfe618440eefd6e556332c5c2deb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c0e0b2b5eff0c7ae05eeca399c7477" id="r_ab0c0e0b2b5eff0c7ae05eeca399c7477"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0c0e0b2b5eff0c7ae05eeca399c7477">getWhiteboardUrl</a> ()=0</td></tr>
+<tr class="memdesc:ab0c0e0b2b5eff0c7ae05eeca399c7477"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取白板加载地址  <br /></td></tr>
+<tr class="separator:ab0c0e0b2b5eff0c7ae05eeca399c7477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89407aa3abec4d937aac93ee67746145" id="r_a89407aa3abec4d937aac93ee67746145"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89407aa3abec4d937aac93ee67746145">login</a> ()=0</td></tr>
+<tr class="memdesc:a89407aa3abec4d937aac93ee67746145"><td class="mdescLeft">&#160;</td><td class="mdescRight">登录白板  <br /></td></tr>
+<tr class="separator:a89407aa3abec4d937aac93ee67746145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1384860cafc1a47155b2ced16a3fbfc8" id="r_a1384860cafc1a47155b2ced16a3fbfc8"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1384860cafc1a47155b2ced16a3fbfc8">logout</a> ()=0</td></tr>
+<tr class="memdesc:a1384860cafc1a47155b2ced16a3fbfc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">登出白板  <br /></td></tr>
+<tr class="separator:a1384860cafc1a47155b2ced16a3fbfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a666509b5b71a4d4b88409b3f3700a19c" id="r_a666509b5b71a4d4b88409b3f3700a19c"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a666509b5b71a4d4b88409b3f3700a19c">auth</a> ()=0</td></tr>
+<tr class="memdesc:a666509b5b71a4d4b88409b3f3700a19c"><td class="mdescLeft">&#160;</td><td class="mdescRight">身份认证  <br /></td></tr>
+<tr class="separator:a666509b5b71a4d4b88409b3f3700a19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7050180fc81beea409d98d675dda8fdd" id="r_a7050180fc81beea409d98d675dda8fdd"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7050180fc81beea409d98d675dda8fdd">setEnableDraw</a> (bool enable)=0</td></tr>
+<tr class="memdesc:a7050180fc81beea409d98d675dda8fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置白板是否可绘制  <br /></td></tr>
+<tr class="separator:a7050180fc81beea409d98d675dda8fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dd6b15927bc5d4415df174968654368" id="r_a6dd6b15927bc5d4415df174968654368"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6dd6b15927bc5d4415df174968654368">setupWhiteboardCanvas</a> (<a class="el" href="classneroom_1_1_i_n_e_whiteboard_view.html">INEWhiteboardView</a> *view)=0</td></tr>
+<tr class="memdesc:a6dd6b15927bc5d4415df174968654368"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置白板视图  <br /></td></tr>
+<tr class="separator:a6dd6b15927bc5d4415df174968654368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d97a80dd56cdfe908070830f6b01d9d" id="r_a9d97a80dd56cdfe908070830f6b01d9d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d97a80dd56cdfe908070830f6b01d9d">resetWhiteboardCanvas</a> (<a class="el" href="classneroom_1_1_i_n_e_whiteboard_view.html">INEWhiteboardView</a> *view)=0</td></tr>
+<tr class="memdesc:a9d97a80dd56cdfe908070830f6b01d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">重置白板视图  <br /></td></tr>
+<tr class="separator:a9d97a80dd56cdfe908070830f6b01d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59aca2ec3a0ba8dbd125b7079f431855" id="r_a59aca2ec3a0ba8dbd125b7079f431855"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59aca2ec3a0ba8dbd125b7079f431855">getWhiteboardSharingUserUuid</a> ()=0</td></tr>
+<tr class="memdesc:a59aca2ec3a0ba8dbd125b7079f431855"><td class="mdescLeft">&#160;</td><td class="mdescRight">正在白板共享的用户  <br /></td></tr>
+<tr class="separator:a59aca2ec3a0ba8dbd125b7079f431855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90eb093f3d3e4fe10661bb30d24878be" id="r_a90eb093f3d3e4fe10661bb30d24878be"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90eb093f3d3e4fe10661bb30d24878be">startWhiteboardShare</a> (const <a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a> &amp;callback=<a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a>())=0</td></tr>
+<tr class="memdesc:a90eb093f3d3e4fe10661bb30d24878be"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始白板共享  <br /></td></tr>
+<tr class="separator:a90eb093f3d3e4fe10661bb30d24878be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aea6cbc694dc4bd62df0b3308b67e72" id="r_a1aea6cbc694dc4bd62df0b3308b67e72"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1aea6cbc694dc4bd62df0b3308b67e72">startWhiteboardShare</a> (bool stopCurrentShare=false, const <a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a> &amp;callback=<a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a>())=0</td></tr>
+<tr class="memdesc:a1aea6cbc694dc4bd62df0b3308b67e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始白板共享  <br /></td></tr>
+<tr class="separator:a1aea6cbc694dc4bd62df0b3308b67e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ee3fba2a688ccad9f773892560e50f4" id="r_a0ee3fba2a688ccad9f773892560e50f4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ee3fba2a688ccad9f773892560e50f4">stopWhiteboardShare</a> (const <a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a> &amp;callback=<a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a>())=0</td></tr>
+<tr class="memdesc:a0ee3fba2a688ccad9f773892560e50f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭白板共享  <br /></td></tr>
+<tr class="separator:a0ee3fba2a688ccad9f773892560e50f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac980bdcaf2854e29b50dab0b55069eaf" id="r_ac980bdcaf2854e29b50dab0b55069eaf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac980bdcaf2854e29b50dab0b55069eaf">stopMemberWhiteboardShare</a> (const std::string &amp;userUuid, const <a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a> &amp;callback=<a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a>())=0</td></tr>
+<tr class="memdesc:ac980bdcaf2854e29b50dab0b55069eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止成员共享  <br /></td></tr>
+<tr class="separator:ac980bdcaf2854e29b50dab0b55069eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classneroom_1_1_i_n_e_base_controller"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classneroom_1_1_i_n_e_base_controller')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classneroom_1_1_i_n_e_base_controller.html">neroom::INEBaseController</a></td></tr>
+<tr class="memitem:ad173bfaf8ba2c6ff692f26b298333076 inherit pub_methods_classneroom_1_1_i_n_e_base_controller" id="r_ad173bfaf8ba2c6ff692f26b298333076"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_base_controller.html#ad173bfaf8ba2c6ff692f26b298333076">INEBaseController</a> ()=default</td></tr>
+<tr class="memdesc:ad173bfaf8ba2c6ff692f26b298333076 inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:ad173bfaf8ba2c6ff692f26b298333076 inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b910876c22d9281cf46f64ebfc339d inherit pub_methods_classneroom_1_1_i_n_e_base_controller" id="r_a32b910876c22d9281cf46f64ebfc339d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_base_controller.html#a32b910876c22d9281cf46f64ebfc339d">~INEBaseController</a> ()=default</td></tr>
+<tr class="memdesc:a32b910876c22d9281cf46f64ebfc339d inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:a32b910876c22d9281cf46f64ebfc339d inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0915c4408553b65960f0ca9e53b4fc2c inherit pub_methods_classneroom_1_1_i_n_e_base_controller" id="r_a0915c4408553b65960f0ca9e53b4fc2c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_base_controller.html#a0915c4408553b65960f0ca9e53b4fc2c">isSupported</a> () const =0</td></tr>
+<tr class="memdesc:a0915c4408553b65960f0ca9e53b4fc2c inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">功能是否支持  <br /></td></tr>
+<tr class="separator:a0915c4408553b65960f0ca9e53b4fc2c inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>白板控制器接口类 </p>
+
+<p class="definition">在文件 <a class="el" href="whiteboard__ctrl__interface_8h_source.html">whiteboard_ctrl_interface.h</a> 第 <a class="el" href="whiteboard__ctrl__interface_8h_source.html#l00035">35</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a8f88e60fbf39ee2afb5e3859a1db2f1f" name="a8f88e60fbf39ee2afb5e3859a1db2f1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">&#9670;&#160;</a></span>NEWhiteboardCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">neroom::INERoomWhiteboardController::NEWhiteboardCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>白板操作结果回调 </p>
+
+<p class="definition">在文件 <a class="el" href="whiteboard__ctrl__interface_8h_source.html">whiteboard_ctrl_interface.h</a> 第 <a class="el" href="whiteboard__ctrl__interface_8h_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aef0bfe618440eefd6e556332c5c2deb6" name="aef0bfe618440eefd6e556332c5c2deb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef0bfe618440eefd6e556332c5c2deb6">&#9670;&#160;</a></span>~INERoomWhiteboardController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual neroom::INERoomWhiteboardController::~INERoomWhiteboardController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a666509b5b71a4d4b88409b3f3700a19c" name="a666509b5b71a4d4b88409b3f3700a19c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a666509b5b71a4d4b88409b3f3700a19c">&#9670;&#160;</a></span>auth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int neroom::INERoomWhiteboardController::auth </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>身份认证 </p>
+<dl class="section return"><dt>返回</dt><dd>int 0成功 其它失败 </dd></dl>
+
+</div>
+</div>
+<a id="a59aca2ec3a0ba8dbd125b7079f431855" name="a59aca2ec3a0ba8dbd125b7079f431855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59aca2ec3a0ba8dbd125b7079f431855">&#9670;&#160;</a></span>getWhiteboardSharingUserUuid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string neroom::INERoomWhiteboardController::getWhiteboardSharingUserUuid </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>正在白板共享的用户 </p>
+<dl class="section return"><dt>返回</dt><dd>std::string 用户ID </dd></dl>
+
+</div>
+</div>
+<a id="ab0c0e0b2b5eff0c7ae05eeca399c7477" name="ab0c0e0b2b5eff0c7ae05eeca399c7477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0c0e0b2b5eff0c7ae05eeca399c7477">&#9670;&#160;</a></span>getWhiteboardUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string neroom::INERoomWhiteboardController::getWhiteboardUrl </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取白板加载地址 </p>
+<dl class="section return"><dt>返回</dt><dd>std::string 白板地址 </dd></dl>
+
+</div>
+</div>
+<a id="a89407aa3abec4d937aac93ee67746145" name="a89407aa3abec4d937aac93ee67746145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89407aa3abec4d937aac93ee67746145">&#9670;&#160;</a></span>login()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int neroom::INERoomWhiteboardController::login </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>登录白板 </p>
+<dl class="section return"><dt>返回</dt><dd>int 0成功 其它失败 </dd></dl>
+
+</div>
+</div>
+<a id="a1384860cafc1a47155b2ced16a3fbfc8" name="a1384860cafc1a47155b2ced16a3fbfc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1384860cafc1a47155b2ced16a3fbfc8">&#9670;&#160;</a></span>logout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int neroom::INERoomWhiteboardController::logout </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>登出白板 </p>
+<dl class="section return"><dt>返回</dt><dd>int 0成功 其它失败 </dd></dl>
+
+</div>
+</div>
+<a id="a9d97a80dd56cdfe908070830f6b01d9d" name="a9d97a80dd56cdfe908070830f6b01d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d97a80dd56cdfe908070830f6b01d9d">&#9670;&#160;</a></span>resetWhiteboardCanvas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int neroom::INERoomWhiteboardController::resetWhiteboardCanvas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classneroom_1_1_i_n_e_whiteboard_view.html">INEWhiteboardView</a> *</td>          <td class="paramname"><span class="paramname"><em>view</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重置白板视图 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td>白板视图 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int 0成功 其它失败 </dd></dl>
+
+</div>
+</div>
+<a id="a7050180fc81beea409d98d675dda8fdd" name="a7050180fc81beea409d98d675dda8fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7050180fc81beea409d98d675dda8fdd">&#9670;&#160;</a></span>setEnableDraw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int neroom::INERoomWhiteboardController::setEnableDraw </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置白板是否可绘制 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>是否允许绘制 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int 0成功 其它失败 </dd></dl>
+
+</div>
+</div>
+<a id="a6dd6b15927bc5d4415df174968654368" name="a6dd6b15927bc5d4415df174968654368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dd6b15927bc5d4415df174968654368">&#9670;&#160;</a></span>setupWhiteboardCanvas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int neroom::INERoomWhiteboardController::setupWhiteboardCanvas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classneroom_1_1_i_n_e_whiteboard_view.html">INEWhiteboardView</a> *</td>          <td class="paramname"><span class="paramname"><em>view</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置白板视图 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td>白板视图 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int 0成功 其它失败 </dd></dl>
+
+</div>
+</div>
+<a id="a1aea6cbc694dc4bd62df0b3308b67e72" name="a1aea6cbc694dc4bd62df0b3308b67e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aea6cbc694dc4bd62df0b3308b67e72">&#9670;&#160;</a></span>startWhiteboardShare() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomWhiteboardController::startWhiteboardShare </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>stopCurrentShare</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a>()</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>开始白板共享 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stopCurrentShare</td><td>是否停止当前其他成员的共享，默认为false </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a90eb093f3d3e4fe10661bb30d24878be" name="a90eb093f3d3e4fe10661bb30d24878be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90eb093f3d3e4fe10661bb30d24878be">&#9670;&#160;</a></span>startWhiteboardShare() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomWhiteboardController::startWhiteboardShare </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a>()</span></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>开始白板共享 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ac980bdcaf2854e29b50dab0b55069eaf" name="ac980bdcaf2854e29b50dab0b55069eaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac980bdcaf2854e29b50dab0b55069eaf">&#9670;&#160;</a></span>stopMemberWhiteboardShare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomWhiteboardController::stopMemberWhiteboardShare </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a>()</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>停止成员共享 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>用户Id </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a0ee3fba2a688ccad9f773892560e50f4" name="a0ee3fba2a688ccad9f773892560e50f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ee3fba2a688ccad9f773892560e50f4">&#9670;&#160;</a></span>stopWhiteboardShare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomWhiteboardController::stopWhiteboardShare </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#a8f88e60fbf39ee2afb5e3859a1db2f1f">NEWhiteboardCallback</a>()</span></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>关闭白板共享 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="whiteboard__ctrl__interface_8h_source.html">whiteboard_ctrl_interface.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

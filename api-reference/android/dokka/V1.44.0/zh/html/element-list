@@ -1,0 +1,33 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NEIMServerConfig.AsymmetricType.Companion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NEIMServerConfig.AsymmetricType.Companion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NEIMServerConfig.AsymmetricType///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NEIMServerConfig.AsymmetricType.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NEIMServerConfig.HandshakeType.Companion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NEIMServerConfig.HandshakeType.Companion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NEIMServerConfig.HandshakeType///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NEIMServerConfig.HandshakeType.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NEIMServerConfig.IPVersion.Companion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NEIMServerConfig.IPVersion.Companion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NEIMServerConfig.IPVersion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NEIMServerConfig.IPVersion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NEIMServerConfig.SymmetryType.Companion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NEIMServerConfig.SymmetryType.Companion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NEIMServerConfig.SymmetryType///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NEIMServerConfig.SymmetryType.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NEMixPushConfig.Companion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NEMixPushConfig.Companion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NERoomDegradationPreference.Companion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NERoomDegradationPreference.Companion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NERoomMemberInviteState.Companion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NERoomMemberInviteState.Companion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NERoomMemberInviteType.Companion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NERoomMemberInviteType.Companion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NERoomSipDeviceInviteProtocolType.Companion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NERoomSipDeviceInviteProtocolType.Companion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NERoomSubStreamContentPrefer.Companion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NERoomSubStreamContentPrefer.Companion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NERoomVideoFrameRate.Companion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NERoomVideoFrameRate.Companion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NERoomVideoProfileType.Companion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NERoomVideoProfileType.Companion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NERoomVirtualBackgroundSource.BackgroundSourceType///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NERoomVirtualBackgroundSource.BackgroundSourceType.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NERoomVirtualBackgroundSource.BlurDegree///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NERoomVirtualBackgroundSource.BlurDegree.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NERoomVirtualBackgroundSupportedType.Companion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NERoomVirtualBackgroundSupportedType.Companion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NEServerConfig.Factory///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NEServerConfig.Factory.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.model/NEVideoLowlightEnhanceLevel.Companion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/model/NEVideoLowlightEnhanceLevel.Companion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api.view/NERoomVideoView.VideoScalingType///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/view/NERoomVideoView.VideoScalingType.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api/NEClientType.Companion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/NEClientType.Companion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api/NERoomKit.Companion///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/NERoomKit.Companion.html
+$dokka.location:com.netease.yunxin.kit.roomkit.api/NERoomVideoFrame.Format///PointingToDeclaration/com/netease/yunxin/kit/roomkit/api/NERoomVideoFrame.Format.html
+com.netease.yunxin.kit.roomkit.api
+com.netease.yunxin.kit.roomkit.api.model
+com.netease.yunxin.kit.roomkit.api.service
+com.netease.yunxin.kit.roomkit.api.view
+com.netease.yunxin.kit.roomkit.api.waitingroom
+

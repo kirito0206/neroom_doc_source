@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERoom SDK: neroom::INERoomLiveController类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERoom SDK<span id="projectnumber">&#160;V1.44.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceneroom.html">neroom</a></li><li class="navelem"><a class="el" href="classneroom_1_1_i_n_e_room_live_controller.html">INERoomLiveController</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classneroom_1_1_i_n_e_room_live_controller-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">neroom::INERoomLiveController类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>直播控制器  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="live__ctrl__interface_8h_source.html">live_ctrl_interface.h</a>&gt;</code></p>
+<div class="dynheader">
+类 neroom::INERoomLiveController 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classneroom_1_1_i_n_e_room_live_controller__inherit__graph.png" border="0" usemap="#aneroom_1_1_i_n_e_room_live_controller_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+neroom::INERoomLiveController 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classneroom_1_1_i_n_e_room_live_controller__coll__graph.png" border="0" usemap="#aneroom_1_1_i_n_e_room_live_controller_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ad1b2e70ef41c6079c8848169585f0e41" id="r_ad1b2e70ef41c6079c8848169585f0e41"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1b2e70ef41c6079c8848169585f0e41">NEStartLiveCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt;</td></tr>
+<tr class="separator:ad1b2e70ef41c6079c8848169585f0e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad235139bf015e9aa075759a2c1f35bd3" id="r_ad235139bf015e9aa075759a2c1f35bd3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad235139bf015e9aa075759a2c1f35bd3">NEUpdateLiveCallback</a> = <a class="el" href="#ad1b2e70ef41c6079c8848169585f0e41">NEStartLiveCallback</a></td></tr>
+<tr class="separator:ad235139bf015e9aa075759a2c1f35bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a370681d55b05525433a15fc12ef38fa4" id="r_a370681d55b05525433a15fc12ef38fa4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a370681d55b05525433a15fc12ef38fa4">NEStopLiveCallback</a> = <a class="el" href="#ad1b2e70ef41c6079c8848169585f0e41">NEStartLiveCallback</a></td></tr>
+<tr class="separator:a370681d55b05525433a15fc12ef38fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f8e1f59e152f41bc569af9120d787b7" id="r_a1f8e1f59e152f41bc569af9120d787b7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f8e1f59e152f41bc569af9120d787b7">NEGetLiveBackgroundInfoCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;<a class="el" href="structneroom_1_1_n_e_room_live_background_info.html">NERoomLiveBackgroundInfo</a>&gt;</td></tr>
+<tr class="separator:a1f8e1f59e152f41bc569af9120d787b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a444ba0370e2b2c19c0c1cbef26a72396" id="r_a444ba0370e2b2c19c0c1cbef26a72396"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a444ba0370e2b2c19c0c1cbef26a72396">NEUpdateLiveBackgroundCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;time_t&gt;</td></tr>
+<tr class="separator:a444ba0370e2b2c19c0c1cbef26a72396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8fc67311b58d0822c62e2c817646fcd6" id="r_a8fc67311b58d0822c62e2c817646fcd6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fc67311b58d0822c62e2c817646fcd6">~INERoomLiveController</a> ()=default</td></tr>
+<tr class="memdesc:a8fc67311b58d0822c62e2c817646fcd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:a8fc67311b58d0822c62e2c817646fcd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e768918e42c95c5530e5664142b2fd3" id="r_a7e768918e42c95c5530e5664142b2fd3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceneroom.html#a3c69d214ac49df67116c253e3e902362">NERoomLiveInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e768918e42c95c5530e5664142b2fd3">getLiveInfo</a> ()=0</td></tr>
+<tr class="memdesc:a7e768918e42c95c5530e5664142b2fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前直播信息  <br /></td></tr>
+<tr class="separator:a7e768918e42c95c5530e5664142b2fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21943e727922b1baa02edfd8baa140f" id="r_ab21943e727922b1baa02edfd8baa140f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab21943e727922b1baa02edfd8baa140f">startLive</a> (const <a class="el" href="namespaceneroom.html#ab5a3fd7fb32fd55d9d6b65dfac5e46d0">NERoomLiveRequest</a> &amp;live, const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt; <a class="el" href="namespaceneroom.html#a3c69d214ac49df67116c253e3e902362">NERoomLiveInfo</a> &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:ab21943e727922b1baa02edfd8baa140f"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始直播  <br /></td></tr>
+<tr class="separator:ab21943e727922b1baa02edfd8baa140f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1edc209ffa2d7e3f47e23cfc46c51fa" id="r_ab1edc209ffa2d7e3f47e23cfc46c51fa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1edc209ffa2d7e3f47e23cfc46c51fa">updateLive</a> (const <a class="el" href="namespaceneroom.html#ab5a3fd7fb32fd55d9d6b65dfac5e46d0">NERoomLiveRequest</a> &amp;live, const <a class="el" href="#ad235139bf015e9aa075759a2c1f35bd3">NEUpdateLiveCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ab1edc209ffa2d7e3f47e23cfc46c51fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新直播  <br /></td></tr>
+<tr class="separator:ab1edc209ffa2d7e3f47e23cfc46c51fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afebf55924d30bdf3531e6f48fa9733bc" id="r_afebf55924d30bdf3531e6f48fa9733bc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afebf55924d30bdf3531e6f48fa9733bc">stopLive</a> (const <a class="el" href="#a370681d55b05525433a15fc12ef38fa4">NEStopLiveCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:afebf55924d30bdf3531e6f48fa9733bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止直播  <br /></td></tr>
+<tr class="separator:afebf55924d30bdf3531e6f48fa9733bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7ae851152e9b2d5847dc62042e81d5a" id="r_af7ae851152e9b2d5847dc62042e81d5a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7ae851152e9b2d5847dc62042e81d5a">addLiveStreamTask</a> (const <a class="el" href="namespaceneroom.html#aeeab01e48e8c287a0c47e54cc5e69b8d">NERoomLiveStreamTaskInfo</a> &amp;taskInfo, const <a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:af7ae851152e9b2d5847dc62042e81d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加房间推流任务  <br /></td></tr>
+<tr class="separator:af7ae851152e9b2d5847dc62042e81d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79ca14b6b439cf9c044582cd9dc6176e" id="r_a79ca14b6b439cf9c044582cd9dc6176e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79ca14b6b439cf9c044582cd9dc6176e">updateLiveStreamTask</a> (const <a class="el" href="namespaceneroom.html#aeeab01e48e8c287a0c47e54cc5e69b8d">NERoomLiveStreamTaskInfo</a> &amp;taskInfo, const <a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a79ca14b6b439cf9c044582cd9dc6176e"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新房间推流任务  <br /></td></tr>
+<tr class="separator:a79ca14b6b439cf9c044582cd9dc6176e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d6d77038e4630cf09842911ba13715" id="r_ae4d6d77038e4630cf09842911ba13715"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4d6d77038e4630cf09842911ba13715">removeLiveStreamTask</a> (const std::string &amp;taskId, const <a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ae4d6d77038e4630cf09842911ba13715"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除房间推流任务  <br /></td></tr>
+<tr class="separator:ae4d6d77038e4630cf09842911ba13715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54bfb1db48aba6a37b8bdbfa7b5f1d40" id="r_a54bfb1db48aba6a37b8bdbfa7b5f1d40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54bfb1db48aba6a37b8bdbfa7b5f1d40">getBackgroundInfo</a> (const <a class="el" href="#a1f8e1f59e152f41bc569af9120d787b7">NEGetLiveBackgroundInfoCallback</a> &amp;callback) const =0</td></tr>
+<tr class="memdesc:a54bfb1db48aba6a37b8bdbfa7b5f1d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取直播背景信息  <br /></td></tr>
+<tr class="separator:a54bfb1db48aba6a37b8bdbfa7b5f1d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1168365cfc8770edc652940d6020756c" id="r_a1168365cfc8770edc652940d6020756c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1168365cfc8770edc652940d6020756c">updateBackgroundInfo</a> (const <a class="el" href="structneroom_1_1_n_e_room_live_background_param.html">NERoomLiveBackgroundParam</a> &amp;info, const <a class="el" href="#a444ba0370e2b2c19c0c1cbef26a72396">NEUpdateLiveBackgroundCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a1168365cfc8770edc652940d6020756c"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新直播背景信息  <br /></td></tr>
+<tr class="separator:a1168365cfc8770edc652940d6020756c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classneroom_1_1_i_n_e_base_controller"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classneroom_1_1_i_n_e_base_controller')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classneroom_1_1_i_n_e_base_controller.html">neroom::INEBaseController</a></td></tr>
+<tr class="memitem:ad173bfaf8ba2c6ff692f26b298333076 inherit pub_methods_classneroom_1_1_i_n_e_base_controller" id="r_ad173bfaf8ba2c6ff692f26b298333076"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_base_controller.html#ad173bfaf8ba2c6ff692f26b298333076">INEBaseController</a> ()=default</td></tr>
+<tr class="memdesc:ad173bfaf8ba2c6ff692f26b298333076 inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:ad173bfaf8ba2c6ff692f26b298333076 inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b910876c22d9281cf46f64ebfc339d inherit pub_methods_classneroom_1_1_i_n_e_base_controller" id="r_a32b910876c22d9281cf46f64ebfc339d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_base_controller.html#a32b910876c22d9281cf46f64ebfc339d">~INEBaseController</a> ()=default</td></tr>
+<tr class="memdesc:a32b910876c22d9281cf46f64ebfc339d inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:a32b910876c22d9281cf46f64ebfc339d inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0915c4408553b65960f0ca9e53b4fc2c inherit pub_methods_classneroom_1_1_i_n_e_base_controller" id="r_a0915c4408553b65960f0ca9e53b4fc2c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_base_controller.html#a0915c4408553b65960f0ca9e53b4fc2c">isSupported</a> () const =0</td></tr>
+<tr class="memdesc:a0915c4408553b65960f0ca9e53b4fc2c inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">功能是否支持  <br /></td></tr>
+<tr class="separator:a0915c4408553b65960f0ca9e53b4fc2c inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>直播控制器 </p>
+
+<p class="definition">在文件 <a class="el" href="live__ctrl__interface_8h_source.html">live_ctrl_interface.h</a> 第 <a class="el" href="live__ctrl__interface_8h_source.html#l00115">115</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a1f8e1f59e152f41bc569af9120d787b7" name="a1f8e1f59e152f41bc569af9120d787b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f8e1f59e152f41bc569af9120d787b7">&#9670;&#160;</a></span>NEGetLiveBackgroundInfoCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a1f8e1f59e152f41bc569af9120d787b7">neroom::INERoomLiveController::NEGetLiveBackgroundInfoCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;<a class="el" href="structneroom_1_1_n_e_room_live_background_info.html">NERoomLiveBackgroundInfo</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="live__ctrl__interface_8h_source.html">live_ctrl_interface.h</a> 第 <a class="el" href="live__ctrl__interface_8h_source.html#l00120">120</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad1b2e70ef41c6079c8848169585f0e41" name="ad1b2e70ef41c6079c8848169585f0e41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b2e70ef41c6079c8848169585f0e41">&#9670;&#160;</a></span>NEStartLiveCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ad1b2e70ef41c6079c8848169585f0e41">neroom::INERoomLiveController::NEStartLiveCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="live__ctrl__interface_8h_source.html">live_ctrl_interface.h</a> 第 <a class="el" href="live__ctrl__interface_8h_source.html#l00117">117</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a370681d55b05525433a15fc12ef38fa4" name="a370681d55b05525433a15fc12ef38fa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a370681d55b05525433a15fc12ef38fa4">&#9670;&#160;</a></span>NEStopLiveCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a370681d55b05525433a15fc12ef38fa4">neroom::INERoomLiveController::NEStopLiveCallback</a> = <a class="el" href="#ad1b2e70ef41c6079c8848169585f0e41">NEStartLiveCallback</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="live__ctrl__interface_8h_source.html">live_ctrl_interface.h</a> 第 <a class="el" href="live__ctrl__interface_8h_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a444ba0370e2b2c19c0c1cbef26a72396" name="a444ba0370e2b2c19c0c1cbef26a72396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a444ba0370e2b2c19c0c1cbef26a72396">&#9670;&#160;</a></span>NEUpdateLiveBackgroundCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a444ba0370e2b2c19c0c1cbef26a72396">neroom::INERoomLiveController::NEUpdateLiveBackgroundCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;time_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="live__ctrl__interface_8h_source.html">live_ctrl_interface.h</a> 第 <a class="el" href="live__ctrl__interface_8h_source.html#l00121">121</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad235139bf015e9aa075759a2c1f35bd3" name="ad235139bf015e9aa075759a2c1f35bd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad235139bf015e9aa075759a2c1f35bd3">&#9670;&#160;</a></span>NEUpdateLiveCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ad235139bf015e9aa075759a2c1f35bd3">neroom::INERoomLiveController::NEUpdateLiveCallback</a> = <a class="el" href="#ad1b2e70ef41c6079c8848169585f0e41">NEStartLiveCallback</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="live__ctrl__interface_8h_source.html">live_ctrl_interface.h</a> 第 <a class="el" href="live__ctrl__interface_8h_source.html#l00118">118</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a8fc67311b58d0822c62e2c817646fcd6" name="a8fc67311b58d0822c62e2c817646fcd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fc67311b58d0822c62e2c817646fcd6">&#9670;&#160;</a></span>~INERoomLiveController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual neroom::INERoomLiveController::~INERoomLiveController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="af7ae851152e9b2d5847dc62042e81d5a" name="af7ae851152e9b2d5847dc62042e81d5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7ae851152e9b2d5847dc62042e81d5a">&#9670;&#160;</a></span>addLiveStreamTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomLiveController::addLiveStreamTask </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#aeeab01e48e8c287a0c47e54cc5e69b8d">NERoomLiveStreamTaskInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>taskInfo</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加房间推流任务 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">taskInfo</td><td>推流任务信息 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a54bfb1db48aba6a37b8bdbfa7b5f1d40" name="a54bfb1db48aba6a37b8bdbfa7b5f1d40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54bfb1db48aba6a37b8bdbfa7b5f1d40">&#9670;&#160;</a></span>getBackgroundInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomLiveController::getBackgroundInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a1f8e1f59e152f41bc569af9120d787b7">NEGetLiveBackgroundInfoCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取直播背景信息 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="structneroom_1_1_n_e_room_live_background_info.html" title="直播背景详细信息">NERoomLiveBackgroundInfo</a> 直播背景信息 </dd></dl>
+
+</div>
+</div>
+<a id="a7e768918e42c95c5530e5664142b2fd3" name="a7e768918e42c95c5530e5664142b2fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e768918e42c95c5530e5664142b2fd3">&#9670;&#160;</a></span>getLiveInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceneroom.html#a3c69d214ac49df67116c253e3e902362">NERoomLiveInfo</a> neroom::INERoomLiveController::getLiveInfo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取当前直播信息 </p>
+<dl class="section return"><dt>返回</dt><dd>NERoomLiveInfo 直播信息 </dd></dl>
+
+</div>
+</div>
+<a id="ae4d6d77038e4630cf09842911ba13715" name="ae4d6d77038e4630cf09842911ba13715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4d6d77038e4630cf09842911ba13715">&#9670;&#160;</a></span>removeLiveStreamTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomLiveController::removeLiveStreamTask </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>taskId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>删除房间推流任务 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">taskId</td><td>任务ID </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ab21943e727922b1baa02edfd8baa140f" name="ab21943e727922b1baa02edfd8baa140f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab21943e727922b1baa02edfd8baa140f">&#9670;&#160;</a></span>startLive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomLiveController::startLive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#ab5a3fd7fb32fd55d9d6b65dfac5e46d0">NERoomLiveRequest</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>live</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt; <a class="el" href="namespaceneroom.html#a3c69d214ac49df67116c253e3e902362">NERoomLiveInfo</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>开始直播 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">live</td><td>直播信息 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="afebf55924d30bdf3531e6f48fa9733bc" name="afebf55924d30bdf3531e6f48fa9733bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afebf55924d30bdf3531e6f48fa9733bc">&#9670;&#160;</a></span>stopLive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomLiveController::stopLive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a370681d55b05525433a15fc12ef38fa4">NEStopLiveCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>停止直播 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a1168365cfc8770edc652940d6020756c" name="a1168365cfc8770edc652940d6020756c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1168365cfc8770edc652940d6020756c">&#9670;&#160;</a></span>updateBackgroundInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomLiveController::updateBackgroundInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structneroom_1_1_n_e_room_live_background_param.html">NERoomLiveBackgroundParam</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>info</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a444ba0370e2b2c19c0c1cbef26a72396">NEUpdateLiveBackgroundCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新直播背景信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>直播背景信息结构 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="structneroom_1_1_n_e_room_live_background_info.html" title="直播背景详细信息">NERoomLiveBackgroundInfo</a> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab1edc209ffa2d7e3f47e23cfc46c51fa" name="ab1edc209ffa2d7e3f47e23cfc46c51fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1edc209ffa2d7e3f47e23cfc46c51fa">&#9670;&#160;</a></span>updateLive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomLiveController::updateLive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#ab5a3fd7fb32fd55d9d6b65dfac5e46d0">NERoomLiveRequest</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>live</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#ad235139bf015e9aa075759a2c1f35bd3">NEUpdateLiveCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新直播 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">live</td><td>直播信息 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a79ca14b6b439cf9c044582cd9dc6176e" name="a79ca14b6b439cf9c044582cd9dc6176e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79ca14b6b439cf9c044582cd9dc6176e">&#9670;&#160;</a></span>updateLiveStreamTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomLiveController::updateLiveStreamTask </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#aeeab01e48e8c287a0c47e54cc5e69b8d">NERoomLiveStreamTaskInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>taskInfo</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新房间推流任务 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">taskInfo</td><td>推流任务信息 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="live__ctrl__interface_8h_source.html">live_ctrl_interface.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

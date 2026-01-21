@@ -1,0 +1,729 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERoom SDK: neroom::INERoomMember类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERoom SDK<span id="projectnumber">&#160;V1.44.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceneroom.html">neroom</a></li><li class="navelem"><a class="el" href="classneroom_1_1_i_n_e_room_member.html">INERoomMember</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classneroom_1_1_i_n_e_room_member-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">neroom::INERoomMember类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>房间用户信息  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="base__type__defines_8h_source.html">base_type_defines.h</a>&gt;</code></p>
+<div class="dynheader">
+类 neroom::INERoomMember 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classneroom_1_1_i_n_e_room_member__inherit__graph.png" border="0" usemap="#aneroom_1_1_i_n_e_room_member_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+neroom::INERoomMember 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classneroom_1_1_i_n_e_room_member__coll__graph.png" border="0" usemap="#aneroom_1_1_i_n_e_room_member_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a4a53714dc37de177727af1f25df12045" id="r_a4a53714dc37de177727af1f25df12045"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a53714dc37de177727af1f25df12045">getRtcUid</a> ()=0</td></tr>
+<tr class="memdesc:a4a53714dc37de177727af1f25df12045"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取用户音视频房间 ID  <br /></td></tr>
+<tr class="separator:a4a53714dc37de177727af1f25df12045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e2dfe05885e87d823b2ed7b8a602ba" id="r_a46e2dfe05885e87d823b2ed7b8a602ba"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46e2dfe05885e87d823b2ed7b8a602ba">getIsAudioOn</a> ()=0</td></tr>
+<tr class="memdesc:a46e2dfe05885e87d823b2ed7b8a602ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音频状态  <br /></td></tr>
+<tr class="separator:a46e2dfe05885e87d823b2ed7b8a602ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbe08eb409beb3d7c4bef784ae5e74b1" id="r_afbe08eb409beb3d7c4bef784ae5e74b1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbe08eb409beb3d7c4bef784ae5e74b1">getIsVideoOn</a> ()=0</td></tr>
+<tr class="memdesc:afbe08eb409beb3d7c4bef784ae5e74b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取视频状态  <br /></td></tr>
+<tr class="separator:afbe08eb409beb3d7c4bef784ae5e74b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc7a2a2a8dab9f0a2a26b041ac6b39c7" id="r_abc7a2a2a8dab9f0a2a26b041ac6b39c7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc7a2a2a8dab9f0a2a26b041ac6b39c7">getIsInRtcChannel</a> ()=0</td></tr>
+<tr class="memdesc:abc7a2a2a8dab9f0a2a26b041ac6b39c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取是否在RTC频道  <br /></td></tr>
+<tr class="separator:abc7a2a2a8dab9f0a2a26b041ac6b39c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74455a5861eb96e2aa26f75d191ddb9" id="r_ac74455a5861eb96e2aa26f75d191ddb9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac74455a5861eb96e2aa26f75d191ddb9">getIsInChatroom</a> ()=0</td></tr>
+<tr class="memdesc:ac74455a5861eb96e2aa26f75d191ddb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取是否在聊天室  <br /></td></tr>
+<tr class="separator:ac74455a5861eb96e2aa26f75d191ddb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab408b0b930cf341966c67a9e1c228846" id="r_ab408b0b930cf341966c67a9e1c228846"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab408b0b930cf341966c67a9e1c228846">getIsSharingScreen</a> ()=0</td></tr>
+<tr class="memdesc:ab408b0b930cf341966c67a9e1c228846"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取是否在屏幕共享  <br /></td></tr>
+<tr class="separator:ab408b0b930cf341966c67a9e1c228846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e336b05d592bc324dc8393297cbe40" id="r_a44e336b05d592bc324dc8393297cbe40"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44e336b05d592bc324dc8393297cbe40">getIsSharingWhiteboard</a> ()=0</td></tr>
+<tr class="memdesc:a44e336b05d592bc324dc8393297cbe40"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取是否在白板共享  <br /></td></tr>
+<tr class="separator:a44e336b05d592bc324dc8393297cbe40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1878fbea73daf116480fa09882a6029a" id="r_a1878fbea73daf116480fa09882a6029a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1878fbea73daf116480fa09882a6029a">getIsAnnotationEnabled</a> ()=0</td></tr>
+<tr class="memdesc:a1878fbea73daf116480fa09882a6029a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取批注状态  <br /></td></tr>
+<tr class="separator:a1878fbea73daf116480fa09882a6029a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a67bad11fefde91745d7cc726e1ddf" id="r_a54a67bad11fefde91745d7cc726e1ddf"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54a67bad11fefde91745d7cc726e1ddf">getIsInSipInviting</a> ()=0</td></tr>
+<tr class="memdesc:a54a67bad11fefde91745d7cc726e1ddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">成员是否处于被SIP邀请中  <br /></td></tr>
+<tr class="separator:a54a67bad11fefde91745d7cc726e1ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a783c3ad0edbb49b3b7b0c54cc07b50df" id="r_a783c3ad0edbb49b3b7b0c54cc07b50df"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a783c3ad0edbb49b3b7b0c54cc07b50df">getIsInAppInviting</a> ()=0</td></tr>
+<tr class="memdesc:a783c3ad0edbb49b3b7b0c54cc07b50df"><td class="mdescLeft">&#160;</td><td class="mdescRight">成员是否处于被App邀请中  <br /></td></tr>
+<tr class="separator:a783c3ad0edbb49b3b7b0c54cc07b50df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b63b79af093608c9f1a81506ad68ee" id="r_a55b63b79af093608c9f1a81506ad68ee"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55b63b79af093608c9f1a81506ad68ee">getIsInWaitingRoom</a> ()=0</td></tr>
+<tr class="memdesc:a55b63b79af093608c9f1a81506ad68ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">成员是否处于等候室  <br /></td></tr>
+<tr class="separator:a55b63b79af093608c9f1a81506ad68ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f03c134355b7e3e9a31171d337e87b4" id="r_a8f03c134355b7e3e9a31171d337e87b4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f03c134355b7e3e9a31171d337e87b4">getIsSharingSystemAudio</a> ()=0</td></tr>
+<tr class="memdesc:a8f03c134355b7e3e9a31171d337e87b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前成员是否正在共享系统音频中  <br /></td></tr>
+<tr class="separator:a8f03c134355b7e3e9a31171d337e87b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e87ae3b5d0c6732118d5cc6f4fd457" id="r_af5e87ae3b5d0c6732118d5cc6f4fd457"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5e87ae3b5d0c6732118d5cc6f4fd457">getProperties</a> ()=0</td></tr>
+<tr class="memdesc:af5e87ae3b5d0c6732118d5cc6f4fd457"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取成员属性值  <br /></td></tr>
+<tr class="separator:af5e87ae3b5d0c6732118d5cc6f4fd457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a156559bcc3bf0827fdc72049139e3800" id="r_a156559bcc3bf0827fdc72049139e3800"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceneroom.html#a011ac4a4b44eebff1059d800bead44fe">NEClientType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a156559bcc3bf0827fdc72049139e3800">getClientType</a> ()=0</td></tr>
+<tr class="memdesc:a156559bcc3bf0827fdc72049139e3800"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取客户端类型  <br /></td></tr>
+<tr class="separator:a156559bcc3bf0827fdc72049139e3800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d20e63829c8a84d76b5e19a364d16a3" id="r_a3d20e63829c8a84d76b5e19a364d16a3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d20e63829c8a84d76b5e19a364d16a3">isAudioConnected</a> () const =0</td></tr>
+<tr class="memdesc:a3d20e63829c8a84d76b5e19a364d16a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">成员是否处于音频连接状态  <br /></td></tr>
+<tr class="separator:a3d20e63829c8a84d76b5e19a364d16a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac24a0ded176363b79e5b5c8d7f56f1e6" id="r_ac24a0ded176363b79e5b5c8d7f56f1e6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceneroom.html#a88b2691935bd4a47d9eeca3a088939de">NERoomMemberInviteType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac24a0ded176363b79e5b5c8d7f56f1e6">getUserInviteType</a> ()=0</td></tr>
+<tr class="memdesc:ac24a0ded176363b79e5b5c8d7f56f1e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取用户邀请类型  <br /></td></tr>
+<tr class="separator:ac24a0ded176363b79e5b5c8d7f56f1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad596ea8b4a43254305a25b1939d045be" id="r_ad596ea8b4a43254305a25b1939d045be"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceneroom.html#a7061cbb74d64a2023fdf3a599ca2881c">NERoomMemberInviteState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad596ea8b4a43254305a25b1939d045be">getUserInviteState</a> ()=0</td></tr>
+<tr class="memdesc:ad596ea8b4a43254305a25b1939d045be"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取用户邀请状态  <br /></td></tr>
+<tr class="separator:ad596ea8b4a43254305a25b1939d045be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eba834384ac9e817236cf5002d9dc39" id="r_a4eba834384ac9e817236cf5002d9dc39"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4eba834384ac9e817236cf5002d9dc39">isChatBanned</a> () const =0</td></tr>
+<tr class="memdesc:a4eba834384ac9e817236cf5002d9dc39"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前成员是否被禁言聊天  <br /></td></tr>
+<tr class="separator:a4eba834384ac9e817236cf5002d9dc39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a710a93e39fd5cd3fc2909a6350259268" id="r_a710a93e39fd5cd3fc2909a6350259268"><td class="memItemLeft" align="right" valign="top">virtual std::list&lt; <a class="el" href="structneroom_1_1_n_e_connected_device.html">NEConnectedDevice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a710a93e39fd5cd3fc2909a6350259268">getConnectedDeviceList</a> () const =0</td></tr>
+<tr class="memdesc:a710a93e39fd5cd3fc2909a6350259268"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果是本端成员，则代表当前设备对应的音视频房间用户id； 如果是远端成员，则代表第一个加入房间的设备的音视频房间用户id；  <br /></td></tr>
+<tr class="separator:a710a93e39fd5cd3fc2909a6350259268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classneroom_1_1_i_n_e_room_member_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classneroom_1_1_i_n_e_room_member_base')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classneroom_1_1_i_n_e_room_member_base.html">neroom::INERoomMemberBase</a></td></tr>
+<tr class="memitem:a5ee1655def977443cae6639d7ebef9c7 inherit pub_methods_classneroom_1_1_i_n_e_room_member_base" id="r_a5ee1655def977443cae6639d7ebef9c7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_room_member_base.html#a5ee1655def977443cae6639d7ebef9c7">~INERoomMemberBase</a> ()=default</td></tr>
+<tr class="separator:a5ee1655def977443cae6639d7ebef9c7 inherit pub_methods_classneroom_1_1_i_n_e_room_member_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab59df8cadebcdd890dcbe262e21ce86b inherit pub_methods_classneroom_1_1_i_n_e_room_member_base" id="r_ab59df8cadebcdd890dcbe262e21ce86b"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_room_member_base.html#ab59df8cadebcdd890dcbe262e21ce86b">getUserUuid</a> ()=0</td></tr>
+<tr class="memdesc:ab59df8cadebcdd890dcbe262e21ce86b inherit pub_methods_classneroom_1_1_i_n_e_room_member_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取用户Id  <br /></td></tr>
+<tr class="separator:ab59df8cadebcdd890dcbe262e21ce86b inherit pub_methods_classneroom_1_1_i_n_e_room_member_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c09962c3937c55a5a73f55745cddf69 inherit pub_methods_classneroom_1_1_i_n_e_room_member_base" id="r_a8c09962c3937c55a5a73f55745cddf69"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_room_member_base.html#a8c09962c3937c55a5a73f55745cddf69">getUserName</a> ()=0</td></tr>
+<tr class="memdesc:a8c09962c3937c55a5a73f55745cddf69 inherit pub_methods_classneroom_1_1_i_n_e_room_member_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取用户名  <br /></td></tr>
+<tr class="separator:a8c09962c3937c55a5a73f55745cddf69 inherit pub_methods_classneroom_1_1_i_n_e_room_member_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e0201bcc8cb3ff4bd79e140cc6f2ee inherit pub_methods_classneroom_1_1_i_n_e_room_member_base" id="r_a98e0201bcc8cb3ff4bd79e140cc6f2ee"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_room_member_base.html#a98e0201bcc8cb3ff4bd79e140cc6f2ee">getAvatar</a> ()=0</td></tr>
+<tr class="memdesc:a98e0201bcc8cb3ff4bd79e140cc6f2ee inherit pub_methods_classneroom_1_1_i_n_e_room_member_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取用户头像  <br /></td></tr>
+<tr class="separator:a98e0201bcc8cb3ff4bd79e140cc6f2ee inherit pub_methods_classneroom_1_1_i_n_e_room_member_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ac9c8fac8cb8dbd0b43a3af7a5d69b inherit pub_methods_classneroom_1_1_i_n_e_room_member_base" id="r_a42ac9c8fac8cb8dbd0b43a3af7a5d69b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceneroom.html#a8b3e1a8cb142656a914a90d908dd51db">NERoomRole</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_room_member_base.html#a42ac9c8fac8cb8dbd0b43a3af7a5d69b">getUserRole</a> ()=0</td></tr>
+<tr class="memdesc:a42ac9c8fac8cb8dbd0b43a3af7a5d69b inherit pub_methods_classneroom_1_1_i_n_e_room_member_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取用户角色  <br /></td></tr>
+<tr class="separator:a42ac9c8fac8cb8dbd0b43a3af7a5d69b inherit pub_methods_classneroom_1_1_i_n_e_room_member_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>房间用户信息 </p>
+
+<p class="definition">在文件 <a class="el" href="base__type__defines_8h_source.html">base_type_defines.h</a> 第 <a class="el" href="base__type__defines_8h_source.html#l01001">1001</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a156559bcc3bf0827fdc72049139e3800" name="a156559bcc3bf0827fdc72049139e3800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a156559bcc3bf0827fdc72049139e3800">&#9670;&#160;</a></span>getClientType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceneroom.html#a011ac4a4b44eebff1059d800bead44fe">NEClientType</a> neroom::INERoomMember::getClientType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取客户端类型 </p>
+<dl class="section return"><dt>返回</dt><dd>NEClientType 客户端类型 </dd></dl>
+
+</div>
+</div>
+<a id="a710a93e39fd5cd3fc2909a6350259268" name="a710a93e39fd5cd3fc2909a6350259268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a710a93e39fd5cd3fc2909a6350259268">&#9670;&#160;</a></span>getConnectedDeviceList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::list&lt; <a class="el" href="structneroom_1_1_n_e_connected_device.html">NEConnectedDevice</a> &gt; neroom::INERoomMember::getConnectedDeviceList </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>如果是本端成员，则代表当前设备对应的音视频房间用户id； 如果是远端成员，则代表第一个加入房间的设备的音视频房间用户id； </p>
+<dl class="section return"><dt>返回</dt><dd>成员聊天处于禁言状态， false 成员聊天处于非禁言状态 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.43.0 </dd></dl>
+
+</div>
+</div>
+<a id="a1878fbea73daf116480fa09882a6029a" name="a1878fbea73daf116480fa09882a6029a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1878fbea73daf116480fa09882a6029a">&#9670;&#160;</a></span>getIsAnnotationEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomMember::getIsAnnotationEnabled </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取批注状态 </p>
+<dl class="section return"><dt>返回</dt><dd>bool true 正在批注 false 未开启批注 </dd></dl>
+
+</div>
+</div>
+<a id="a46e2dfe05885e87d823b2ed7b8a602ba" name="a46e2dfe05885e87d823b2ed7b8a602ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46e2dfe05885e87d823b2ed7b8a602ba">&#9670;&#160;</a></span>getIsAudioOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomMember::getIsAudioOn </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取音频状态 </p>
+<dl class="section return"><dt>返回</dt><dd>bool true 开 false 关 </dd></dl>
+
+</div>
+</div>
+<a id="a783c3ad0edbb49b3b7b0c54cc07b50df" name="a783c3ad0edbb49b3b7b0c54cc07b50df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a783c3ad0edbb49b3b7b0c54cc07b50df">&#9670;&#160;</a></span>getIsInAppInviting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomMember::getIsInAppInviting </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>成员是否处于被App邀请中 </p>
+<dl class="section return"><dt>返回</dt><dd>bool true 在App邀请中 false 不在App邀请中 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.28.0 </dd></dl>
+
+</div>
+</div>
+<a id="ac74455a5861eb96e2aa26f75d191ddb9" name="ac74455a5861eb96e2aa26f75d191ddb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac74455a5861eb96e2aa26f75d191ddb9">&#9670;&#160;</a></span>getIsInChatroom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomMember::getIsInChatroom </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取是否在聊天室 </p>
+<dl class="section return"><dt>返回</dt><dd>bool true 在聊天室 false 不在聊天室 </dd></dl>
+
+</div>
+</div>
+<a id="abc7a2a2a8dab9f0a2a26b041ac6b39c7" name="abc7a2a2a8dab9f0a2a26b041ac6b39c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc7a2a2a8dab9f0a2a26b041ac6b39c7">&#9670;&#160;</a></span>getIsInRtcChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomMember::getIsInRtcChannel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取是否在RTC频道 </p>
+<dl class="section return"><dt>返回</dt><dd>bool true 在 false 不在 </dd></dl>
+
+</div>
+</div>
+<a id="a54a67bad11fefde91745d7cc726e1ddf" name="a54a67bad11fefde91745d7cc726e1ddf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54a67bad11fefde91745d7cc726e1ddf">&#9670;&#160;</a></span>getIsInSipInviting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomMember::getIsInSipInviting </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>成员是否处于被SIP邀请中 </p>
+<dl class="section return"><dt>返回</dt><dd>bool true 在SIP邀请中 false 不在SIP邀请中 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.28.0 </dd></dl>
+
+</div>
+</div>
+<a id="a55b63b79af093608c9f1a81506ad68ee" name="a55b63b79af093608c9f1a81506ad68ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55b63b79af093608c9f1a81506ad68ee">&#9670;&#160;</a></span>getIsInWaitingRoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomMember::getIsInWaitingRoom </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>成员是否处于等候室 </p>
+<dl class="section return"><dt>返回</dt><dd>bool true 在等候室 false 不在等候室 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.28.0 </dd></dl>
+
+</div>
+</div>
+<a id="ab408b0b930cf341966c67a9e1c228846" name="ab408b0b930cf341966c67a9e1c228846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab408b0b930cf341966c67a9e1c228846">&#9670;&#160;</a></span>getIsSharingScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomMember::getIsSharingScreen </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取是否在屏幕共享 </p>
+<dl class="section return"><dt>返回</dt><dd>bool true 正在屏幕共享 false 未开启屏幕共享 </dd></dl>
+
+</div>
+</div>
+<a id="a8f03c134355b7e3e9a31171d337e87b4" name="a8f03c134355b7e3e9a31171d337e87b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f03c134355b7e3e9a31171d337e87b4">&#9670;&#160;</a></span>getIsSharingSystemAudio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomMember::getIsSharingSystemAudio </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前成员是否正在共享系统音频中 </p>
+<dl class="section return"><dt>返回</dt><dd>bool true 正在共享系统音频 false 未开启共享系统音频 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.31.0 </dd></dl>
+
+</div>
+</div>
+<a id="a44e336b05d592bc324dc8393297cbe40" name="a44e336b05d592bc324dc8393297cbe40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e336b05d592bc324dc8393297cbe40">&#9670;&#160;</a></span>getIsSharingWhiteboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomMember::getIsSharingWhiteboard </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取是否在白板共享 </p>
+<dl class="section return"><dt>返回</dt><dd>bool true 正在白板共享 false 未开启白板共享 </dd></dl>
+
+</div>
+</div>
+<a id="afbe08eb409beb3d7c4bef784ae5e74b1" name="afbe08eb409beb3d7c4bef784ae5e74b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbe08eb409beb3d7c4bef784ae5e74b1">&#9670;&#160;</a></span>getIsVideoOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomMember::getIsVideoOn </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取视频状态 </p>
+<dl class="section return"><dt>返回</dt><dd>bool true 开 false 关 </dd></dl>
+
+</div>
+</div>
+<a id="af5e87ae3b5d0c6732118d5cc6f4fd457" name="af5e87ae3b5d0c6732118d5cc6f4fd457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5e87ae3b5d0c6732118d5cc6f4fd457">&#9670;&#160;</a></span>getProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::map&lt; std::string, std::string &gt; neroom::INERoomMember::getProperties </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取成员属性值 </p>
+<dl class="section return"><dt>返回</dt><dd>std::map&lt;std::string, std::string&gt; 属性值 </dd></dl>
+
+</div>
+</div>
+<a id="a4a53714dc37de177727af1f25df12045" name="a4a53714dc37de177727af1f25df12045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a53714dc37de177727af1f25df12045">&#9670;&#160;</a></span>getRtcUid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint64_t neroom::INERoomMember::getRtcUid </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取用户音视频房间 ID </p>
+<dl class="section return"><dt>返回</dt><dd>uint64_t 用户音视频房间 ID </dd></dl>
+
+</div>
+</div>
+<a id="ad596ea8b4a43254305a25b1939d045be" name="ad596ea8b4a43254305a25b1939d045be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad596ea8b4a43254305a25b1939d045be">&#9670;&#160;</a></span>getUserInviteState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceneroom.html#a7061cbb74d64a2023fdf3a599ca2881c">NERoomMemberInviteState</a> neroom::INERoomMember::getUserInviteState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取用户邀请状态 </p>
+<dl class="section return"><dt>返回</dt><dd>NERoomRole 用户角色 <code><a class="el" href="namespaceneroom.html#a7061cbb74d64a2023fdf3a599ca2881c">NERoomMemberInviteState</a></code> </dd></dl>
+
+</div>
+</div>
+<a id="ac24a0ded176363b79e5b5c8d7f56f1e6" name="ac24a0ded176363b79e5b5c8d7f56f1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac24a0ded176363b79e5b5c8d7f56f1e6">&#9670;&#160;</a></span>getUserInviteType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceneroom.html#a88b2691935bd4a47d9eeca3a088939de">NERoomMemberInviteType</a> neroom::INERoomMember::getUserInviteType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取用户邀请类型 </p>
+<dl class="section return"><dt>返回</dt><dd>NERoomMemberInviteType 用户邀请类型 <code><a class="el" href="namespaceneroom.html#a88b2691935bd4a47d9eeca3a088939de">NERoomMemberInviteType</a></code> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.28.0 </dd></dl>
+
+</div>
+</div>
+<a id="a3d20e63829c8a84d76b5e19a364d16a3" name="a3d20e63829c8a84d76b5e19a364d16a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d20e63829c8a84d76b5e19a364d16a3">&#9670;&#160;</a></span>isAudioConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomMember::isAudioConnected </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>成员是否处于音频连接状态 </p>
+<dl class="section return"><dt>返回</dt><dd>true 成员音频连接处于断开状态， false 成员音频连接处于连接状态 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.26.0 </dd></dl>
+
+</div>
+</div>
+<a id="a4eba834384ac9e817236cf5002d9dc39" name="a4eba834384ac9e817236cf5002d9dc39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eba834384ac9e817236cf5002d9dc39">&#9670;&#160;</a></span>isChatBanned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomMember::isChatBanned </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前成员是否被禁言聊天 </p>
+<dl class="section return"><dt>返回</dt><dd>true 成员聊天处于禁言状态， false 成员聊天处于非禁言状态 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.41.0 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="base__type__defines_8h_source.html">base_type_defines.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

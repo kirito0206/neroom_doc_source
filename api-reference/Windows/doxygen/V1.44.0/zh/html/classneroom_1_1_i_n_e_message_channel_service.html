@@ -1,0 +1,694 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERoom SDK: neroom::INEMessageChannelService类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERoom SDK<span id="projectnumber">&#160;V1.44.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceneroom.html">neroom</a></li><li class="navelem"><a class="el" href="classneroom_1_1_i_n_e_message_channel_service.html">INEMessageChannelService</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classneroom_1_1_i_n_e_message_channel_service-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">neroom::INEMessageChannelService类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>消息服务  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="message__service__interface_8h_source.html">message_service_interface.h</a>&gt;</code></p>
+<div class="dynheader">
+类 neroom::INEMessageChannelService 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classneroom_1_1_i_n_e_message_channel_service__inherit__graph.png" border="0" usemap="#aneroom_1_1_i_n_e_message_channel_service_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+neroom::INEMessageChannelService 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classneroom_1_1_i_n_e_message_channel_service__coll__graph.png" border="0" usemap="#aneroom_1_1_i_n_e_message_channel_service_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ad99ff6cc8e8ec955d522773a1eb90abe" id="r_ad99ff6cc8e8ec955d522773a1eb90abe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad99ff6cc8e8ec955d522773a1eb90abe">NEMessageCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt;</td></tr>
+<tr class="separator:ad99ff6cc8e8ec955d522773a1eb90abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3d105fa8c0a3bc86106127a33930ff20" id="r_a3d105fa8c0a3bc86106127a33930ff20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d105fa8c0a3bc86106127a33930ff20">INEMessageChannelService</a> ()=default</td></tr>
+<tr class="memdesc:a3d105fa8c0a3bc86106127a33930ff20"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a3d105fa8c0a3bc86106127a33930ff20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c7ed2d20af6904cc4903b09323e7028" id="r_a3c7ed2d20af6904cc4903b09323e7028"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c7ed2d20af6904cc4903b09323e7028">~INEMessageChannelService</a> () override=default</td></tr>
+<tr class="memdesc:a3c7ed2d20af6904cc4903b09323e7028"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:a3c7ed2d20af6904cc4903b09323e7028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5840d8dfa3c99a69dcfb80b459f11991" id="r_a5840d8dfa3c99a69dcfb80b459f11991"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5840d8dfa3c99a69dcfb80b459f11991">addMessageChannelListener</a> (<a class="el" href="classneroom_1_1_i_n_e_message_channel_listener.html">INEMessageChannelListener</a> *listener)=0</td></tr>
+<tr class="memdesc:a5840d8dfa3c99a69dcfb80b459f11991"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加消息监听  <br /></td></tr>
+<tr class="separator:a5840d8dfa3c99a69dcfb80b459f11991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5fe7b4825d46ad9e3b837e7cc70716" id="r_afe5fe7b4825d46ad9e3b837e7cc70716"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe5fe7b4825d46ad9e3b837e7cc70716">removeMessageChannelListener</a> (<a class="el" href="classneroom_1_1_i_n_e_message_channel_listener.html">INEMessageChannelListener</a> *listener)=0</td></tr>
+<tr class="memdesc:afe5fe7b4825d46ad9e3b837e7cc70716"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除消息监听  <br /></td></tr>
+<tr class="separator:afe5fe7b4825d46ad9e3b837e7cc70716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698f41c445e52a5bf79c9ffb694b644a" id="r_a698f41c445e52a5bf79c9ffb694b644a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a698f41c445e52a5bf79c9ffb694b644a">sendCustomMessage</a> (const std::string &amp;roomUuid, const std::string &amp;userUuid, int commandId, const std::string &amp;data, const <a class="el" href="#ad99ff6cc8e8ec955d522773a1eb90abe">NEMessageCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a698f41c445e52a5bf79c9ffb694b644a"><td class="mdescLeft">&#160;</td><td class="mdescRight">给房间内的[userUuid]发送自定义消息，如房间内信令  <br /></td></tr>
+<tr class="separator:a698f41c445e52a5bf79c9ffb694b644a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea07118d80cd2417a28f795924a6a78" id="r_aaea07118d80cd2417a28f795924a6a78"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaea07118d80cd2417a28f795924a6a78">sendCustomMessageToRoom</a> (const std::string &amp;roomUuid, int commandId, const std::string &amp;data, const <a class="el" href="#ad99ff6cc8e8ec955d522773a1eb90abe">NEMessageCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:aaea07118d80cd2417a28f795924a6a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">给房间内的[userUuid]发送自定义消息，如房间内信令  <br /></td></tr>
+<tr class="separator:aaea07118d80cd2417a28f795924a6a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3205f79fdcde5036fe47b375befa4564" id="r_a3205f79fdcde5036fe47b375befa4564"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3205f79fdcde5036fe47b375befa4564">sendCustomMessageToRoles</a> (const std::string &amp;roomUuid, int commandId, std::list&lt; std::string &gt; roles, const std::string &amp;data, const <a class="el" href="#ad99ff6cc8e8ec955d522773a1eb90abe">NEMessageCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a3205f79fdcde5036fe47b375befa4564"><td class="mdescLeft">&#160;</td><td class="mdescRight">向房间内指定角色的用户发送自定义消息，如房间内信令  <br /></td></tr>
+<tr class="separator:a3205f79fdcde5036fe47b375befa4564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e173fe414d2efb045d571863cfe83ce" id="r_a9e173fe414d2efb045d571863cfe83ce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e173fe414d2efb045d571863cfe83ce">queryUnreadMessageList</a> (const std::string &amp;sessionID, <a class="el" href="namespaceneroom.html#a45663ba7b2959136adc78c26fe4b1b2c">NERoomSessionType</a> sessionType, const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt; std::list&lt; <a class="el" href="structneroom_1_1_n_e_custom_session_message.html">NECustomSessionMessage</a> &gt; &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a9e173fe414d2efb045d571863cfe83ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定会话的未读消息列表  <br /></td></tr>
+<tr class="separator:a9e173fe414d2efb045d571863cfe83ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2824a6a0a85d30bc5c20c683d07fbd12" id="r_a2824a6a0a85d30bc5c20c683d07fbd12"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2824a6a0a85d30bc5c20c683d07fbd12">clearUnreadCount</a> (const std::string &amp;sessionID, const <a class="el" href="namespaceneroom.html#a45663ba7b2959136adc78c26fe4b1b2c">NERoomSessionType</a> &amp;sessionType, const <a class="el" href="#ad99ff6cc8e8ec955d522773a1eb90abe">NEMessageCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a2824a6a0a85d30bc5c20c683d07fbd12"><td class="mdescLeft">&#160;</td><td class="mdescRight">清空某会话未读计数  <br /></td></tr>
+<tr class="separator:a2824a6a0a85d30bc5c20c683d07fbd12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35868afeb9d64ddf5c0e725d296ef110" id="r_a35868afeb9d64ddf5c0e725d296ef110"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35868afeb9d64ddf5c0e725d296ef110">deleteSessionMessage</a> (const std::string &amp;sessionID, const <a class="el" href="namespaceneroom.html#a45663ba7b2959136adc78c26fe4b1b2c">NERoomSessionType</a> &amp;sessionType, const std::string &amp;messageID, const <a class="el" href="#ad99ff6cc8e8ec955d522773a1eb90abe">NEMessageCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a35868afeb9d64ddf5c0e725d296ef110"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除指定会话的指定消息  <br /></td></tr>
+<tr class="separator:a35868afeb9d64ddf5c0e725d296ef110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dce47f399ba48218b4e5a8c371ff8dc" id="r_a5dce47f399ba48218b4e5a8c371ff8dc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dce47f399ba48218b4e5a8c371ff8dc">deleteAllSessionMessage</a> (const std::string &amp;sessionID, const <a class="el" href="namespaceneroom.html#a45663ba7b2959136adc78c26fe4b1b2c">NERoomSessionType</a> &amp;sessionType, const <a class="el" href="#ad99ff6cc8e8ec955d522773a1eb90abe">NEMessageCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a5dce47f399ba48218b4e5a8c371ff8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除指定聊天对象和会话类型的最近会话记录，包括本地最近会话和漫游消息  <br /></td></tr>
+<tr class="separator:a5dce47f399ba48218b4e5a8c371ff8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacddf190aa8aef2707f35cd259a283f7" id="r_aacddf190aa8aef2707f35cd259a283f7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacddf190aa8aef2707f35cd259a283f7">getSessionMessagesHistory</a> (const <a class="el" href="structneroom_1_1_n_e_room_get_session_messages_history_param.html">NERoomGetSessionMessagesHistoryParam</a> &amp;parameter, const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt; std::list&lt; <a class="el" href="structneroom_1_1_n_e_custom_session_message.html">NECustomSessionMessage</a> &gt; &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:aacddf190aa8aef2707f35cd259a283f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询某会话的历史消息  <br /></td></tr>
+<tr class="separator:aacddf190aa8aef2707f35cd259a283f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classneroom_1_1_i_n_e_base_service"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classneroom_1_1_i_n_e_base_service')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classneroom_1_1_i_n_e_base_service.html">neroom::INEBaseService</a></td></tr>
+<tr class="memitem:ab69d6bc825372d84a6b060d5496e599d inherit pub_methods_classneroom_1_1_i_n_e_base_service" id="r_ab69d6bc825372d84a6b060d5496e599d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_base_service.html#ab69d6bc825372d84a6b060d5496e599d">INEBaseService</a> ()=default</td></tr>
+<tr class="memdesc:ab69d6bc825372d84a6b060d5496e599d inherit pub_methods_classneroom_1_1_i_n_e_base_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:ab69d6bc825372d84a6b060d5496e599d inherit pub_methods_classneroom_1_1_i_n_e_base_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec287ff1cd4bd1df4f53760268928579 inherit pub_methods_classneroom_1_1_i_n_e_base_service" id="r_aec287ff1cd4bd1df4f53760268928579"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_base_service.html#aec287ff1cd4bd1df4f53760268928579">~INEBaseService</a> ()=default</td></tr>
+<tr class="memdesc:aec287ff1cd4bd1df4f53760268928579 inherit pub_methods_classneroom_1_1_i_n_e_base_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:aec287ff1cd4bd1df4f53760268928579 inherit pub_methods_classneroom_1_1_i_n_e_base_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>消息服务 </p>
+
+<p class="definition">在文件 <a class="el" href="message__service__interface_8h_source.html">message_service_interface.h</a> 第 <a class="el" href="message__service__interface_8h_source.html#l00126">126</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="ad99ff6cc8e8ec955d522773a1eb90abe" name="ad99ff6cc8e8ec955d522773a1eb90abe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad99ff6cc8e8ec955d522773a1eb90abe">&#9670;&#160;</a></span>NEMessageCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ad99ff6cc8e8ec955d522773a1eb90abe">neroom::INEMessageChannelService::NEMessageCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="message__service__interface_8h_source.html">message_service_interface.h</a> 第 <a class="el" href="message__service__interface_8h_source.html#l00128">128</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a3d105fa8c0a3bc86106127a33930ff20" name="a3d105fa8c0a3bc86106127a33930ff20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d105fa8c0a3bc86106127a33930ff20">&#9670;&#160;</a></span>INEMessageChannelService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">neroom::INEMessageChannelService::INEMessageChannelService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+
+</div>
+</div>
+<a id="a3c7ed2d20af6904cc4903b09323e7028" name="a3c7ed2d20af6904cc4903b09323e7028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c7ed2d20af6904cc4903b09323e7028">&#9670;&#160;</a></span>~INEMessageChannelService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">neroom::INEMessageChannelService::~INEMessageChannelService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a5840d8dfa3c99a69dcfb80b459f11991" name="a5840d8dfa3c99a69dcfb80b459f11991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5840d8dfa3c99a69dcfb80b459f11991">&#9670;&#160;</a></span>addMessageChannelListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEMessageChannelService::addMessageChannelListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classneroom_1_1_i_n_e_message_channel_listener.html">INEMessageChannelListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加消息监听 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>消息监听对象 <code><a class="el" href="classneroom_1_1_i_n_e_message_channel_listener.html">INEMessageChannelListener</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a2824a6a0a85d30bc5c20c683d07fbd12" name="a2824a6a0a85d30bc5c20c683d07fbd12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2824a6a0a85d30bc5c20c683d07fbd12">&#9670;&#160;</a></span>clearUnreadCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEMessageChannelService::clearUnreadCount </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>sessionID</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a45663ba7b2959136adc78c26fe4b1b2c">NERoomSessionType</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sessionType</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#ad99ff6cc8e8ec955d522773a1eb90abe">NEMessageCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>清空某会话未读计数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sessionID</td><td>会话 ID </td></tr>
+    <tr><td class="paramname">sessionType</td><td>会话类型 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.26.0 </dd></dl>
+
+</div>
+</div>
+<a id="a5dce47f399ba48218b4e5a8c371ff8dc" name="a5dce47f399ba48218b4e5a8c371ff8dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dce47f399ba48218b4e5a8c371ff8dc">&#9670;&#160;</a></span>deleteAllSessionMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEMessageChannelService::deleteAllSessionMessage </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>sessionID</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a45663ba7b2959136adc78c26fe4b1b2c">NERoomSessionType</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sessionType</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#ad99ff6cc8e8ec955d522773a1eb90abe">NEMessageCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>删除指定聊天对象和会话类型的最近会话记录，包括本地最近会话和漫游消息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sessionID</td><td>会话 ID </td></tr>
+    <tr><td class="paramname">sessionType</td><td>会话类型 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.26.0 </dd></dl>
+
+</div>
+</div>
+<a id="a35868afeb9d64ddf5c0e725d296ef110" name="a35868afeb9d64ddf5c0e725d296ef110"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35868afeb9d64ddf5c0e725d296ef110">&#9670;&#160;</a></span>deleteSessionMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEMessageChannelService::deleteSessionMessage </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>sessionID</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a45663ba7b2959136adc78c26fe4b1b2c">NERoomSessionType</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sessionType</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>messageID</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#ad99ff6cc8e8ec955d522773a1eb90abe">NEMessageCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>删除指定会话的指定消息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sessionID</td><td>会话 ID </td></tr>
+    <tr><td class="paramname">sessionType</td><td>会话类型 </td></tr>
+    <tr><td class="paramname">messageID</td><td>消息 ID </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.26.0 </dd></dl>
+
+</div>
+</div>
+<a id="aacddf190aa8aef2707f35cd259a283f7" name="aacddf190aa8aef2707f35cd259a283f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacddf190aa8aef2707f35cd259a283f7">&#9670;&#160;</a></span>getSessionMessagesHistory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEMessageChannelService::getSessionMessagesHistory </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structneroom_1_1_n_e_room_get_session_messages_history_param.html">NERoomGetSessionMessagesHistoryParam</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>parameter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt; std::list&lt; <a class="el" href="structneroom_1_1_n_e_custom_session_message.html">NECustomSessionMessage</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>查询某会话的历史消息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameter</td><td>查询参数 <code><a class="el" href="structneroom_1_1_n_e_room_get_session_messages_history_param.html">NERoomGetSessionMessagesHistoryParam</a></code> </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.26.0 </dd></dl>
+
+</div>
+</div>
+<a id="a9e173fe414d2efb045d571863cfe83ce" name="a9e173fe414d2efb045d571863cfe83ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e173fe414d2efb045d571863cfe83ce">&#9670;&#160;</a></span>queryUnreadMessageList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEMessageChannelService::queryUnreadMessageList </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>sessionID</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceneroom.html#a45663ba7b2959136adc78c26fe4b1b2c">NERoomSessionType</a></td>          <td class="paramname"><span class="paramname"><em>sessionType</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt; std::list&lt; <a class="el" href="structneroom_1_1_n_e_custom_session_message.html">NECustomSessionMessage</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取指定会话的未读消息列表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sessionID</td><td>会话 ID </td></tr>
+    <tr><td class="paramname">sessionType</td><td>会话类型 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数，包含未读消息列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.26.0 </dd></dl>
+
+</div>
+</div>
+<a id="afe5fe7b4825d46ad9e3b837e7cc70716" name="afe5fe7b4825d46ad9e3b837e7cc70716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe5fe7b4825d46ad9e3b837e7cc70716">&#9670;&#160;</a></span>removeMessageChannelListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEMessageChannelService::removeMessageChannelListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classneroom_1_1_i_n_e_message_channel_listener.html">INEMessageChannelListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移除消息监听 </p>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a698f41c445e52a5bf79c9ffb694b644a" name="a698f41c445e52a5bf79c9ffb694b644a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a698f41c445e52a5bf79c9ffb694b644a">&#9670;&#160;</a></span>sendCustomMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEMessageChannelService::sendCustomMessage </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>roomUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>commandId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#ad99ff6cc8e8ec955d522773a1eb90abe">NEMessageCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>给房间内的[userUuid]发送自定义消息，如房间内信令 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roomUuid</td><td>房间ID </td></tr>
+    <tr><td class="paramname">userUuid</td><td>发送目标用户ID </td></tr>
+    <tr><td class="paramname">commandId</td><td>消息类型 </td></tr>
+    <tr><td class="paramname">data</td><td>自定义的消息内容 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a3205f79fdcde5036fe47b375befa4564" name="a3205f79fdcde5036fe47b375befa4564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3205f79fdcde5036fe47b375befa4564">&#9670;&#160;</a></span>sendCustomMessageToRoles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEMessageChannelService::sendCustomMessageToRoles </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>roomUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>commandId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::list&lt; std::string &gt;</td>          <td class="paramname"><span class="paramname"><em>roles</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#ad99ff6cc8e8ec955d522773a1eb90abe">NEMessageCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>向房间内指定角色的用户发送自定义消息，如房间内信令 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roomUuid</td><td>房间ID </td></tr>
+    <tr><td class="paramname">userUuid</td><td>发送目标用户ID </td></tr>
+    <tr><td class="paramname">commandId</td><td>消息类型 </td></tr>
+    <tr><td class="paramname">roles</td><td>角色列表 </td></tr>
+    <tr><td class="paramname">data</td><td>自定义的消息内容 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.39.0 </dd></dl>
+
+</div>
+</div>
+<a id="aaea07118d80cd2417a28f795924a6a78" name="aaea07118d80cd2417a28f795924a6a78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaea07118d80cd2417a28f795924a6a78">&#9670;&#160;</a></span>sendCustomMessageToRoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEMessageChannelService::sendCustomMessageToRoom </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>roomUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>commandId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#ad99ff6cc8e8ec955d522773a1eb90abe">NEMessageCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>给房间内的[userUuid]发送自定义消息，如房间内信令 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roomUuid</td><td>房间ID </td></tr>
+    <tr><td class="paramname">userUuid</td><td>发送目标用户ID </td></tr>
+    <tr><td class="paramname">commandId</td><td>消息类型 </td></tr>
+    <tr><td class="paramname">data</td><td>自定义的消息内容 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.32.0 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="message__service__interface_8h_source.html">message_service_interface.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERoom SDK: neroom::INERoomRtcStatsListener类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERoom SDK<span id="projectnumber">&#160;V1.44.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceneroom.html">neroom</a></li><li class="navelem"><a class="el" href="classneroom_1_1_i_n_e_room_rtc_stats_listener.html">INERoomRtcStatsListener</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classneroom_1_1_i_n_e_room_rtc_stats_listener-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">neroom::INERoomRtcStatsListener类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>统计数据监听类  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="room__listener_8h_source.html">room_listener.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a2474874410d676f54393f7fe0da7c618" id="r_a2474874410d676f54393f7fe0da7c618"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2474874410d676f54393f7fe0da7c618">~INERoomRtcStatsListener</a> ()=default</td></tr>
+<tr class="memdesc:a2474874410d676f54393f7fe0da7c618"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:a2474874410d676f54393f7fe0da7c618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eda314725ee1383d5d89d2c16ec3ded" id="r_a9eda314725ee1383d5d89d2c16ec3ded"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9eda314725ee1383d5d89d2c16ec3ded">onRtcStats</a> (const <a class="el" href="namespaceneroom.html#a4b44bf6f32e78f92f2834cc073bf260c">NERoomRtcStats</a> &amp;stats)</td></tr>
+<tr class="memdesc:a9eda314725ee1383d5d89d2c16ec3ded"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前通话统计回调,SDK 定期向 App 报告当前通话的统计信息，每 2 秒触发一次  <br /></td></tr>
+<tr class="separator:a9eda314725ee1383d5d89d2c16ec3ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5539e1a21b5173ee270b3d59e2476795" id="r_a5539e1a21b5173ee270b3d59e2476795"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5539e1a21b5173ee270b3d59e2476795">onLocalAudioStats</a> (const std::vector&lt; <a class="el" href="namespaceneroom.html#a32ed0542345e8d967b66d51ccbe771e9">NERoomRtcAudioSendStats</a> &gt; &amp;stats)</td></tr>
+<tr class="memdesc:a5539e1a21b5173ee270b3d59e2476795"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地音频流上传统计信息  <br /></td></tr>
+<tr class="separator:a5539e1a21b5173ee270b3d59e2476795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e2b5d78ed1f126d33eebbcea37f31c" id="r_a15e2b5d78ed1f126d33eebbcea37f31c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15e2b5d78ed1f126d33eebbcea37f31c">onRemoteAudioStats</a> (const std::map&lt; std::string, std::vector&lt; <a class="el" href="namespaceneroom.html#a65d84fb730fe149a16b9c0067aedfa37">NERoomRtcAudioRecvStats</a> &gt; &gt; &amp;stats)</td></tr>
+<tr class="memdesc:a15e2b5d78ed1f126d33eebbcea37f31c"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端用户的音频统计  <br /></td></tr>
+<tr class="separator:a15e2b5d78ed1f126d33eebbcea37f31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e15684be35ceb1fa81150e270a5a601" id="r_a9e15684be35ceb1fa81150e270a5a601"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e15684be35ceb1fa81150e270a5a601">onLocalVideoStats</a> (const std::vector&lt; <a class="el" href="namespaceneroom.html#a9c731e0cecf85bc2e18cf5b218588a8b">NERoomRtcVideoSendStats</a> &gt; &amp;stats)</td></tr>
+<tr class="memdesc:a9e15684be35ceb1fa81150e270a5a601"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地视频流上传统计信息  <br /></td></tr>
+<tr class="separator:a9e15684be35ceb1fa81150e270a5a601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf97c0458882fde3533d999931db903c" id="r_abf97c0458882fde3533d999931db903c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf97c0458882fde3533d999931db903c">onRemoteVideoStats</a> (const std::map&lt; std::string, std::vector&lt; <a class="el" href="namespaceneroom.html#a25df454648cfdc158b0eef0c7907a140">NERoomRtcVideoRecvStats</a> &gt; &gt; &amp;stats)</td></tr>
+<tr class="memdesc:abf97c0458882fde3533d999931db903c"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端视频流的统计信息  <br /></td></tr>
+<tr class="separator:abf97c0458882fde3533d999931db903c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b2699f61600785c3e3a00864b3684c8" id="r_a3b2699f61600785c3e3a00864b3684c8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b2699f61600785c3e3a00864b3684c8">onNetworkQuality</a> (const std::vector&lt; <a class="el" href="namespaceneroom.html#a283dc46c317087c02b90af1f51dc6666">NERoomRtcNetworkQualityInfo</a> &gt; &amp;stats)</td></tr>
+<tr class="memdesc:a3b2699f61600785c3e3a00864b3684c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">网络质量统计信息。  <br /></td></tr>
+<tr class="separator:a3b2699f61600785c3e3a00864b3684c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>统计数据监听类 </p>
+
+<p class="definition">在文件 <a class="el" href="room__listener_8h_source.html">room_listener.h</a> 第 <a class="el" href="room__listener_8h_source.html#l00620">620</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a2474874410d676f54393f7fe0da7c618" name="a2474874410d676f54393f7fe0da7c618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2474874410d676f54393f7fe0da7c618">&#9670;&#160;</a></span>~INERoomRtcStatsListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual neroom::INERoomRtcStatsListener::~INERoomRtcStatsListener </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a5539e1a21b5173ee270b3d59e2476795" name="a5539e1a21b5173ee270b3d59e2476795"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5539e1a21b5173ee270b3d59e2476795">&#9670;&#160;</a></span>onLocalAudioStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomRtcStatsListener::onLocalAudioStats </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceneroom.html#a32ed0542345e8d967b66d51ccbe771e9">NERoomRtcAudioSendStats</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>stats</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地音频流上传统计信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stats</td><td>本地音频流上传统计信息 <code><a class="el" href="namespaceneroom.html#a32ed0542345e8d967b66d51ccbe771e9">NERoomRtcAudioSendStats</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="room__listener_8h_source.html">room_listener.h</a> 第 <a class="el" href="room__listener_8h_source.html#l00639">639</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9e15684be35ceb1fa81150e270a5a601" name="a9e15684be35ceb1fa81150e270a5a601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e15684be35ceb1fa81150e270a5a601">&#9670;&#160;</a></span>onLocalVideoStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomRtcStatsListener::onLocalVideoStats </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceneroom.html#a9c731e0cecf85bc2e18cf5b218588a8b">NERoomRtcVideoSendStats</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>stats</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地视频流上传统计信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stats</td><td>本地视频流上传统计信息 <code><a class="el" href="namespaceneroom.html#a9c731e0cecf85bc2e18cf5b218588a8b">NERoomRtcVideoSendStats</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="room__listener_8h_source.html">room_listener.h</a> 第 <a class="el" href="room__listener_8h_source.html#l00653">653</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3b2699f61600785c3e3a00864b3684c8" name="a3b2699f61600785c3e3a00864b3684c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b2699f61600785c3e3a00864b3684c8">&#9670;&#160;</a></span>onNetworkQuality()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomRtcStatsListener::onNetworkQuality </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceneroom.html#a283dc46c317087c02b90af1f51dc6666">NERoomRtcNetworkQualityInfo</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>stats</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>网络质量统计信息。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stats</td><td>网络质量统计信息 <code><a class="el" href="namespaceneroom.html#a283dc46c317087c02b90af1f51dc6666">NERoomRtcNetworkQualityInfo</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="room__listener_8h_source.html">room_listener.h</a> 第 <a class="el" href="room__listener_8h_source.html#l00667">667</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a15e2b5d78ed1f126d33eebbcea37f31c" name="a15e2b5d78ed1f126d33eebbcea37f31c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15e2b5d78ed1f126d33eebbcea37f31c">&#9670;&#160;</a></span>onRemoteAudioStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomRtcStatsListener::onRemoteAudioStats </td>
+          <td>(</td>
+          <td class="paramtype">const std::map&lt; std::string, std::vector&lt; <a class="el" href="namespaceneroom.html#a65d84fb730fe149a16b9c0067aedfa37">NERoomRtcAudioRecvStats</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>stats</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端用户的音频统计 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stats</td><td>远端用户的音频统计 <code><a class="el" href="namespaceneroom.html#a65d84fb730fe149a16b9c0067aedfa37">NERoomRtcAudioRecvStats</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="room__listener_8h_source.html">room_listener.h</a> 第 <a class="el" href="room__listener_8h_source.html#l00646">646</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abf97c0458882fde3533d999931db903c" name="abf97c0458882fde3533d999931db903c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf97c0458882fde3533d999931db903c">&#9670;&#160;</a></span>onRemoteVideoStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomRtcStatsListener::onRemoteVideoStats </td>
+          <td>(</td>
+          <td class="paramtype">const std::map&lt; std::string, std::vector&lt; <a class="el" href="namespaceneroom.html#a25df454648cfdc158b0eef0c7907a140">NERoomRtcVideoRecvStats</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>stats</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端视频流的统计信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stats</td><td>远端视频流的统计信息 <code><a class="el" href="namespaceneroom.html#a25df454648cfdc158b0eef0c7907a140">NERoomRtcVideoRecvStats</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="room__listener_8h_source.html">room_listener.h</a> 第 <a class="el" href="room__listener_8h_source.html#l00660">660</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9eda314725ee1383d5d89d2c16ec3ded" name="a9eda314725ee1383d5d89d2c16ec3ded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eda314725ee1383d5d89d2c16ec3ded">&#9670;&#160;</a></span>onRtcStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomRtcStatsListener::onRtcStats </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a4b44bf6f32e78f92f2834cc073bf260c">NERoomRtcStats</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>stats</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前通话统计回调,SDK 定期向 App 报告当前通话的统计信息，每 2 秒触发一次 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stats</td><td>通话相关的统计信息 <code><a class="el" href="namespaceneroom.html#a4b44bf6f32e78f92f2834cc073bf260c">NERoomRtcStats</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="room__listener_8h_source.html">room_listener.h</a> 第 <a class="el" href="room__listener_8h_source.html#l00632">632</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="room__listener_8h_source.html">room_listener.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

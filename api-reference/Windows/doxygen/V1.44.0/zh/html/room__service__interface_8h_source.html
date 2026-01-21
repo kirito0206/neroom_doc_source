@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERoom SDK: room_service_interface.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERoom SDK<span id="projectnumber">&#160;V1.44.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">room_service_interface.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="room__service__interface_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2022 NetEase, Inc. All rights reserved.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Use of this source code is governed by a MIT license that can be</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// found in the LICENSE file.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef ROOM_SERVICE_INTERFACE_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define ROOM_SERVICE_INTERFACE_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="base__service__interface_8h.html">base_service_interface.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="base__type__defines_8h.html">base_type_defines.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="error__code__defines_8h.html">error_code_defines.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="preview__room__context__interface_8h.html">preview_room_context_interface.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="room__context__interface_8h.html">room_context_interface.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceneroom.html">neroom</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="classneroom_1_1_i_n_e_room_service.html">INERoomService</a> : <span class="keyword">public</span> <a class="code hl_class" href="classneroom_1_1_i_n_e_base_service.html">INEBaseService</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#ae7af91111e2835387a8dad9137322261">   30</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classneroom_1_1_i_n_e_room_service.html#ae7af91111e2835387a8dad9137322261">NERoomCallback</a> = <a class="code hl_typedef" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback&lt;&gt;</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#a9681e99aab4ac4431fa3d542ec2ca004">   34</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classneroom_1_1_i_n_e_room_service.html#a9681e99aab4ac4431fa3d542ec2ca004">NERoomTemplateCallback</a> = <a class="code hl_typedef" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback&lt;NERoomTemplate&gt;</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#a1e2ec9a389a126226e8a585493e8a24c">   38</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classneroom_1_1_i_n_e_room_service.html#a1e2ec9a389a126226e8a585493e8a24c">NEJoinRoomCallback</a> = <a class="code hl_typedef" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback&lt;INERoomContext*&gt;</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#a412566bc94281d905fd7befaca674c69">   42</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classneroom_1_1_i_n_e_room_service.html#a412566bc94281d905fd7befaca674c69">NEPreviewRoomCallback</a> = <a class="code hl_typedef" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback&lt;INEPreviewRoomContext&gt;</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#a5dcc379f3f2ec66f0b68830c0224e1d9">   46</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classneroom_1_1_i_n_e_room_service.html#a5dcc379f3f2ec66f0b68830c0224e1d9">NEGetRecordsCallback</a> = <a class="code hl_typedef" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback&lt;std::list&lt;NERoomRecord&gt;</a>&gt;;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#a51b3aae62922960f9e98d67a9f03e8bd">   50</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classneroom_1_1_i_n_e_room_service.html#a51b3aae62922960f9e98d67a9f03e8bd">NERoomFetchChatRoomMessageCallback</a> = <a class="code hl_typedef" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback&lt;std::list&lt;SharedChatMessagePtr&gt;</a>&gt;;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#a0bc5d1e042e6f1b6428d2a6a00934136">   55</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classneroom_1_1_i_n_e_room_service.html#a0bc5d1e042e6f1b6428d2a6a00934136">NEInRoomDeviceListItemCallback</a> = <a class="code hl_typedef" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback&lt;std::list&lt;NEInRoomDeviceListItem&gt;</a>&gt;;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#aaf895a1a28722eda6d0c267102103aa7">   61</a></span>    <a class="code hl_function" href="classneroom_1_1_i_n_e_room_service.html#aaf895a1a28722eda6d0c267102103aa7">INERoomService</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#a1d3d48f90e8c1a968b5be7b989746db0">   66</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_service.html#a1d3d48f90e8c1a968b5be7b989746db0">~INERoomService</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#a278eb05b6ec4dfa80b4adc93e9d3d8a3">   75</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_service.html#a278eb05b6ec4dfa80b4adc93e9d3d8a3">createRoom</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#a01c08f0ace5a978dc5f86f1239b3ce56">NECreateRoomParams</a>&amp; params, <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#a5a515d7f513110b8da62521bfe1ffa86">NECreateRoomOptions</a>&amp; options, <span class="keyword">const</span> <a class="code hl_typedef" href="classneroom_1_1_i_n_e_room_service.html#ae7af91111e2835387a8dad9137322261">NERoomCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#aa37144805c2df789c839fd125acbcb37">   83</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_service.html#aa37144805c2df789c839fd125acbcb37">fetchRoomTemplate</a>(<span class="keyword">const</span> std::string&amp; roomUuid, <span class="keyword">const</span> <a class="code hl_typedef" href="classneroom_1_1_i_n_e_room_service.html#a9681e99aab4ac4431fa3d542ec2ca004">NERoomTemplateCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#aa97e0c48bd80db08ec31bb2f68643d87">   92</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_service.html#aa97e0c48bd80db08ec31bb2f68643d87">joinRoom</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#aff3312cefdd981ef7827895e9c964027">NEJoinRoomParams</a>&amp; params, <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#a1d2517dfca21731bc1ed528a561d9a24">NEJoinRoomOptions</a>&amp; options, <span class="keyword">const</span> <a class="code hl_typedef" href="classneroom_1_1_i_n_e_room_service.html#a1e2ec9a389a126226e8a585493e8a24c">NEJoinRoomCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#af5b721fc3530f8af0bcbf1e3e18cbd97">  101</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_service.html#af5b721fc3530f8af0bcbf1e3e18cbd97">joinRoomByInvite</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#aff3312cefdd981ef7827895e9c964027">NEJoinRoomParams</a>&amp; params, <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#a1d2517dfca21731bc1ed528a561d9a24">NEJoinRoomOptions</a>&amp; options, <span class="keyword">const</span> <a class="code hl_typedef" href="classneroom_1_1_i_n_e_room_service.html#a1e2ec9a389a126226e8a585493e8a24c">NEJoinRoomCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#ad27921227518935d9bbc2fc18794f99f">  110</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_service.html#ad27921227518935d9bbc2fc18794f99f">previewRoom</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#aa934baf34f267c6096d56424b8992435">NEPreviewRoomParams</a>&amp; params, <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#ac8db24802b543729b0e9b609964eb6ec">NEPreviewRoomOptions</a>&amp; options, <span class="keyword">const</span> <a class="code hl_typedef" href="classneroom_1_1_i_n_e_room_service.html#a412566bc94281d905fd7befaca674c69">NEPreviewRoomCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#a4dc236451ad8b012c4c4b2242c515905">  117</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classneroom_1_1_i_n_e_room_context.html">INERoomContext</a>* <a class="code hl_function" href="classneroom_1_1_i_n_e_room_service.html#a4dc236451ad8b012c4c4b2242c515905">getRoomContext</a>(<span class="keyword">const</span> std::string&amp; roomUuid) = 0;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#af06f7192f8dec98b9944a95a89dcc64f">  123</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classneroom_1_1_i_n_e_preview_room_context.html">INEPreviewRoomContext</a>* <a class="code hl_function" href="classneroom_1_1_i_n_e_room_service.html#af06f7192f8dec98b9944a95a89dcc64f">getPreviewRoomContext</a>() = 0;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#a85cc630b19024fb7e295ca0b065bcd9a">  131</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_service.html#a85cc630b19024fb7e295ca0b065bcd9a">getRoomCloudRecordList</a>(<span class="keyword">const</span> std::string&amp; roomArchiveId, <span class="keyword">const</span> <a class="code hl_typedef" href="classneroom_1_1_i_n_e_room_service.html#a5dcc379f3f2ec66f0b68830c0224e1d9">NEGetRecordsCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#adbd63b308ca234bdf71a72a19b16eb55">  139</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_service.html#adbd63b308ca234bdf71a72a19b16eb55">fetchChatroomHistoryMessages</a>(<span class="keyword">const</span> std::string&amp; roomArchiveId,</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <a class="code hl_struct" href="structneroom_1_1_n_e_history_message_search_option.html">NEHistoryMessageSearchOption</a> option,</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="classneroom_1_1_i_n_e_room_service.html#a51b3aae62922960f9e98d67a9f03e8bd">NERoomFetchChatRoomMessageCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#a0c08d9357d10a1f70abee39666aacbf4">  148</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_service.html#a0c08d9357d10a1f70abee39666aacbf4">exportChatroomHistoryMessages</a>(<span class="keyword">const</span> std::string&amp; roomArchiveId, <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback&lt;std::string&gt;</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#a238258ac4a5f93dd06c033f6b9defa83">  156</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_service.html#a238258ac4a5f93dd06c033f6b9defa83">rejectInvite</a>(<span class="keyword">const</span> std::string&amp; roomUuid, <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback&lt;std::string&gt;</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_service.html#a91603652b9a8995096af64d00a165db5">  164</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_service.html#a91603652b9a8995096af64d00a165db5">getMyInRoomDeviceList</a>(<span class="keyword">const</span> std::string&amp; roomUuid, <span class="keyword">const</span> <a class="code hl_typedef" href="classneroom_1_1_i_n_e_room_service.html#a0bc5d1e042e6f1b6428d2a6a00934136">NEInRoomDeviceListItemCallback</a>&amp; callback) = 0;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>};</div>
+</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>}  <span class="comment">// namespace neroom</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="preprocessor">#endif  </span><span class="comment">// ROOM_SERVICE_INTERFACE_H</span></div>
+<div class="ttc" id="abase__service__interface_8h_html"><div class="ttname"><a href="base__service__interface_8h.html">base_service_interface.h</a></div><div class="ttdoc">基础服务接口头文件</div></div>
+<div class="ttc" id="abase__type__defines_8h_html"><div class="ttname"><a href="base__type__defines_8h.html">base_type_defines.h</a></div><div class="ttdoc">基本类型定义头文件</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_base_service_html"><div class="ttname"><a href="classneroom_1_1_i_n_e_base_service.html">neroom::INEBaseService</a></div><div class="ttdoc">基础服务</div><div class="ttdef"><b>Definition</b> <a href="base__service__interface_8h_source.html#l00019">base_service_interface.h:19</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_context_html"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_context.html">neroom::INEPreviewRoomContext</a></div><div class="ttdoc">房间外context</div><div class="ttdef"><b>Definition</b> <a href="preview__room__context__interface_8h_source.html#l00022">preview_room_context_interface.h:22</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_context_html"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_context.html">neroom::INERoomContext</a></div><div class="ttdoc">房间上下文</div><div class="ttdef"><b>Definition</b> <a href="room__context__interface_8h_source.html#l00032">room_context_interface.h:32</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html">neroom::INERoomService</a></div><div class="ttdoc">房间服务</div><div class="ttdef"><b>Definition</b> <a href="#l00025">room_service_interface.h:25</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_a0bc5d1e042e6f1b6428d2a6a00934136"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#a0bc5d1e042e6f1b6428d2a6a00934136">neroom::INERoomService::NEInRoomDeviceListItemCallback</a></div><div class="ttdeci">NECallback&lt; std::list&lt; NEInRoomDeviceListItem &gt; &gt; NEInRoomDeviceListItemCallback</div><div class="ttdoc">获取本端所有在房的已连接设备列表回调</div><div class="ttdef"><b>Definition</b> <a href="#l00055">room_service_interface.h:55</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_a0c08d9357d10a1f70abee39666aacbf4"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#a0c08d9357d10a1f70abee39666aacbf4">neroom::INERoomService::exportChatroomHistoryMessages</a></div><div class="ttdeci">virtual void exportChatroomHistoryMessages(const std::string &amp;roomArchiveId, const NECallback&lt; std::string &gt; &amp;callback)=0</div><div class="ttdoc">导出指定会议聊天室内的消息</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_a1d3d48f90e8c1a968b5be7b989746db0"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#a1d3d48f90e8c1a968b5be7b989746db0">neroom::INERoomService::~INERoomService</a></div><div class="ttdeci">virtual ~INERoomService()=default</div><div class="ttdoc">析构函数</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_a1e2ec9a389a126226e8a585493e8a24c"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#a1e2ec9a389a126226e8a585493e8a24c">neroom::INERoomService::NEJoinRoomCallback</a></div><div class="ttdeci">NECallback&lt; INERoomContext * &gt; NEJoinRoomCallback</div><div class="ttdoc">加入房间回调</div><div class="ttdef"><b>Definition</b> <a href="#l00038">room_service_interface.h:38</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_a238258ac4a5f93dd06c033f6b9defa83"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#a238258ac4a5f93dd06c033f6b9defa83">neroom::INERoomService::rejectInvite</a></div><div class="ttdeci">virtual void rejectInvite(const std::string &amp;roomUuid, const NECallback&lt; std::string &gt; &amp;callback)=0</div><div class="ttdoc">挂断正在进行的呼叫，无论是正在响铃还是等待响铃都可以使用</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_a278eb05b6ec4dfa80b4adc93e9d3d8a3"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#a278eb05b6ec4dfa80b4adc93e9d3d8a3">neroom::INERoomService::createRoom</a></div><div class="ttdeci">virtual void createRoom(const NECreateRoomParams &amp;params, const NECreateRoomOptions &amp;options, const NERoomCallback &amp;callback)=0</div><div class="ttdoc">创建一个房间，不会加入房间</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_a412566bc94281d905fd7befaca674c69"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#a412566bc94281d905fd7befaca674c69">neroom::INERoomService::NEPreviewRoomCallback</a></div><div class="ttdeci">NECallback&lt; INEPreviewRoomContext &gt; NEPreviewRoomCallback</div><div class="ttdoc">房间预览回调</div><div class="ttdef"><b>Definition</b> <a href="#l00042">room_service_interface.h:42</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_a4dc236451ad8b012c4c4b2242c515905"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#a4dc236451ad8b012c4c4b2242c515905">neroom::INERoomService::getRoomContext</a></div><div class="ttdeci">virtual INERoomContext * getRoomContext(const std::string &amp;roomUuid)=0</div><div class="ttdoc">获取房间上下文</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_a51b3aae62922960f9e98d67a9f03e8bd"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#a51b3aae62922960f9e98d67a9f03e8bd">neroom::INERoomService::NERoomFetchChatRoomMessageCallback</a></div><div class="ttdeci">NECallback&lt; std::list&lt; SharedChatMessagePtr &gt; &gt; NERoomFetchChatRoomMessageCallback</div><div class="ttdoc">检索聊天室消息回调</div><div class="ttdef"><b>Definition</b> <a href="#l00050">room_service_interface.h:50</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_a5dcc379f3f2ec66f0b68830c0224e1d9"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#a5dcc379f3f2ec66f0b68830c0224e1d9">neroom::INERoomService::NEGetRecordsCallback</a></div><div class="ttdeci">NECallback&lt; std::list&lt; NERoomRecord &gt; &gt; NEGetRecordsCallback</div><div class="ttdoc">获取房间录制信息回调</div><div class="ttdef"><b>Definition</b> <a href="#l00046">room_service_interface.h:46</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_a85cc630b19024fb7e295ca0b065bcd9a"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#a85cc630b19024fb7e295ca0b065bcd9a">neroom::INERoomService::getRoomCloudRecordList</a></div><div class="ttdeci">virtual void getRoomCloudRecordList(const std::string &amp;roomArchiveId, const NEGetRecordsCallback &amp;callback)=0</div><div class="ttdoc">获取房间录制信息</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_a91603652b9a8995096af64d00a165db5"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#a91603652b9a8995096af64d00a165db5">neroom::INERoomService::getMyInRoomDeviceList</a></div><div class="ttdeci">virtual void getMyInRoomDeviceList(const std::string &amp;roomUuid, const NEInRoomDeviceListItemCallback &amp;callback)=0</div><div class="ttdoc">获取本端所有在房的已连接设备列表</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_a9681e99aab4ac4431fa3d542ec2ca004"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#a9681e99aab4ac4431fa3d542ec2ca004">neroom::INERoomService::NERoomTemplateCallback</a></div><div class="ttdeci">NECallback&lt; NERoomTemplate &gt; NERoomTemplateCallback</div><div class="ttdoc">房间服务获取模板回调</div><div class="ttdef"><b>Definition</b> <a href="#l00034">room_service_interface.h:34</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_aa37144805c2df789c839fd125acbcb37"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#aa37144805c2df789c839fd125acbcb37">neroom::INERoomService::fetchRoomTemplate</a></div><div class="ttdeci">virtual void fetchRoomTemplate(const std::string &amp;roomUuid, const NERoomTemplateCallback &amp;callback)=0</div><div class="ttdoc">获取房间模板</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_aa97e0c48bd80db08ec31bb2f68643d87"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#aa97e0c48bd80db08ec31bb2f68643d87">neroom::INERoomService::joinRoom</a></div><div class="ttdeci">virtual void joinRoom(const NEJoinRoomParams &amp;params, const NEJoinRoomOptions &amp;options, const NEJoinRoomCallback &amp;callback)=0</div><div class="ttdoc">加入房间</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_aaf895a1a28722eda6d0c267102103aa7"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#aaf895a1a28722eda6d0c267102103aa7">neroom::INERoomService::INERoomService</a></div><div class="ttdeci">INERoomService()=default</div><div class="ttdoc">构造函数</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_ad27921227518935d9bbc2fc18794f99f"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#ad27921227518935d9bbc2fc18794f99f">neroom::INERoomService::previewRoom</a></div><div class="ttdeci">virtual void previewRoom(const NEPreviewRoomParams &amp;params, const NEPreviewRoomOptions &amp;options, const NEPreviewRoomCallback &amp;callback)=0</div><div class="ttdoc">房间预览</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_adbd63b308ca234bdf71a72a19b16eb55"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#adbd63b308ca234bdf71a72a19b16eb55">neroom::INERoomService::fetchChatroomHistoryMessages</a></div><div class="ttdeci">virtual void fetchChatroomHistoryMessages(const std::string &amp;roomArchiveId, NEHistoryMessageSearchOption option, const NERoomFetchChatRoomMessageCallback &amp;callback)=0</div><div class="ttdoc">会议外获取指定会议聊天室内的消息</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_ae7af91111e2835387a8dad9137322261"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#ae7af91111e2835387a8dad9137322261">neroom::INERoomService::NERoomCallback</a></div><div class="ttdeci">NECallback&lt;&gt; NERoomCallback</div><div class="ttdoc">房间服务回调</div><div class="ttdef"><b>Definition</b> <a href="#l00030">room_service_interface.h:30</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_af06f7192f8dec98b9944a95a89dcc64f"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#af06f7192f8dec98b9944a95a89dcc64f">neroom::INERoomService::getPreviewRoomContext</a></div><div class="ttdeci">virtual INEPreviewRoomContext * getPreviewRoomContext()=0</div><div class="ttdoc">获取房间预览上下文</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_service_html_af5b721fc3530f8af0bcbf1e3e18cbd97"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_service.html#af5b721fc3530f8af0bcbf1e3e18cbd97">neroom::INERoomService::joinRoomByInvite</a></div><div class="ttdeci">virtual void joinRoomByInvite(const NEJoinRoomParams &amp;params, const NEJoinRoomOptions &amp;options, const NEJoinRoomCallback &amp;callback)=0</div><div class="ttdoc">加入房间通过邀请</div></div>
+<div class="ttc" id="aerror__code__defines_8h_html"><div class="ttname"><a href="error__code__defines_8h.html">error_code_defines.h</a></div><div class="ttdoc">错误码定义头文件</div></div>
+<div class="ttc" id="anamespaceneroom_html"><div class="ttname"><a href="namespaceneroom.html">neroom</a></div><div class="ttdef"><b>Definition</b> <a href="auth__service__interface_8h_source.html#l00018">auth_service_interface.h:18</a></div></div>
+<div class="ttc" id="anamespaceneroom_html_a01c08f0ace5a978dc5f86f1239b3ce56"><div class="ttname"><a href="namespaceneroom.html#a01c08f0ace5a978dc5f86f1239b3ce56">neroom::NECreateRoomParams</a></div><div class="ttdeci">struct tagNECreateRoomParams { std::string roomUuid; std::string roomName; std::string password; int maxMembers{-1}; int templateId; std::map&lt; std::string, std::string &gt; initialProperties; } NECreateRoomParams</div><div class="ttdoc">创建房间参数</div><div class="ttdef"><b>Definition</b> <a href="base__type__defines_8h_source.html#l00548">base_type_defines.h:548</a></div></div>
+<div class="ttc" id="anamespaceneroom_html_a1d2517dfca21731bc1ed528a561d9a24"><div class="ttname"><a href="namespaceneroom.html#a1d2517dfca21731bc1ed528a561d9a24">neroom::NEJoinRoomOptions</a></div><div class="ttdeci">struct tagNEJoinRoomOptions { bool enableMyAudioDeviceOnJoinRtc=false;} NEJoinRoomOptions</div><div class="ttdoc">加入房间选项</div><div class="ttdef"><b>Definition</b> <a href="base__type__defines_8h_source.html#l00598">base_type_defines.h:598</a></div></div>
+<div class="ttc" id="anamespaceneroom_html_a5a515d7f513110b8da62521bfe1ffa86"><div class="ttname"><a href="namespaceneroom.html#a5a515d7f513110b8da62521bfe1ffa86">neroom::NECreateRoomOptions</a></div><div class="ttdeci">struct tagNECreateRoomOptions { bool enableRecord=false; bool enableLive=false; bool enableRtc=true; bool enableChatroom=false; bool enableWhiteboard=false; std::map&lt; std::string, std::string &gt; roleBind; bool enableWaitingRoom=false; bool enableSIPInvite=false; bool enableAPPInvite=false;} NECreateRoomOptions</div><div class="ttdoc">创建房间属性</div><div class="ttdef"><b>Definition</b> <a href="base__type__defines_8h_source.html#l00574">base_type_defines.h:574</a></div></div>
+<div class="ttc" id="anamespaceneroom_html_a995982a9fd7493f2a6d7257216437945"><div class="ttname"><a href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">neroom::NECallback</a></div><div class="ttdeci">std::function&lt; void(int, const std::string &amp;, const TResultParam &amp;...)&gt; NECallback</div><div class="ttdoc">通用回调</div><div class="ttdef"><b>Definition</b> <a href="base__type__defines_8h_source.html#l00037">base_type_defines.h:37</a></div></div>
+<div class="ttc" id="anamespaceneroom_html_aa934baf34f267c6096d56424b8992435"><div class="ttname"><a href="namespaceneroom.html#aa934baf34f267c6096d56424b8992435">neroom::NEPreviewRoomParams</a></div><div class="ttdeci">struct tagNEPreviewRoomParams {} NEPreviewRoomParams</div><div class="ttdoc">房间预览参数</div><div class="ttdef"><b>Definition</b> <a href="base__type__defines_8h_source.html#l00619">base_type_defines.h:619</a></div></div>
+<div class="ttc" id="anamespaceneroom_html_ac8db24802b543729b0e9b609964eb6ec"><div class="ttname"><a href="namespaceneroom.html#ac8db24802b543729b0e9b609964eb6ec">neroom::NEPreviewRoomOptions</a></div><div class="ttdeci">struct tagNEPreviewRoomOptions {} NEPreviewRoomOptions</div><div class="ttdoc">房间预览选项</div><div class="ttdef"><b>Definition</b> <a href="base__type__defines_8h_source.html#l00624">base_type_defines.h:624</a></div></div>
+<div class="ttc" id="anamespaceneroom_html_aff3312cefdd981ef7827895e9c964027"><div class="ttname"><a href="namespaceneroom.html#aff3312cefdd981ef7827895e9c964027">neroom::NEJoinRoomParams</a></div><div class="ttdeci">struct tagNEJoinRoomParams { std::string roomUuid; std::string userName; std::string avatar; std::string role; std::string password; std::string session; bool kickOtherDevice; std::map&lt; std::string, std::string &gt; initialProperties; } NEJoinRoomParams</div><div class="ttdoc">加入房间时参数</div><div class="ttdef"><b>Definition</b> <a href="base__type__defines_8h_source.html#l00560">base_type_defines.h:560</a></div></div>
+<div class="ttc" id="apreview__room__context__interface_8h_html"><div class="ttname"><a href="preview__room__context__interface_8h.html">preview_room_context_interface.h</a></div><div class="ttdoc">房间外上下文定义头文件</div></div>
+<div class="ttc" id="aroom__context__interface_8h_html"><div class="ttname"><a href="room__context__interface_8h.html">room_context_interface.h</a></div><div class="ttdoc">房间上下文定义头文件</div></div>
+<div class="ttc" id="astructneroom_1_1_n_e_history_message_search_option_html"><div class="ttname"><a href="structneroom_1_1_n_e_history_message_search_option.html">neroom::NEHistoryMessageSearchOption</a></div><div class="ttdef"><b>Definition</b> <a href="base__type__defines_8h_source.html#l00690">base_type_defines.h:690</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

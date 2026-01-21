@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERoom SDK: neroom::INERtcWrapper类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERoom SDK<span id="projectnumber">&#160;V1.44.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceneroom.html">neroom</a></li><li class="navelem"><a class="el" href="classneroom_1_1_i_n_e_rtc_wrapper.html">INERtcWrapper</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classneroom_1_1_i_n_e_rtc_wrapper-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">neroom::INERtcWrapper类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>RTC实例包装类，可获取RTC实例，添加/删除RTC回调  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="room__kit__listener_8h_source.html">room_kit_listener.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8f03a462016455be74512fb8ee0da112" id="r_a8f03a462016455be74512fb8ee0da112"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f03a462016455be74512fb8ee0da112">~INERtcWrapper</a> ()=default</td></tr>
+<tr class="memdesc:a8f03a462016455be74512fb8ee0da112"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:a8f03a462016455be74512fb8ee0da112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0931198fc3e8f26b6bae0d231f7e32" id="r_adb0931198fc3e8f26b6bae0d231f7e32"><td class="memItemLeft" align="right" valign="top">virtual nertc::IRtcEngineEx *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb0931198fc3e8f26b6bae0d231f7e32">getRtcEngine</a> () const =0</td></tr>
+<tr class="memdesc:adb0931198fc3e8f26b6bae0d231f7e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取RTC实例  <br /></td></tr>
+<tr class="separator:adb0931198fc3e8f26b6bae0d231f7e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af636243a13f121aa5f7a620457c13034" id="r_af636243a13f121aa5f7a620457c13034"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af636243a13f121aa5f7a620457c13034">addRtcCallback</a> (nertc::IRtcEngineEventHandlerEx *callback)=0</td></tr>
+<tr class="memdesc:af636243a13f121aa5f7a620457c13034"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加RTC回调  <br /></td></tr>
+<tr class="separator:af636243a13f121aa5f7a620457c13034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4344ac954b115f1f0d16bd9eab74b19b" id="r_a4344ac954b115f1f0d16bd9eab74b19b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4344ac954b115f1f0d16bd9eab74b19b">removeRtcCallback</a> (nertc::IRtcEngineEventHandlerEx *callback)=0</td></tr>
+<tr class="memdesc:a4344ac954b115f1f0d16bd9eab74b19b"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除RTC回调  <br /></td></tr>
+<tr class="separator:a4344ac954b115f1f0d16bd9eab74b19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>RTC实例包装类，可获取RTC实例，添加/删除RTC回调 </p>
+
+<p class="definition">在文件 <a class="el" href="room__kit__listener_8h_source.html">room_kit_listener.h</a> 第 <a class="el" href="room__kit__listener_8h_source.html#l00073">73</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a8f03a462016455be74512fb8ee0da112" name="a8f03a462016455be74512fb8ee0da112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f03a462016455be74512fb8ee0da112">&#9670;&#160;</a></span>~INERtcWrapper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual neroom::INERtcWrapper::~INERtcWrapper </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="af636243a13f121aa5f7a620457c13034" name="af636243a13f121aa5f7a620457c13034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af636243a13f121aa5f7a620457c13034">&#9670;&#160;</a></span>addRtcCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERtcWrapper::addRtcCallback </td>
+          <td>(</td>
+          <td class="paramtype">nertc::IRtcEngineEventHandlerEx *</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加RTC回调 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>RTC回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="adb0931198fc3e8f26b6bae0d231f7e32" name="adb0931198fc3e8f26b6bae0d231f7e32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb0931198fc3e8f26b6bae0d231f7e32">&#9670;&#160;</a></span>getRtcEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual nertc::IRtcEngineEx * neroom::INERtcWrapper::getRtcEngine </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取RTC实例 </p>
+<dl class="section return"><dt>返回</dt><dd>nertc::IRtcEngineEx* RTC实例 </dd></dl>
+
+</div>
+</div>
+<a id="a4344ac954b115f1f0d16bd9eab74b19b" name="a4344ac954b115f1f0d16bd9eab74b19b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4344ac954b115f1f0d16bd9eab74b19b">&#9670;&#160;</a></span>removeRtcCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERtcWrapper::removeRtcCallback </td>
+          <td>(</td>
+          <td class="paramtype">nertc::IRtcEngineEventHandlerEx *</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移除RTC回调 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>RTC回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="room__kit__listener_8h_source.html">room_kit_listener.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

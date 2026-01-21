@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERoom SDK: preview_room_listener.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERoom SDK<span id="projectnumber">&#160;V1.44.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">preview_room_listener.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="preview__room__listener_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) 2022 NetEase, Inc. All rights reserved.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Use of this source code is governed by a MIT license that can be</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// found in the LICENSE file.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef PREVIEW_ROOM_LISTENER_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define PREVIEW_ROOM_LISTENER_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="base__type__defines_8h.html">base_type_defines.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="error__code__defines_8h.html">error_code_defines.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceneroom.html">neroom</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="classneroom_1_1_i_n_e_preview_room_listener.html">INEPreviewRoomListener</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#a3ff07d1290e2ba66488731902e5212b1">   27</a></span>    <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#a3ff07d1290e2ba66488731902e5212b1">INEPreviewRoomListener</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#a68655f03284bae7df81b739600dc93ab">   32</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#a68655f03284bae7df81b739600dc93ab">~INEPreviewRoomListener</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#a0e9b1a2f2e5841d689f2050096b2218e">   48</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#a0e9b1a2f2e5841d689f2050096b2218e">onVideoFrameData</a>(<span class="keyword">const</span> std::string&amp; userUuid,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordtype">bool</span> bSubVideo,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordtype">void</span>* data,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        uint32_t type,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        uint32_t width,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        uint32_t height,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        uint32_t count,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        uint32_t offset[4],</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        uint32_t stride[4],</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        uint32_t rotation) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        (void)userUuid;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        (void)bSubVideo;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        (void)data;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        (void)type;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        (void)width;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        (void)height;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        (void)count;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        (void)offset;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        (void)stride;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        (void)rotation;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    };</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#ac612292aa53b3e63b859869110c45486">   70</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#ac612292aa53b3e63b859869110c45486">onVideoFrameDataCallback</a>(<span class="keyword">const</span> std::string&amp; userUuid, <span class="keywordtype">bool</span> bSubVideo, <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#a3143ef062c05dccae0a873d01120d716">NERoomVideoCallbackFrame</a>&amp; frame) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        (void)userUuid;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        (void)bSubVideo;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        (void)frame;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    };</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#a481e812e6d9ef7407c1f20f26496212a">   82</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#a481e812e6d9ef7407c1f20f26496212a">onCameraDeviceChanged</a>(<span class="keyword">const</span> std::string&amp; deviceId, <span class="keywordtype">bool</span> bAdd) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        (void)deviceId;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        (void)bAdd;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    };</div>
+</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#a76ebb55429c1c4cd1cec9a1e3a19f3cc">   93</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#a76ebb55429c1c4cd1cec9a1e3a19f3cc">onPlayoutDeviceChanged</a>(<span class="keyword">const</span> std::string&amp; deviceId, <span class="keywordtype">bool</span> bAdd) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        (void)deviceId;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        (void)bAdd;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    };</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#ab92ed2ba19417928b9dd7cdd6ebeac3a">  104</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#ab92ed2ba19417928b9dd7cdd6ebeac3a">onPlayoutDeviceStateChanged</a>(<span class="keyword">const</span> std::string&amp; deviceId, <span class="keywordtype">int</span> state) {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        (void)deviceId;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        (void)state;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    };</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="foldopen" id="foldopen00115" data-start="{" data-end="}">
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#afa36ebba10efac7ee861991ea9ee285b">  115</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#afa36ebba10efac7ee861991ea9ee285b">onRecordDeviceChanged</a>(<span class="keyword">const</span> std::string&amp; deviceId, <span class="keywordtype">bool</span> bAdd) {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        (void)deviceId;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        (void)bAdd;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    };</div>
+</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="foldopen" id="foldopen00126" data-start="{" data-end="}">
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#a69c26db4a2ecf23da4ffc17634f3e4b3">  126</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#a69c26db4a2ecf23da4ffc17634f3e4b3">onRecordDeviceStateChanged</a>(<span class="keyword">const</span> std::string&amp; deviceId, <span class="keywordtype">int</span> state) {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        (void)deviceId;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        (void)state;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    };</div>
+</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#ac13d140dfe9f1b9a0852758a920fecdc">  136</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#ac13d140dfe9f1b9a0852758a920fecdc">onDefaultPlayoutDeviceChanged</a>(<span class="keyword">const</span> std::string&amp; deviceId) { (void)deviceId; };</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#af971b8031f70d4897ebe327b570bb7fd">  143</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#af971b8031f70d4897ebe327b570bb7fd">onDefaultRecordDeviceChanged</a>(<span class="keyword">const</span> std::string&amp; deviceId) { (void)deviceId; };</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#a7638b30334e617699320be5b5abfc323">  150</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#a7638b30334e617699320be5b5abfc323">onLocalAudioVolumeIndication</a>(<span class="keywordtype">int</span> volume) { (void)volume; };</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="foldopen" id="foldopen00159" data-start="{" data-end="}">
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#a6fae88873eb4300ac9fb3675b80ab74f">  159</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#a6fae88873eb4300ac9fb3675b80ab74f">onLocalAudioVolumeIndication</a>(<span class="keywordtype">int</span> volume, <span class="keywordtype">bool</span> vadFlag) {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        (void)volume;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        (void)vadFlag;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    };</div>
+</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="foldopen" id="foldopen00170" data-start="{" data-end="}">
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#ab03cbb521040fa64ee028462146b1269">  170</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#ab03cbb521040fa64ee028462146b1269">onRtcVirtualBackgroundSourceEnabled</a>(<span class="keywordtype">bool</span> enabled, <a class="code hl_typedef" href="namespaceneroom.html#acbf0ae3db9cc0325970fe2ad0280c327">NERoomVirtualBackgroundSourceStateReason</a> reason) {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        (void)enabled;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        (void)reason;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    };</div>
+</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="foldopen" id="foldopen00182" data-start="{" data-end="}">
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#aa9275f92365bf7306171212bb9df54e8">  182</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#aa9275f92365bf7306171212bb9df54e8">onLocalRecorderStatus</a>(<a class="code hl_typedef" href="namespaceneroom.html#aea7b0a6cd4c114faf9097d4ab3045f62">NERoomLocalRecorderStatus</a> status, <span class="keyword">const</span> std::string taskId) {</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        (void)status;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        (void)taskId;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    }</div>
+</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="foldopen" id="foldopen00194" data-start="{" data-end="}">
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#a4d63e7123342a7bf814bbc707b7812da">  194</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#a4d63e7123342a7bf814bbc707b7812da">onLocalRecorderError</a>(<a class="code hl_typedef" href="namespaceneroom.html#a5d2e8cdd43c928fbf5bb21f950654d1e">NERoomLocalRecorderError</a> error, <span class="keyword">const</span> std::string taskId) {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        (void)error;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        (void)taskId;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    }</div>
+</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="foldopen" id="foldopen00205" data-start="{" data-end="}">
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_preview_room_listener.html#ae60c2a54aa0a33953c7990872de080e0">  205</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_preview_room_listener.html#ae60c2a54aa0a33953c7990872de080e0">onVoiceprintRegistrationResult</a>(<span class="keywordtype">int</span> code, <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#a52fa95a792f68859de7a66e90a3eeb71">NERoomVoiceprintInfo</a>&amp; info) {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        (void)code;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        (void)info;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    };</div>
+</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>};</div>
+</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="foldopen" id="foldopen00214" data-start="{" data-end="};">
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html">  214</a></span><span class="keyword">class </span><a class="code hl_class" href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html">INERoomRtcAudioFrameObserver</a> {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#adbeacd03b91078eba285108a7b200d53">  219</a></span>    <a class="code hl_function" href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#adbeacd03b91078eba285108a7b200d53">INERoomRtcAudioFrameObserver</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#ac2958d8557fda07d7083d2386cc48f8c">  224</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#ac2958d8557fda07d7083d2386cc48f8c">~INERoomRtcAudioFrameObserver</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#a5ccbe46962bf45593b90467d77ab65de">  233</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#a5ccbe46962bf45593b90467d77ab65de">onAudioFrameDidRecord</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#ab57e1c7138bd24062ec1a4f676c7cde5">NERoomAudioFrame</a>&amp; audioFrame) { (void)audioFrame; }</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#a8a9fd24545ed8f1ea6b614bdbdbef87c">  242</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#a8a9fd24545ed8f1ea6b614bdbdbef87c">onAudioFrameWillPlayback</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#ab57e1c7138bd24062ec1a4f676c7cde5">NERoomAudioFrame</a>&amp; audioFrame) { (void)audioFrame; }</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#a44ccf2a4eae5a8f6cc59150605599864">  251</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#a44ccf2a4eae5a8f6cc59150605599864">onMixedAudioFrame</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#ab57e1c7138bd24062ec1a4f676c7cde5">NERoomAudioFrame</a>&amp; audioFrame) { (void)audioFrame; }</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="foldopen" id="foldopen00260" data-start="{" data-end="}">
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#a289c44cb9e64a31b629e4f841437d3e6">  260</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#a289c44cb9e64a31b629e4f841437d3e6">onPlaybackAudioFrameBeforeMixing</a>(<span class="keyword">const</span> std::string&amp; userUuid, <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#ab57e1c7138bd24062ec1a4f676c7cde5">NERoomAudioFrame</a>&amp; audioFrame) {</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        (void)userUuid;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        (void)audioFrame;</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    }</div>
+</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
+<div class="foldopen" id="foldopen00273" data-start="{" data-end="}">
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#a0d24ed3b6c08e7f7850d233cb454bf12">  273</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#a0d24ed3b6c08e7f7850d233cb454bf12">onPlaybackSubStreamAudioFrameBeforeMixing</a>(<span class="keyword">const</span> std::string&amp; userUuid, <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceneroom.html#ab57e1c7138bd24062ec1a4f676c7cde5">NERoomAudioFrame</a>&amp; audioFrame) {</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        (void)userUuid;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        (void)audioFrame;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    }</div>
+</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>};</div>
+</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>}  <span class="comment">// namespace neroom</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="preprocessor">#endif  </span><span class="comment">// PREVIEW_ROOM_LISTENER_H</span></div>
+<div class="ttc" id="abase__type__defines_8h_html"><div class="ttname"><a href="base__type__defines_8h.html">base_type_defines.h</a></div><div class="ttdoc">基本类型定义头文件</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html">neroom::INEPreviewRoomListener</a></div><div class="ttdoc">房间外事件监听</div><div class="ttdef"><b>Definition</b> <a href="#l00022">preview_room_listener.h:22</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_a0e9b1a2f2e5841d689f2050096b2218e"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#a0e9b1a2f2e5841d689f2050096b2218e">neroom::INEPreviewRoomListener::onVideoFrameData</a></div><div class="ttdeci">virtual void onVideoFrameData(const std::string &amp;userUuid, bool bSubVideo, void *data, uint32_t type, uint32_t width, uint32_t height, uint32_t count, uint32_t offset[4], uint32_t stride[4], uint32_t rotation)</div><div class="ttdoc">视频帧数据通知</div><div class="ttdef"><b>Definition</b> <a href="#l00048">preview_room_listener.h:48</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_a3ff07d1290e2ba66488731902e5212b1"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#a3ff07d1290e2ba66488731902e5212b1">neroom::INEPreviewRoomListener::INEPreviewRoomListener</a></div><div class="ttdeci">INEPreviewRoomListener()=default</div><div class="ttdoc">构造函数</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_a481e812e6d9ef7407c1f20f26496212a"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#a481e812e6d9ef7407c1f20f26496212a">neroom::INEPreviewRoomListener::onCameraDeviceChanged</a></div><div class="ttdeci">virtual void onCameraDeviceChanged(const std::string &amp;deviceId, bool bAdd)</div><div class="ttdoc">摄像头设备变更通知</div><div class="ttdef"><b>Definition</b> <a href="#l00082">preview_room_listener.h:82</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_a4d63e7123342a7bf814bbc707b7812da"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#a4d63e7123342a7bf814bbc707b7812da">neroom::INEPreviewRoomListener::onLocalRecorderError</a></div><div class="ttdeci">virtual void onLocalRecorderError(NERoomLocalRecorderError error, const std::string taskId)</div><div class="ttdoc">本地录制错误回调</div><div class="ttdef"><b>Definition</b> <a href="#l00194">preview_room_listener.h:194</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_a68655f03284bae7df81b739600dc93ab"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#a68655f03284bae7df81b739600dc93ab">neroom::INEPreviewRoomListener::~INEPreviewRoomListener</a></div><div class="ttdeci">virtual ~INEPreviewRoomListener()=default</div><div class="ttdoc">析构函数</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_a69c26db4a2ecf23da4ffc17634f3e4b3"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#a69c26db4a2ecf23da4ffc17634f3e4b3">neroom::INEPreviewRoomListener::onRecordDeviceStateChanged</a></div><div class="ttdeci">virtual void onRecordDeviceStateChanged(const std::string &amp;deviceId, int state)</div><div class="ttdoc">麦克风设备状态变更通知</div><div class="ttdef"><b>Definition</b> <a href="#l00126">preview_room_listener.h:126</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_a6fae88873eb4300ac9fb3675b80ab74f"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#a6fae88873eb4300ac9fb3675b80ab74f">neroom::INEPreviewRoomListener::onLocalAudioVolumeIndication</a></div><div class="ttdeci">virtual void onLocalAudioVolumeIndication(int volume, bool vadFlag)</div><div class="ttdoc">本地音量通知</div><div class="ttdef"><b>Definition</b> <a href="#l00159">preview_room_listener.h:159</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_a7638b30334e617699320be5b5abfc323"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#a7638b30334e617699320be5b5abfc323">neroom::INEPreviewRoomListener::onLocalAudioVolumeIndication</a></div><div class="ttdeci">virtual void onLocalAudioVolumeIndication(int volume)</div><div class="ttdoc">本地音量通知</div><div class="ttdef"><b>Definition</b> <a href="#l00150">preview_room_listener.h:150</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_a76ebb55429c1c4cd1cec9a1e3a19f3cc"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#a76ebb55429c1c4cd1cec9a1e3a19f3cc">neroom::INEPreviewRoomListener::onPlayoutDeviceChanged</a></div><div class="ttdeci">virtual void onPlayoutDeviceChanged(const std::string &amp;deviceId, bool bAdd)</div><div class="ttdoc">扬声器设备变更通知</div><div class="ttdef"><b>Definition</b> <a href="#l00093">preview_room_listener.h:93</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_aa9275f92365bf7306171212bb9df54e8"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#aa9275f92365bf7306171212bb9df54e8">neroom::INEPreviewRoomListener::onLocalRecorderStatus</a></div><div class="ttdeci">virtual void onLocalRecorderStatus(NERoomLocalRecorderStatus status, const std::string taskId)</div><div class="ttdoc">本地录制状态回调</div><div class="ttdef"><b>Definition</b> <a href="#l00182">preview_room_listener.h:182</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_ab03cbb521040fa64ee028462146b1269"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#ab03cbb521040fa64ee028462146b1269">neroom::INEPreviewRoomListener::onRtcVirtualBackgroundSourceEnabled</a></div><div class="ttdeci">virtual void onRtcVirtualBackgroundSourceEnabled(bool enabled, NERoomVirtualBackgroundSourceStateReason reason)</div><div class="ttdoc">虚拟背景功能是否成功启用的通知</div><div class="ttdef"><b>Definition</b> <a href="#l00170">preview_room_listener.h:170</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_ab92ed2ba19417928b9dd7cdd6ebeac3a"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#ab92ed2ba19417928b9dd7cdd6ebeac3a">neroom::INEPreviewRoomListener::onPlayoutDeviceStateChanged</a></div><div class="ttdeci">virtual void onPlayoutDeviceStateChanged(const std::string &amp;deviceId, int state)</div><div class="ttdoc">扬声器设备状态变更通知</div><div class="ttdef"><b>Definition</b> <a href="#l00104">preview_room_listener.h:104</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_ac13d140dfe9f1b9a0852758a920fecdc"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#ac13d140dfe9f1b9a0852758a920fecdc">neroom::INEPreviewRoomListener::onDefaultPlayoutDeviceChanged</a></div><div class="ttdeci">virtual void onDefaultPlayoutDeviceChanged(const std::string &amp;deviceId)</div><div class="ttdoc">默认扬声器设备变更通知</div><div class="ttdef"><b>Definition</b> <a href="#l00136">preview_room_listener.h:136</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_ac612292aa53b3e63b859869110c45486"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#ac612292aa53b3e63b859869110c45486">neroom::INEPreviewRoomListener::onVideoFrameDataCallback</a></div><div class="ttdeci">virtual void onVideoFrameDataCallback(const std::string &amp;userUuid, bool bSubVideo, const NERoomVideoCallbackFrame &amp;frame)</div><div class="ttdef"><b>Definition</b> <a href="#l00070">preview_room_listener.h:70</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_ae60c2a54aa0a33953c7990872de080e0"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#ae60c2a54aa0a33953c7990872de080e0">neroom::INEPreviewRoomListener::onVoiceprintRegistrationResult</a></div><div class="ttdeci">virtual void onVoiceprintRegistrationResult(int code, const NERoomVoiceprintInfo &amp;info)</div><div class="ttdef"><b>Definition</b> <a href="#l00205">preview_room_listener.h:205</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_af971b8031f70d4897ebe327b570bb7fd"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#af971b8031f70d4897ebe327b570bb7fd">neroom::INEPreviewRoomListener::onDefaultRecordDeviceChanged</a></div><div class="ttdeci">virtual void onDefaultRecordDeviceChanged(const std::string &amp;deviceId)</div><div class="ttdoc">默认麦克风设备变更通知</div><div class="ttdef"><b>Definition</b> <a href="#l00143">preview_room_listener.h:143</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_preview_room_listener_html_afa36ebba10efac7ee861991ea9ee285b"><div class="ttname"><a href="classneroom_1_1_i_n_e_preview_room_listener.html#afa36ebba10efac7ee861991ea9ee285b">neroom::INEPreviewRoomListener::onRecordDeviceChanged</a></div><div class="ttdeci">virtual void onRecordDeviceChanged(const std::string &amp;deviceId, bool bAdd)</div><div class="ttdoc">麦克风设备变更通知</div><div class="ttdef"><b>Definition</b> <a href="#l00115">preview_room_listener.h:115</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_rtc_audio_frame_observer_html"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html">neroom::INERoomRtcAudioFrameObserver</a></div><div class="ttdoc">语音观测器对象</div><div class="ttdef"><b>Definition</b> <a href="#l00214">preview_room_listener.h:214</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_rtc_audio_frame_observer_html_a0d24ed3b6c08e7f7850d233cb454bf12"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#a0d24ed3b6c08e7f7850d233cb454bf12">neroom::INERoomRtcAudioFrameObserver::onPlaybackSubStreamAudioFrameBeforeMixing</a></div><div class="ttdeci">virtual void onPlaybackSubStreamAudioFrameBeforeMixing(const std::string &amp;userUuid, const NERoomAudioFrame &amp;audioFrame)</div><div class="ttdoc">获取单个远端用户混音前的辅流音频数据。   成功注册音频观测器后，如果订阅了远端辅流音频（默认订阅）且远端用户开启辅流音频后，SDK 会在捕捉到混音前的辅流音频数据时，触发该回调，将辅流音频数据回调给用...</div><div class="ttdef"><b>Definition</b> <a href="#l00273">preview_room_listener.h:273</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_rtc_audio_frame_observer_html_a289c44cb9e64a31b629e4f841437d3e6"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#a289c44cb9e64a31b629e4f841437d3e6">neroom::INERoomRtcAudioFrameObserver::onPlaybackAudioFrameBeforeMixing</a></div><div class="ttdeci">virtual void onPlaybackAudioFrameBeforeMixing(const std::string &amp;userUuid, const NERoomAudioFrame &amp;audioFrame)</div><div class="ttdoc">获取单个远端用户混音前的音频数据。  成功注册音频观测器后，如果订阅了远端音频（默认订阅）且远端用户开启音频后，SDK会在捕捉到混音前的音频数据时，触发该回调，将音频数据回调给用户。</div><div class="ttdef"><b>Definition</b> <a href="#l00260">preview_room_listener.h:260</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_rtc_audio_frame_observer_html_a44ccf2a4eae5a8f6cc59150605599864"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#a44ccf2a4eae5a8f6cc59150605599864">neroom::INERoomRtcAudioFrameObserver::onMixedAudioFrame</a></div><div class="ttdeci">virtual void onMixedAudioFrame(const NERoomAudioFrame &amp;audioFrame)</div><div class="ttdoc">获取本地用户和所有远端用户混音后的原始音频数据。</div><div class="ttdef"><b>Definition</b> <a href="#l00251">preview_room_listener.h:251</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_rtc_audio_frame_observer_html_a5ccbe46962bf45593b90467d77ab65de"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#a5ccbe46962bf45593b90467d77ab65de">neroom::INERoomRtcAudioFrameObserver::onAudioFrameDidRecord</a></div><div class="ttdeci">virtual void onAudioFrameDidRecord(const NERoomAudioFrame &amp;audioFrame)</div><div class="ttdoc">采集音频数据回调，用于声音处理等操作。</div><div class="ttdef"><b>Definition</b> <a href="#l00233">preview_room_listener.h:233</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_rtc_audio_frame_observer_html_a8a9fd24545ed8f1ea6b614bdbdbef87c"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#a8a9fd24545ed8f1ea6b614bdbdbef87c">neroom::INERoomRtcAudioFrameObserver::onAudioFrameWillPlayback</a></div><div class="ttdeci">virtual void onAudioFrameWillPlayback(const NERoomAudioFrame &amp;audioFrame)</div><div class="ttdoc">播放音频数据回调，用于声音处理等操作。</div><div class="ttdef"><b>Definition</b> <a href="#l00242">preview_room_listener.h:242</a></div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_rtc_audio_frame_observer_html_ac2958d8557fda07d7083d2386cc48f8c"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#ac2958d8557fda07d7083d2386cc48f8c">neroom::INERoomRtcAudioFrameObserver::~INERoomRtcAudioFrameObserver</a></div><div class="ttdeci">virtual ~INERoomRtcAudioFrameObserver()=default</div><div class="ttdoc">析构函数</div></div>
+<div class="ttc" id="aclassneroom_1_1_i_n_e_room_rtc_audio_frame_observer_html_adbeacd03b91078eba285108a7b200d53"><div class="ttname"><a href="classneroom_1_1_i_n_e_room_rtc_audio_frame_observer.html#adbeacd03b91078eba285108a7b200d53">neroom::INERoomRtcAudioFrameObserver::INERoomRtcAudioFrameObserver</a></div><div class="ttdeci">INERoomRtcAudioFrameObserver()=default</div><div class="ttdoc">构造函数</div></div>
+<div class="ttc" id="aerror__code__defines_8h_html"><div class="ttname"><a href="error__code__defines_8h.html">error_code_defines.h</a></div><div class="ttdoc">错误码定义头文件</div></div>
+<div class="ttc" id="anamespaceneroom_html"><div class="ttname"><a href="namespaceneroom.html">neroom</a></div><div class="ttdef"><b>Definition</b> <a href="auth__service__interface_8h_source.html#l00018">auth_service_interface.h:18</a></div></div>
+<div class="ttc" id="anamespaceneroom_html_a3143ef062c05dccae0a873d01120d716"><div class="ttname"><a href="namespaceneroom.html#a3143ef062c05dccae0a873d01120d716">neroom::NERoomVideoCallbackFrame</a></div><div class="ttdeci">struct tagNERoomVideoCallbackFrame { void *data; uint32_t type; uint32_t width; uint32_t height; uint32_t count; uint32_t offsets[4]; uint32_t strides[4]; uint32_t rotation; NERoomVideoColorSpaceRange colorSpaceRange; NERoomVideoColorSpaceMatrix colorSpaceMatrix; NERoomVideoColorSpacePrimary colorSpacePrimary; NERoomVideoColorSpaceTransfer colorSpaceTransfer; } NERoomVideoCallbackFrame</div><div class="ttdef"><b>Definition</b> <a href="base__type__defines_8h_source.html#l00340">base_type_defines.h:340</a></div></div>
+<div class="ttc" id="anamespaceneroom_html_a52fa95a792f68859de7a66e90a3eeb71"><div class="ttname"><a href="namespaceneroom.html#a52fa95a792f68859de7a66e90a3eeb71">neroom::NERoomVoiceprintInfo</a></div><div class="ttdeci">struct tagNERoomVoiceprintInfo { std::string deviceId; std::string voiceprint; } NERoomVoiceprintInfo</div><div class="ttdoc">声纹数据</div><div class="ttdef"><b>Definition</b> <a href="base__type__defines_8h_source.html#l03022">base_type_defines.h:3022</a></div></div>
+<div class="ttc" id="anamespaceneroom_html_a5d2e8cdd43c928fbf5bb21f950654d1e"><div class="ttname"><a href="namespaceneroom.html#a5d2e8cdd43c928fbf5bb21f950654d1e">neroom::NERoomLocalRecorderError</a></div><div class="ttdeci">enum tagNERoomLocalRecorderError { kNERoomLocalRecorderErrorNone=0, kNERoomLocalRecorderFileOpenFailed, kNERoomLocalRecorderWriteFailed, kNERoomLocalRecorderWriteTrailerFailed, kNERoomLocalRecorderFailed, kNERoomLocalRecorderCallbackConflict, kNERoomLocalRecorderTaskAlreadyExist, kNERoomLocalRecorderTaskNotFound, kNERoomLocalRecorderSourceNotFoundForTask, kNERoomLocalRecorderInputOpenFailed, kNERoomLocalRecorderVideoStreamCreateFailed, kNERoomLocalRecorderAudioStreamCreateFailed, kNERoomLocalRecorderCoverImageParseFailed, kNERoomLocalRecorderPlaceholderImageParseFailed, kNERoomLocalRecorderRemuxPrcocessRunning, kNERoomLocalRecorderOutputOpenFailed } NERoomLocalRecorderError</div><div class="ttdoc">本地录制错误码</div><div class="ttdef"><b>Definition</b> <a href="base__type__defines_8h_source.html#l01505">base_type_defines.h:1505</a></div></div>
+<div class="ttc" id="anamespaceneroom_html_ab57e1c7138bd24062ec1a4f676c7cde5"><div class="ttname"><a href="namespaceneroom.html#ab57e1c7138bd24062ec1a4f676c7cde5">neroom::NERoomAudioFrame</a></div><div class="ttdeci">struct tagNERoomAudioFrame { NEAudioFormat format; void *data=nullptr; int64_t syncTimestamp=0; } NERoomAudioFrame</div><div class="ttdoc">外部输入的音频帧</div><div class="ttdef"><b>Definition</b> <a href="base__type__defines_8h_source.html#l02001">base_type_defines.h:2001</a></div></div>
+<div class="ttc" id="anamespaceneroom_html_acbf0ae3db9cc0325970fe2ad0280c327"><div class="ttname"><a href="namespaceneroom.html#acbf0ae3db9cc0325970fe2ad0280c327">neroom::NERoomVirtualBackgroundSourceStateReason</a></div><div class="ttdeci">enum tagNERoomVirtualBackgroundSourceStateReason { kNERoomVirtualBackgroundSourceStateReasonSuccess=0, kNERoomVirtualBackgroundSourceStateReasonImageNotExist=1, kNERoomVirtualBackgroundSourceStateReasonImageFormatNotSupported=2, kNERoomVirtualBackgroundSourceStateReasonColorFormatNotSupported=3, kNERoomVirtualBackgroundSourceStateReasonDeviceNotSupported=4, kNERoomVirtualBackgroundSourceStateReasonVideoDecodeFail=5, } NERoomVirtualBackgroundSourceStateReason</div><div class="ttdoc">虚拟背景未成功启用的原因或确认成功的信息</div><div class="ttdef"><b>Definition</b> <a href="base__type__defines_8h_source.html#l01479">base_type_defines.h:1479</a></div></div>
+<div class="ttc" id="anamespaceneroom_html_aea7b0a6cd4c114faf9097d4ab3045f62"><div class="ttname"><a href="namespaceneroom.html#aea7b0a6cd4c114faf9097d4ab3045f62">neroom::NERoomLocalRecorderStatus</a></div><div class="ttdeci">enum tagNERoomLocalRecorderStatus { kNERoomLocalRecorderStatusNone=0, kNERoomLocalRecorderStatusFlvStart, kNERoomLocalRecorderStatusFlvEnd, kNERoomLocalRecorderStatusMp4Start, kNERoomLocalRecorderStatusMp4End, kNERoomLocalRecorderStatusRemuxStart, kNERoomLocalRecorderStatusRemuxEnd, kNERoomLocalRecorderStatusComplete } NERoomLocalRecorderStatus</div><div class="ttdoc">本地录制状态</div><div class="ttdef"><b>Definition</b> <a href="base__type__defines_8h_source.html#l01491">base_type_defines.h:1491</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

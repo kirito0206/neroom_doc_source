@@ -1,0 +1,2279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERoom SDK: neroom::INERoomContext类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERoom SDK<span id="projectnumber">&#160;V1.44.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceneroom.html">neroom</a></li><li class="navelem"><a class="el" href="classneroom_1_1_i_n_e_room_context.html">INERoomContext</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classneroom_1_1_i_n_e_room_context-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">neroom::INERoomContext类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>房间上下文  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="room__context__interface_8h_source.html">room_context_interface.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a2eff61e67ba14ade4b35cbbec90cd6b1" id="r_a2eff61e67ba14ade4b35cbbec90cd6b1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt;</td></tr>
+<tr class="memdesc:a2eff61e67ba14ade4b35cbbec90cd6b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">房间回调函数模板  <br /></td></tr>
+<tr class="separator:a2eff61e67ba14ade4b35cbbec90cd6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a218f0b61b6f44f7d46e63a60d0642784" id="r_a218f0b61b6f44f7d46e63a60d0642784"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a218f0b61b6f44f7d46e63a60d0642784">INERoomContext</a> ()=default</td></tr>
+<tr class="memdesc:a218f0b61b6f44f7d46e63a60d0642784"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a218f0b61b6f44f7d46e63a60d0642784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae0afa2f44cc1e51017ba179731d1a38" id="r_aae0afa2f44cc1e51017ba179731d1a38"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae0afa2f44cc1e51017ba179731d1a38">~INERoomContext</a> ()=default</td></tr>
+<tr class="memdesc:aae0afa2f44cc1e51017ba179731d1a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:aae0afa2f44cc1e51017ba179731d1a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af22382b267431daa797e8eb54b4c4640" id="r_af22382b267431daa797e8eb54b4c4640"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af22382b267431daa797e8eb54b4c4640">getRoomUuid</a> ()=0</td></tr>
+<tr class="memdesc:af22382b267431daa797e8eb54b4c4640"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间ID  <br /></td></tr>
+<tr class="separator:af22382b267431daa797e8eb54b4c4640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815ecb7ed12dd189b59a3520cc737b98" id="r_a815ecb7ed12dd189b59a3520cc737b98"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a815ecb7ed12dd189b59a3520cc737b98">getRoomName</a> ()=0</td></tr>
+<tr class="memdesc:a815ecb7ed12dd189b59a3520cc737b98"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间名  <br /></td></tr>
+<tr class="separator:a815ecb7ed12dd189b59a3520cc737b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acecb73118c817805bd935e69faef506f" id="r_acecb73118c817805bd935e69faef506f"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acecb73118c817805bd935e69faef506f">getRoomArchiveID</a> () const =0</td></tr>
+<tr class="memdesc:acecb73118c817805bd935e69faef506f"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间归档ID  <br /></td></tr>
+<tr class="separator:acecb73118c817805bd935e69faef506f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad663f631b347f5687451bb676ed5417a" id="r_ad663f631b347f5687451bb676ed5417a"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad663f631b347f5687451bb676ed5417a">getPassword</a> ()=0</td></tr>
+<tr class="memdesc:ad663f631b347f5687451bb676ed5417a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间密码  <br /></td></tr>
+<tr class="separator:ad663f631b347f5687451bb676ed5417a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e35b69ee9bf798a473e1d32732fa36a" id="r_a6e35b69ee9bf798a473e1d32732fa36a"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e35b69ee9bf798a473e1d32732fa36a">getSession</a> ()=0</td></tr>
+<tr class="memdesc:a6e35b69ee9bf798a473e1d32732fa36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间会话ID  <br /></td></tr>
+<tr class="separator:a6e35b69ee9bf798a473e1d32732fa36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d23c52d69404b499c0936e001ec1a15" id="r_a9d23c52d69404b499c0936e001ec1a15"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d23c52d69404b499c0936e001ec1a15">getSipCid</a> ()=0</td></tr>
+<tr class="memdesc:a9d23c52d69404b499c0936e001ec1a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取sipCid  <br /></td></tr>
+<tr class="separator:a9d23c52d69404b499c0936e001ec1a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46fcaf6ad83a2db2e28b956b2f8babbf" id="r_a46fcaf6ad83a2db2e28b956b2f8babbf"><td class="memItemLeft" align="right" valign="top">virtual std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46fcaf6ad83a2db2e28b956b2f8babbf">getRtcStartTime</a> ()=0</td></tr>
+<tr class="memdesc:a46fcaf6ad83a2db2e28b956b2f8babbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间rtc开始时间  <br /></td></tr>
+<tr class="separator:a46fcaf6ad83a2db2e28b956b2f8babbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af631ca3d9755331300fb90fbb8f261aa" id="r_af631ca3d9755331300fb90fbb8f261aa"><td class="memItemLeft" align="right" valign="top">virtual std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af631ca3d9755331300fb90fbb8f261aa">getRemainingSeconds</a> ()=0</td></tr>
+<tr class="memdesc:af631ca3d9755331300fb90fbb8f261aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间剩余时间  <br /></td></tr>
+<tr class="separator:af631ca3d9755331300fb90fbb8f261aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71cf208a0781201531f7ddf1e87f98a" id="r_af71cf208a0781201531f7ddf1e87f98a"><td class="memItemLeft" align="right" valign="top">virtual std::int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af71cf208a0781201531f7ddf1e87f98a">getMaxMembers</a> ()=0</td></tr>
+<tr class="memdesc:af71cf208a0781201531f7ddf1e87f98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">房间最大成员数,空代表无限制  <br /></td></tr>
+<tr class="separator:af71cf208a0781201531f7ddf1e87f98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb21bef28bc4ef914cf61f88aa59a8e" id="r_addb21bef28bc4ef914cf61f88aa59a8e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceneroom.html#a451f7b1665a8ca0194e6348b1a096268">NERoomTemplate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addb21bef28bc4ef914cf61f88aa59a8e">getRoomTemplate</a> ()=0</td></tr>
+<tr class="memdesc:addb21bef28bc4ef914cf61f88aa59a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取模板  <br /></td></tr>
+<tr class="separator:addb21bef28bc4ef914cf61f88aa59a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a38f822c224db4e382d49131d240b1" id="r_a49a38f822c224db4e382d49131d240b1"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49a38f822c224db4e382d49131d240b1">getRoomProperties</a> () const =0</td></tr>
+<tr class="memdesc:a49a38f822c224db4e382d49131d240b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间属性  <br /></td></tr>
+<tr class="separator:a49a38f822c224db4e382d49131d240b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1c83cdbb480fd4aa70f6abcb6afd30" id="r_afa1c83cdbb480fd4aa70f6abcb6afd30"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceneroom.html#a4f7b09f258d15649c2abf72d7285b3a8">SharedMemberPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa1c83cdbb480fd4aa70f6abcb6afd30">getLocalMember</a> ()=0</td></tr>
+<tr class="memdesc:afa1c83cdbb480fd4aa70f6abcb6afd30"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取本端用户信息  <br /></td></tr>
+<tr class="separator:afa1c83cdbb480fd4aa70f6abcb6afd30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e00ccf4bfebe54f41e56a2310e565c" id="r_ac2e00ccf4bfebe54f41e56a2310e565c"><td class="memItemLeft" align="right" valign="top">virtual std::list&lt; <a class="el" href="namespaceneroom.html#a4f7b09f258d15649c2abf72d7285b3a8">SharedMemberPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2e00ccf4bfebe54f41e56a2310e565c">getRemoteMembers</a> ()=0</td></tr>
+<tr class="memdesc:ac2e00ccf4bfebe54f41e56a2310e565c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取远端用户列表  <br /></td></tr>
+<tr class="separator:ac2e00ccf4bfebe54f41e56a2310e565c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96eb53c9985f36534eb4292e9034b36d" id="r_a96eb53c9985f36534eb4292e9034b36d"><td class="memItemLeft" align="right" valign="top">virtual std::list&lt; <a class="el" href="namespaceneroom.html#a4f7b09f258d15649c2abf72d7285b3a8">SharedMemberPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96eb53c9985f36534eb4292e9034b36d">getInSIPInvitingMembers</a> ()=0</td></tr>
+<tr class="memdesc:a96eb53c9985f36534eb4292e9034b36d"><td class="mdescLeft">&#160;</td><td class="mdescRight">正在SIP外呼邀请中的成员  <br /></td></tr>
+<tr class="separator:a96eb53c9985f36534eb4292e9034b36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac95c14785e277d664956bf17763fd750" id="r_ac95c14785e277d664956bf17763fd750"><td class="memItemLeft" align="right" valign="top">virtual std::list&lt; <a class="el" href="namespaceneroom.html#a4f7b09f258d15649c2abf72d7285b3a8">SharedMemberPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac95c14785e277d664956bf17763fd750">getInAppInvitingMembers</a> ()=0</td></tr>
+<tr class="memdesc:ac95c14785e277d664956bf17763fd750"><td class="mdescLeft">&#160;</td><td class="mdescRight">正在APP外呼邀请中的成员  <br /></td></tr>
+<tr class="separator:ac95c14785e277d664956bf17763fd750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1609f53bbfb0326df98cf8e388344e" id="r_afd1609f53bbfb0326df98cf8e388344e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classneroom_1_1_i_n_e_room_chat_controller.html">INERoomChatController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd1609f53bbfb0326df98cf8e388344e">getChatController</a> ()=0</td></tr>
+<tr class="memdesc:afd1609f53bbfb0326df98cf8e388344e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取聊天控制器  <br /></td></tr>
+<tr class="separator:afd1609f53bbfb0326df98cf8e388344e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b6669a49324cd94444f8098e5a8a8e" id="r_ae7b6669a49324cd94444f8098e5a8a8e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classneroom_1_1_i_n_e_waiting_room_controller.html">INEWaitingRoomController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7b6669a49324cd94444f8098e5a8a8e">getWaitingRoomController</a> ()=0</td></tr>
+<tr class="memdesc:ae7b6669a49324cd94444f8098e5a8a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取等候室控制器  <br /></td></tr>
+<tr class="separator:ae7b6669a49324cd94444f8098e5a8a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05021ab025a8d0dad62c17c1b8397e9" id="r_ac05021ab025a8d0dad62c17c1b8397e9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classneroom_1_1_i_n_e_room_s_i_p_controller.html">INERoomSIPController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac05021ab025a8d0dad62c17c1b8397e9">getSIPController</a> ()=0</td></tr>
+<tr class="memdesc:ac05021ab025a8d0dad62c17c1b8397e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取SIP控制器  <br /></td></tr>
+<tr class="separator:ac05021ab025a8d0dad62c17c1b8397e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2669ef21517867bdd98cc3b11035228" id="r_ac2669ef21517867bdd98cc3b11035228"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classneroom_1_1_i_n_e_room_app_invite_controller.html">INERoomAppInviteController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2669ef21517867bdd98cc3b11035228">getAppInviteController</a> ()=0</td></tr>
+<tr class="memdesc:ac2669ef21517867bdd98cc3b11035228"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取AppInvite控制器  <br /></td></tr>
+<tr class="separator:ac2669ef21517867bdd98cc3b11035228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaac74ecf2f79472d787c1b9ee4fbc23" id="r_abaac74ecf2f79472d787c1b9ee4fbc23"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classneroom_1_1_i_n_e_room_chat_controller.html">INERoomChatController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abaac74ecf2f79472d787c1b9ee4fbc23">getWaitingRoomChatController</a> ()=0</td></tr>
+<tr class="memdesc:abaac74ecf2f79472d787c1b9ee4fbc23"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取等候室的聊天室控制器  <br /></td></tr>
+<tr class="separator:abaac74ecf2f79472d787c1b9ee4fbc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa705a3f0cb863934cecdff34f2cb06a1" id="r_aa705a3f0cb863934cecdff34f2cb06a1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classneroom_1_1_i_n_e_room_rtc_controller.html">INERoomRtcController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa705a3f0cb863934cecdff34f2cb06a1">getRtcController</a> ()=0</td></tr>
+<tr class="memdesc:aa705a3f0cb863934cecdff34f2cb06a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取RTC控制器  <br /></td></tr>
+<tr class="separator:aa705a3f0cb863934cecdff34f2cb06a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55e8a11c1a49da129ef37618cc5aa7c8" id="r_a55e8a11c1a49da129ef37618cc5aa7c8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classneroom_1_1_i_n_e_room_whiteboard_controller.html">INERoomWhiteboardController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55e8a11c1a49da129ef37618cc5aa7c8">getWhiteboardController</a> ()=0</td></tr>
+<tr class="memdesc:a55e8a11c1a49da129ef37618cc5aa7c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取白板控制器  <br /></td></tr>
+<tr class="separator:a55e8a11c1a49da129ef37618cc5aa7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade0a81e4ba1e44b5ca5692fe5fac7ac" id="r_aade0a81e4ba1e44b5ca5692fe5fac7ac"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classneroom_1_1_i_n_e_room_annotation_controller.html">INERoomAnnotationController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aade0a81e4ba1e44b5ca5692fe5fac7ac">getAnnotationController</a> ()=0</td></tr>
+<tr class="memdesc:aade0a81e4ba1e44b5ca5692fe5fac7ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取批注控制器  <br /></td></tr>
+<tr class="separator:aade0a81e4ba1e44b5ca5692fe5fac7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5913ed41f17dedc0da82cab40af9419" id="r_ae5913ed41f17dedc0da82cab40af9419"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classneroom_1_1_i_n_e_room_live_controller.html">INERoomLiveController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5913ed41f17dedc0da82cab40af9419">getLiveController</a> ()=0</td></tr>
+<tr class="memdesc:ae5913ed41f17dedc0da82cab40af9419"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取直播控制器  <br /></td></tr>
+<tr class="separator:ae5913ed41f17dedc0da82cab40af9419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e23e1dca09c04cf72ed2eb1da7052bb" id="r_a9e23e1dca09c04cf72ed2eb1da7052bb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e23e1dca09c04cf72ed2eb1da7052bb">changeMyName</a> (const std::string &amp;name, const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a9e23e1dca09c04cf72ed2eb1da7052bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">修改本端用户名  <br /></td></tr>
+<tr class="separator:a9e23e1dca09c04cf72ed2eb1da7052bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab74f04029ea4561d1e36150e1e5328" id="r_a7ab74f04029ea4561d1e36150e1e5328"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ab74f04029ea4561d1e36150e1e5328">changeMemberName</a> (const std::string &amp;userUuid, const std::string &amp;name, const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a7ab74f04029ea4561d1e36150e1e5328"><td class="mdescLeft">&#160;</td><td class="mdescRight">修改成员昵称  <br /></td></tr>
+<tr class="separator:a7ab74f04029ea4561d1e36150e1e5328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb14d2864507929dbda706656cc5d1e8" id="r_adb14d2864507929dbda706656cc5d1e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb14d2864507929dbda706656cc5d1e8">changeMemberRole</a> (const std::string &amp;userUuid, const std::string &amp;role, const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:adb14d2864507929dbda706656cc5d1e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">修改成员角色  <br /></td></tr>
+<tr class="separator:adb14d2864507929dbda706656cc5d1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0de8aa108d94318ab1e35ecdb3b9bb" id="r_acf0de8aa108d94318ab1e35ecdb3b9bb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf0de8aa108d94318ab1e35ecdb3b9bb">changeMembersRole</a> (const std::map&lt; std::string, std::string &gt; &amp;userRoleMap, const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="separator:acf0de8aa108d94318ab1e35ecdb3b9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dec89119f084d93fd7546fb895ee5c8" id="r_a9dec89119f084d93fd7546fb895ee5c8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dec89119f084d93fd7546fb895ee5c8">handOverMyRole</a> (const std::string &amp;userUuid, const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a9dec89119f084d93fd7546fb895ee5c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">将自身当前的角色转移给[userUuid]对应的用户，自身会恢复到默认的房间角色，只有授权角色才能执行该操作  <br /></td></tr>
+<tr class="separator:a9dec89119f084d93fd7546fb895ee5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb039ab23167797d4a26f8dbb7f43d67" id="r_afb039ab23167797d4a26f8dbb7f43d67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb039ab23167797d4a26f8dbb7f43d67">handOverMyRole</a> (const std::string &amp;userUuid, bool resign, const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:afb039ab23167797d4a26f8dbb7f43d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">将自身当前的角色转移给[userUuid]对应的用户，自身会恢复到默认的房间角色，只有授权角色才能执行该操作  <br /></td></tr>
+<tr class="separator:afb039ab23167797d4a26f8dbb7f43d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47751a03adbbaf99a2922a91fc8bf854" id="r_a47751a03adbbaf99a2922a91fc8bf854"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47751a03adbbaf99a2922a91fc8bf854">kickMemberOut</a> (const std::string &amp;userUuid, const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a47751a03adbbaf99a2922a91fc8bf854"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除成员  <br /></td></tr>
+<tr class="separator:a47751a03adbbaf99a2922a91fc8bf854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e965047f0dfa14e702d9cdc09f928f3" id="r_a1e965047f0dfa14e702d9cdc09f928f3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e965047f0dfa14e702d9cdc09f928f3">kickMemberOut</a> (const std::string &amp;userUuid, bool toBlacklist, const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a1e965047f0dfa14e702d9cdc09f928f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除成员，可选择是否加入黑名单  <br /></td></tr>
+<tr class="separator:a1e965047f0dfa14e702d9cdc09f928f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a258672b1b5ac5cc5636013d7cffbf131" id="r_a258672b1b5ac5cc5636013d7cffbf131"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a258672b1b5ac5cc5636013d7cffbf131">addRoomListener</a> (<a class="el" href="classneroom_1_1_i_n_e_room_listener.html">INERoomListener</a> *listener)=0</td></tr>
+<tr class="memdesc:a258672b1b5ac5cc5636013d7cffbf131"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册房间事件监听  <br /></td></tr>
+<tr class="separator:a258672b1b5ac5cc5636013d7cffbf131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a1f497c1d709c92d8131d210ffcc55" id="r_a07a1f497c1d709c92d8131d210ffcc55"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07a1f497c1d709c92d8131d210ffcc55">removeRoomListener</a> (<a class="el" href="classneroom_1_1_i_n_e_room_listener.html">INERoomListener</a> *listener)=0</td></tr>
+<tr class="memdesc:a07a1f497c1d709c92d8131d210ffcc55"><td class="mdescLeft">&#160;</td><td class="mdescRight">反注册房间事件监听  <br /></td></tr>
+<tr class="separator:a07a1f497c1d709c92d8131d210ffcc55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae172e48f4ff0568be5f9096446f93a1b" id="r_ae172e48f4ff0568be5f9096446f93a1b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae172e48f4ff0568be5f9096446f93a1b">addRtcStatsListener</a> (<a class="el" href="classneroom_1_1_i_n_e_room_rtc_stats_listener.html">INERoomRtcStatsListener</a> *listener)=0</td></tr>
+<tr class="memdesc:ae172e48f4ff0568be5f9096446f93a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加Rtc统计数据监听  <br /></td></tr>
+<tr class="separator:ae172e48f4ff0568be5f9096446f93a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c8b16808d416cdbc57a037e54346b8" id="r_a78c8b16808d416cdbc57a037e54346b8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78c8b16808d416cdbc57a037e54346b8">removeRtcStatsListener</a> (<a class="el" href="classneroom_1_1_i_n_e_room_rtc_stats_listener.html">INERoomRtcStatsListener</a> *listener)=0</td></tr>
+<tr class="memdesc:a78c8b16808d416cdbc57a037e54346b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除Rtc统计数据监听  <br /></td></tr>
+<tr class="separator:a78c8b16808d416cdbc57a037e54346b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372403821cd5a51cf3995e33d3003734" id="r_a372403821cd5a51cf3995e33d3003734"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a372403821cd5a51cf3995e33d3003734">rejoinAfterAdmittedToRoom</a> (const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a372403821cd5a51cf3995e33d3003734"><td class="mdescLeft">&#160;</td><td class="mdescRight">当房间管理员同意您从等候室加入房间时，您需要调用此方法重新加入房间  <br /></td></tr>
+<tr class="separator:a372403821cd5a51cf3995e33d3003734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea6781e2adf0624d36e0941358173731" id="r_aea6781e2adf0624d36e0941358173731"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea6781e2adf0624d36e0941358173731">leaveRoom</a> (const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:aea6781e2adf0624d36e0941358173731"><td class="mdescLeft">&#160;</td><td class="mdescRight">离开房间  <br /></td></tr>
+<tr class="separator:aea6781e2adf0624d36e0941358173731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae61f659e919b6ca07660db34447f225a" id="r_ae61f659e919b6ca07660db34447f225a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae61f659e919b6ca07660db34447f225a">leaveRoom</a> (<a class="el" href="namespaceneroom.html#a4a90c94317bf7fc8eea4ee63c1e0e50a">NERoomLeaveRoomType</a> leaveRoomType, const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ae61f659e919b6ca07660db34447f225a"><td class="mdescLeft">&#160;</td><td class="mdescRight">离开房间  <br /></td></tr>
+<tr class="separator:ae61f659e919b6ca07660db34447f225a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a555940629e3b91fb3b8befdb55acd" id="r_af7a555940629e3b91fb3b8befdb55acd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7a555940629e3b91fb3b8befdb55acd">endRoom</a> (const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:af7a555940629e3b91fb3b8befdb55acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束房间  <br /></td></tr>
+<tr class="separator:af7a555940629e3b91fb3b8befdb55acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0458f37fcbecdf858f32f848f61cc083" id="r_a0458f37fcbecdf858f32f848f61cc083"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0458f37fcbecdf858f32f848f61cc083">endRoom</a> (bool force, const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a0458f37fcbecdf858f32f848f61cc083"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束房间  <br /></td></tr>
+<tr class="separator:a0458f37fcbecdf858f32f848f61cc083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94090f2702cb391c6682474e0544d09b" id="r_a94090f2702cb391c6682474e0544d09b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94090f2702cb391c6682474e0544d09b">lockRoom</a> (const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a94090f2702cb391c6682474e0544d09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">锁定房间，锁定后成员无法加入房间  <br /></td></tr>
+<tr class="separator:a94090f2702cb391c6682474e0544d09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a728759130aae1548d6c2b8e32aa34119" id="r_a728759130aae1548d6c2b8e32aa34119"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a728759130aae1548d6c2b8e32aa34119">unlockRoom</a> (const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a728759130aae1548d6c2b8e32aa34119"><td class="mdescLeft">&#160;</td><td class="mdescRight">解除锁定房间，解除锁定后成员可以加入房间  <br /></td></tr>
+<tr class="separator:a728759130aae1548d6c2b8e32aa34119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a221b3a8683b1bb2b33961c9755166e46" id="r_a221b3a8683b1bb2b33961c9755166e46"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a221b3a8683b1bb2b33961c9755166e46">isRoomLocked</a> ()=0</td></tr>
+<tr class="memdesc:a221b3a8683b1bb2b33961c9755166e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间是否已锁定  <br /></td></tr>
+<tr class="separator:a221b3a8683b1bb2b33961c9755166e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a819561734eb550fba786e93513a0ba6d" id="r_a819561734eb550fba786e93513a0ba6d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a819561734eb550fba786e93513a0ba6d">updateRoomProperty</a> (const std::string &amp;key, const std::string &amp;value, const std::string &amp;associatedUserUuid=&quot;&quot;, const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback=<a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a>())=0</td></tr>
+<tr class="memdesc:a819561734eb550fba786e93513a0ba6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新房间属性  <br /></td></tr>
+<tr class="separator:a819561734eb550fba786e93513a0ba6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2791d7d5ff28f3187ef1024b9a531f32" id="r_a2791d7d5ff28f3187ef1024b9a531f32"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2791d7d5ff28f3187ef1024b9a531f32">deleteRoomProperty</a> (const std::string &amp;key, const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a2791d7d5ff28f3187ef1024b9a531f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除房间属性  <br /></td></tr>
+<tr class="separator:a2791d7d5ff28f3187ef1024b9a531f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7804673a215fe1e9396bcad40a308d34" id="r_a7804673a215fe1e9396bcad40a308d34"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7804673a215fe1e9396bcad40a308d34">updateMemberProperty</a> (const std::string &amp;userUuid, const std::string &amp;key, const std::string &amp;value, const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a7804673a215fe1e9396bcad40a308d34"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新房间属性  <br /></td></tr>
+<tr class="separator:a7804673a215fe1e9396bcad40a308d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d1b3d253551d316a10163055c75261a" id="r_a5d1b3d253551d316a10163055c75261a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d1b3d253551d316a10163055c75261a">deleteMemberProperty</a> (const std::string &amp;userUuid, const std::string &amp;key, const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a5d1b3d253551d316a10163055c75261a"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除房间成员属性  <br /></td></tr>
+<tr class="separator:a5d1b3d253551d316a10163055c75261a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e93a8cbfaa5842fc01b31f86ed51e9" id="r_a15e93a8cbfaa5842fc01b31f86ed51e9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15e93a8cbfaa5842fc01b31f86ed51e9">startCloudRecord</a> (const <a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> &amp;callback) const =0</td></tr>
+<tr class="memdesc:a15e93a8cbfaa5842fc01b31f86ed51e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启云录制  <br /></td></tr>
+<tr class="separator:a15e93a8cbfaa5842fc01b31f86ed51e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11e31ed1bd50960922123374e509839" id="r_ac11e31ed1bd50960922123374e509839"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac11e31ed1bd50960922123374e509839">startCloudRecord</a> (const <a class="el" href="namespaceneroom.html#a470205cb3f8ed37d2ce043b3608312cb">NERoomRecordConfig</a> &amp;recordConfig, const <a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> &amp;callback) const =0</td></tr>
+<tr class="memdesc:ac11e31ed1bd50960922123374e509839"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启云录制  <br /></td></tr>
+<tr class="separator:ac11e31ed1bd50960922123374e509839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574b5a92be9c2b288c98951f2d90460c" id="r_a574b5a92be9c2b288c98951f2d90460c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a574b5a92be9c2b288c98951f2d90460c">stopCloudRecord</a> (const <a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> &amp;callback) const =0</td></tr>
+<tr class="memdesc:a574b5a92be9c2b288c98951f2d90460c"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止云录制  <br /></td></tr>
+<tr class="separator:a574b5a92be9c2b288c98951f2d90460c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b81dbddee6190179d2ded1ef703f933" id="r_a5b81dbddee6190179d2ded1ef703f933"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b81dbddee6190179d2ded1ef703f933">isCloudRecording</a> () const =0</td></tr>
+<tr class="memdesc:a5b81dbddee6190179d2ded1ef703f933"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取云录制状态  <br /></td></tr>
+<tr class="separator:a5b81dbddee6190179d2ded1ef703f933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ea17ec69ff2a5db8d8b63fc3861cc4" id="r_a08ea17ec69ff2a5db8d8b63fc3861cc4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08ea17ec69ff2a5db8d8b63fc3861cc4">isInWaitingRoom</a> () const =0</td></tr>
+<tr class="memdesc:a08ea17ec69ff2a5db8d8b63fc3861cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间是否在等候室  <br /></td></tr>
+<tr class="separator:a08ea17ec69ff2a5db8d8b63fc3861cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdcd585f2d8dd4b36bcacc8a8e86ce53" id="r_afdcd585f2d8dd4b36bcacc8a8e86ce53"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdcd585f2d8dd4b36bcacc8a8e86ce53">isRoomBlacklistEnabled</a> () const =0</td></tr>
+<tr class="memdesc:afdcd585f2d8dd4b36bcacc8a8e86ce53"><td class="mdescLeft">&#160;</td><td class="mdescRight">房间是否开启了黑名单  <br /></td></tr>
+<tr class="separator:afdcd585f2d8dd4b36bcacc8a8e86ce53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b502013284e9c37f41c96d37a52c7d" id="r_af4b502013284e9c37f41c96d37a52c7d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4b502013284e9c37f41c96d37a52c7d">enableRoomBlacklist</a> (bool enable, const <a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:af4b502013284e9c37f41c96d37a52c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启/关闭房间黑名单  <br /></td></tr>
+<tr class="separator:af4b502013284e9c37f41c96d37a52c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c021288a4eeb8992b0196d07d9cd62" id="r_a10c021288a4eeb8992b0196d07d9cd62"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10c021288a4eeb8992b0196d07d9cd62">isRoomMultiDeviceEnabled</a> () const =0</td></tr>
+<tr class="memdesc:a10c021288a4eeb8992b0196d07d9cd62"><td class="mdescLeft">&#160;</td><td class="mdescRight">房间是否开启了多设备  <br /></td></tr>
+<tr class="separator:a10c021288a4eeb8992b0196d07d9cd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade026be226952a17ea9c051bff714dc" id="r_aade026be226952a17ea9c051bff714dc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aade026be226952a17ea9c051bff714dc">enableMultiDevice</a> (bool enable, const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:aade026be226952a17ea9c051bff714dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启/关闭同账号多设备加入  <br /></td></tr>
+<tr class="separator:aade026be226952a17ea9c051bff714dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>房间上下文 </p>
+
+<p class="definition">在文件 <a class="el" href="room__context__interface_8h_source.html">room_context_interface.h</a> 第 <a class="el" href="room__context__interface_8h_source.html#l00032">32</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a2eff61e67ba14ade4b35cbbec90cd6b1" name="a2eff61e67ba14ade4b35cbbec90cd6b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eff61e67ba14ade4b35cbbec90cd6b1">&#9670;&#160;</a></span>NERoomContextCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">neroom::INERoomContext::NERoomContextCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>房间回调函数模板 </p>
+
+<p class="definition">在文件 <a class="el" href="room__context__interface_8h_source.html">room_context_interface.h</a> 第 <a class="el" href="room__context__interface_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a218f0b61b6f44f7d46e63a60d0642784" name="a218f0b61b6f44f7d46e63a60d0642784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a218f0b61b6f44f7d46e63a60d0642784">&#9670;&#160;</a></span>INERoomContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">neroom::INERoomContext::INERoomContext </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+
+</div>
+</div>
+<a id="aae0afa2f44cc1e51017ba179731d1a38" name="aae0afa2f44cc1e51017ba179731d1a38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae0afa2f44cc1e51017ba179731d1a38">&#9670;&#160;</a></span>~INERoomContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual neroom::INERoomContext::~INERoomContext </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a258672b1b5ac5cc5636013d7cffbf131" name="a258672b1b5ac5cc5636013d7cffbf131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a258672b1b5ac5cc5636013d7cffbf131">&#9670;&#160;</a></span>addRoomListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::addRoomListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classneroom_1_1_i_n_e_room_listener.html">INERoomListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>注册房间事件监听 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>房间事件监听对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ae172e48f4ff0568be5f9096446f93a1b" name="ae172e48f4ff0568be5f9096446f93a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae172e48f4ff0568be5f9096446f93a1b">&#9670;&#160;</a></span>addRtcStatsListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::addRtcStatsListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classneroom_1_1_i_n_e_room_rtc_stats_listener.html">INERoomRtcStatsListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加Rtc统计数据监听 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>Rtc统计数据监听对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a7ab74f04029ea4561d1e36150e1e5328" name="a7ab74f04029ea4561d1e36150e1e5328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ab74f04029ea4561d1e36150e1e5328">&#9670;&#160;</a></span>changeMemberName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::changeMemberName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>修改成员昵称 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>用户 ID </td></tr>
+    <tr><td class="paramname">name</td><td>新用户名 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.26.0 </dd></dl>
+
+</div>
+</div>
+<a id="adb14d2864507929dbda706656cc5d1e8" name="adb14d2864507929dbda706656cc5d1e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb14d2864507929dbda706656cc5d1e8">&#9670;&#160;</a></span>changeMemberRole()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::changeMemberRole </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>role</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>修改成员角色 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>用户uuid </td></tr>
+    <tr><td class="paramname">role</td><td>新角色 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="acf0de8aa108d94318ab1e35ecdb3b9bb" name="acf0de8aa108d94318ab1e35ecdb3b9bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf0de8aa108d94318ab1e35ecdb3b9bb">&#9670;&#160;</a></span>changeMembersRole()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::changeMembersRole </td>
+          <td>(</td>
+          <td class="paramtype">const std::map&lt; std::string, std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>userRoleMap</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>批量修改房间内的成员角色。只有授权角色才能执行该操作。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userRoleMap</td><td>成员账号与角色名称映射表 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.27.0 </dd></dl>
+
+</div>
+</div>
+<a id="a9e23e1dca09c04cf72ed2eb1da7052bb" name="a9e23e1dca09c04cf72ed2eb1da7052bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e23e1dca09c04cf72ed2eb1da7052bb">&#9670;&#160;</a></span>changeMyName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::changeMyName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>修改本端用户名 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>新用户名 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a5d1b3d253551d316a10163055c75261a" name="a5d1b3d253551d316a10163055c75261a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d1b3d253551d316a10163055c75261a">&#9670;&#160;</a></span>deleteMemberProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::deleteMemberProperty </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>删除房间成员属性 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>用户id </td></tr>
+    <tr><td class="paramname">key</td><td>属性key值 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a2791d7d5ff28f3187ef1024b9a531f32" name="a2791d7d5ff28f3187ef1024b9a531f32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2791d7d5ff28f3187ef1024b9a531f32">&#9670;&#160;</a></span>deleteRoomProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::deleteRoomProperty </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>删除房间属性 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>属性key值 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aade026be226952a17ea9c051bff714dc" name="aade026be226952a17ea9c051bff714dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade026be226952a17ea9c051bff714dc">&#9670;&#160;</a></span>enableMultiDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::enableMultiDevice </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>开启/关闭同账号多设备加入 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>是否开启 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.43.0 </dd></dl>
+
+</div>
+</div>
+<a id="af4b502013284e9c37f41c96d37a52c7d" name="af4b502013284e9c37f41c96d37a52c7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b502013284e9c37f41c96d37a52c7d">&#9670;&#160;</a></span>enableRoomBlacklist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::enableRoomBlacklist </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>开启/关闭房间黑名单 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>true 开启，false 关闭 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.26.0 </dd></dl>
+
+</div>
+</div>
+<a id="a0458f37fcbecdf858f32f848f61cc083" name="a0458f37fcbecdf858f32f848f61cc083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0458f37fcbecdf858f32f848f61cc083">&#9670;&#160;</a></span>endRoom() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::endRoom </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>force</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>结束房间 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">force</td><td>是否强制结束 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af7a555940629e3b91fb3b8befdb55acd" name="af7a555940629e3b91fb3b8befdb55acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7a555940629e3b91fb3b8befdb55acd">&#9670;&#160;</a></span>endRoom() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::endRoom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>结束房间 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aade0a81e4ba1e44b5ca5692fe5fac7ac" name="aade0a81e4ba1e44b5ca5692fe5fac7ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade0a81e4ba1e44b5ca5692fe5fac7ac">&#9670;&#160;</a></span>getAnnotationController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classneroom_1_1_i_n_e_room_annotation_controller.html">INERoomAnnotationController</a> * neroom::INERoomContext::getAnnotationController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取批注控制器 </p>
+<dl class="section return"><dt>返回</dt><dd>INERoomWhiteboardController* 批注控制器 </dd></dl>
+
+</div>
+</div>
+<a id="ac2669ef21517867bdd98cc3b11035228" name="ac2669ef21517867bdd98cc3b11035228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2669ef21517867bdd98cc3b11035228">&#9670;&#160;</a></span>getAppInviteController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classneroom_1_1_i_n_e_room_app_invite_controller.html">INERoomAppInviteController</a> * neroom::INERoomContext::getAppInviteController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取AppInvite控制器 </p>
+<dl class="section return"><dt>返回</dt><dd>INERoomAppInviteController* AppInvite控制器 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.28.0 </dd></dl>
+
+</div>
+</div>
+<a id="afd1609f53bbfb0326df98cf8e388344e" name="afd1609f53bbfb0326df98cf8e388344e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd1609f53bbfb0326df98cf8e388344e">&#9670;&#160;</a></span>getChatController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classneroom_1_1_i_n_e_room_chat_controller.html">INERoomChatController</a> * neroom::INERoomContext::getChatController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取聊天控制器 </p>
+<dl class="section return"><dt>返回</dt><dd>NERoomChatController* 聊天控制器 </dd></dl>
+
+</div>
+</div>
+<a id="ac95c14785e277d664956bf17763fd750" name="ac95c14785e277d664956bf17763fd750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac95c14785e277d664956bf17763fd750">&#9670;&#160;</a></span>getInAppInvitingMembers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::list&lt; <a class="el" href="namespaceneroom.html#a4f7b09f258d15649c2abf72d7285b3a8">SharedMemberPtr</a> &gt; neroom::INERoomContext::getInAppInvitingMembers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>正在APP外呼邀请中的成员 </p>
+<dl class="section return"><dt>返回</dt><dd>std::list&lt;SharedMemberPtr&gt; App用户列表 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.28.0 </dd></dl>
+
+</div>
+</div>
+<a id="a96eb53c9985f36534eb4292e9034b36d" name="a96eb53c9985f36534eb4292e9034b36d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96eb53c9985f36534eb4292e9034b36d">&#9670;&#160;</a></span>getInSIPInvitingMembers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::list&lt; <a class="el" href="namespaceneroom.html#a4f7b09f258d15649c2abf72d7285b3a8">SharedMemberPtr</a> &gt; neroom::INERoomContext::getInSIPInvitingMembers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>正在SIP外呼邀请中的成员 </p>
+<dl class="section return"><dt>返回</dt><dd>std::list&lt;SharedMemberPtr&gt; SIP用户列表 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.28.0 </dd></dl>
+
+</div>
+</div>
+<a id="ae5913ed41f17dedc0da82cab40af9419" name="ae5913ed41f17dedc0da82cab40af9419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5913ed41f17dedc0da82cab40af9419">&#9670;&#160;</a></span>getLiveController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classneroom_1_1_i_n_e_room_live_controller.html">INERoomLiveController</a> * neroom::INERoomContext::getLiveController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取直播控制器 </p>
+<dl class="section return"><dt>返回</dt><dd>INERoomLiveController* 直播控制器 </dd></dl>
+
+</div>
+</div>
+<a id="afa1c83cdbb480fd4aa70f6abcb6afd30" name="afa1c83cdbb480fd4aa70f6abcb6afd30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa1c83cdbb480fd4aa70f6abcb6afd30">&#9670;&#160;</a></span>getLocalMember()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceneroom.html#a4f7b09f258d15649c2abf72d7285b3a8">SharedMemberPtr</a> neroom::INERoomContext::getLocalMember </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取本端用户信息 </p>
+<dl class="section return"><dt>返回</dt><dd>SharedMemberPtr 本端用户信息 </dd></dl>
+
+</div>
+</div>
+<a id="af71cf208a0781201531f7ddf1e87f98a" name="af71cf208a0781201531f7ddf1e87f98a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af71cf208a0781201531f7ddf1e87f98a">&#9670;&#160;</a></span>getMaxMembers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::int64_t neroom::INERoomContext::getMaxMembers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>房间最大成员数,空代表无限制 </p>
+<dl class="section return"><dt>返回</dt><dd>std::int64_t 最大成员数 </dd></dl>
+
+</div>
+</div>
+<a id="ad663f631b347f5687451bb676ed5417a" name="ad663f631b347f5687451bb676ed5417a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad663f631b347f5687451bb676ed5417a">&#9670;&#160;</a></span>getPassword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string neroom::INERoomContext::getPassword </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取房间密码 </p>
+<dl class="section return"><dt>返回</dt><dd>std::string 房间密码 </dd></dl>
+
+</div>
+</div>
+<a id="af631ca3d9755331300fb90fbb8f261aa" name="af631ca3d9755331300fb90fbb8f261aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af631ca3d9755331300fb90fbb8f261aa">&#9670;&#160;</a></span>getRemainingSeconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::uint64_t neroom::INERoomContext::getRemainingSeconds </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取房间剩余时间 </p>
+<dl class="section return"><dt>返回</dt><dd>std::uint64_t 开始时间, s </dd></dl>
+
+</div>
+</div>
+<a id="ac2e00ccf4bfebe54f41e56a2310e565c" name="ac2e00ccf4bfebe54f41e56a2310e565c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2e00ccf4bfebe54f41e56a2310e565c">&#9670;&#160;</a></span>getRemoteMembers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::list&lt; <a class="el" href="namespaceneroom.html#a4f7b09f258d15649c2abf72d7285b3a8">SharedMemberPtr</a> &gt; neroom::INERoomContext::getRemoteMembers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取远端用户列表 </p>
+<dl class="section return"><dt>返回</dt><dd>std::list&lt;SharedMemberPtr&gt; 远端用户列表 </dd></dl>
+
+</div>
+</div>
+<a id="acecb73118c817805bd935e69faef506f" name="acecb73118c817805bd935e69faef506f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acecb73118c817805bd935e69faef506f">&#9670;&#160;</a></span>getRoomArchiveID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string neroom::INERoomContext::getRoomArchiveID </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取房间归档ID </p>
+<dl class="section return"><dt>返回</dt><dd>std::string 房间归档 ID </dd></dl>
+
+</div>
+</div>
+<a id="a815ecb7ed12dd189b59a3520cc737b98" name="a815ecb7ed12dd189b59a3520cc737b98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815ecb7ed12dd189b59a3520cc737b98">&#9670;&#160;</a></span>getRoomName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string neroom::INERoomContext::getRoomName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取房间名 </p>
+<dl class="section return"><dt>返回</dt><dd>std::string 房间名 </dd></dl>
+
+</div>
+</div>
+<a id="a49a38f822c224db4e382d49131d240b1" name="a49a38f822c224db4e382d49131d240b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a38f822c224db4e382d49131d240b1">&#9670;&#160;</a></span>getRoomProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::map&lt; std::string, std::string &gt; neroom::INERoomContext::getRoomProperties </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取房间属性 </p>
+<dl class="section return"><dt>返回</dt><dd>std::map&lt;std::string, std::string&gt; 房间属性 </dd></dl>
+
+</div>
+</div>
+<a id="addb21bef28bc4ef914cf61f88aa59a8e" name="addb21bef28bc4ef914cf61f88aa59a8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addb21bef28bc4ef914cf61f88aa59a8e">&#9670;&#160;</a></span>getRoomTemplate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceneroom.html#a451f7b1665a8ca0194e6348b1a096268">NERoomTemplate</a> neroom::INERoomContext::getRoomTemplate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取模板 </p>
+<dl class="section return"><dt>返回</dt><dd>NERoomTemplate 模板 </dd></dl>
+
+</div>
+</div>
+<a id="af22382b267431daa797e8eb54b4c4640" name="af22382b267431daa797e8eb54b4c4640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af22382b267431daa797e8eb54b4c4640">&#9670;&#160;</a></span>getRoomUuid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string neroom::INERoomContext::getRoomUuid </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取房间ID </p>
+<dl class="section return"><dt>返回</dt><dd>std::string 房间ID </dd></dl>
+
+</div>
+</div>
+<a id="aa705a3f0cb863934cecdff34f2cb06a1" name="aa705a3f0cb863934cecdff34f2cb06a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa705a3f0cb863934cecdff34f2cb06a1">&#9670;&#160;</a></span>getRtcController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classneroom_1_1_i_n_e_room_rtc_controller.html">INERoomRtcController</a> * neroom::INERoomContext::getRtcController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取RTC控制器 </p>
+<dl class="section return"><dt>返回</dt><dd>INERoomRtcController* RTC控制器 </dd></dl>
+
+</div>
+</div>
+<a id="a46fcaf6ad83a2db2e28b956b2f8babbf" name="a46fcaf6ad83a2db2e28b956b2f8babbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46fcaf6ad83a2db2e28b956b2f8babbf">&#9670;&#160;</a></span>getRtcStartTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::uint64_t neroom::INERoomContext::getRtcStartTime </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取房间rtc开始时间 </p>
+<dl class="section return"><dt>返回</dt><dd>std::uint64_t 开始时间, ms </dd></dl>
+
+</div>
+</div>
+<a id="a6e35b69ee9bf798a473e1d32732fa36a" name="a6e35b69ee9bf798a473e1d32732fa36a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e35b69ee9bf798a473e1d32732fa36a">&#9670;&#160;</a></span>getSession()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string neroom::INERoomContext::getSession </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取房间会话ID </p>
+<dl class="section return"><dt>返回</dt><dd>std::string 房间会话ID </dd></dl>
+
+</div>
+</div>
+<a id="a9d23c52d69404b499c0936e001ec1a15" name="a9d23c52d69404b499c0936e001ec1a15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d23c52d69404b499c0936e001ec1a15">&#9670;&#160;</a></span>getSipCid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string neroom::INERoomContext::getSipCid </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取sipCid </p>
+<dl class="section return"><dt>返回</dt><dd>std::string sipCid </dd></dl>
+
+</div>
+</div>
+<a id="ac05021ab025a8d0dad62c17c1b8397e9" name="ac05021ab025a8d0dad62c17c1b8397e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac05021ab025a8d0dad62c17c1b8397e9">&#9670;&#160;</a></span>getSIPController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classneroom_1_1_i_n_e_room_s_i_p_controller.html">INERoomSIPController</a> * neroom::INERoomContext::getSIPController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取SIP控制器 </p>
+<dl class="section return"><dt>返回</dt><dd>INERoomSIPController* SIP控制器 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.28.0 </dd></dl>
+
+</div>
+</div>
+<a id="abaac74ecf2f79472d787c1b9ee4fbc23" name="abaac74ecf2f79472d787c1b9ee4fbc23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaac74ecf2f79472d787c1b9ee4fbc23">&#9670;&#160;</a></span>getWaitingRoomChatController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classneroom_1_1_i_n_e_room_chat_controller.html">INERoomChatController</a> * neroom::INERoomContext::getWaitingRoomChatController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取等候室的聊天室控制器 </p>
+<dl class="section return"><dt>返回</dt><dd>NERoomChatController* 等候室聊天控制器实例 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+</div>
+</div>
+<a id="ae7b6669a49324cd94444f8098e5a8a8e" name="ae7b6669a49324cd94444f8098e5a8a8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b6669a49324cd94444f8098e5a8a8e">&#9670;&#160;</a></span>getWaitingRoomController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classneroom_1_1_i_n_e_waiting_room_controller.html">INEWaitingRoomController</a> * neroom::INERoomContext::getWaitingRoomController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取等候室控制器 </p>
+<dl class="section return"><dt>返回</dt><dd>INEWaitingRoomController* 等候室控制器实例 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+</div>
+</div>
+<a id="a55e8a11c1a49da129ef37618cc5aa7c8" name="a55e8a11c1a49da129ef37618cc5aa7c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55e8a11c1a49da129ef37618cc5aa7c8">&#9670;&#160;</a></span>getWhiteboardController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classneroom_1_1_i_n_e_room_whiteboard_controller.html">INERoomWhiteboardController</a> * neroom::INERoomContext::getWhiteboardController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取白板控制器 </p>
+<dl class="section return"><dt>返回</dt><dd>INERoomWhiteboardController* 白板控制器 </dd></dl>
+
+</div>
+</div>
+<a id="afb039ab23167797d4a26f8dbb7f43d67" name="afb039ab23167797d4a26f8dbb7f43d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb039ab23167797d4a26f8dbb7f43d67">&#9670;&#160;</a></span>handOverMyRole() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::handOverMyRole </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>resign</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将自身当前的角色转移给[userUuid]对应的用户，自身会恢复到默认的房间角色，只有授权角色才能执行该操作 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>目标用户uuid </td></tr>
+    <tr><td class="paramname">resign</td><td>是否放弃当前身份 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a9dec89119f084d93fd7546fb895ee5c8" name="a9dec89119f084d93fd7546fb895ee5c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dec89119f084d93fd7546fb895ee5c8">&#9670;&#160;</a></span>handOverMyRole() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::handOverMyRole </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将自身当前的角色转移给[userUuid]对应的用户，自身会恢复到默认的房间角色，只有授权角色才能执行该操作 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>目标用户uuid </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a5b81dbddee6190179d2ded1ef703f933" name="a5b81dbddee6190179d2ded1ef703f933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b81dbddee6190179d2ded1ef703f933">&#9670;&#160;</a></span>isCloudRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomContext::isCloudRecording </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取云录制状态 </p>
+<dl class="section return"><dt>返回</dt><dd>bool true 云录制中，false 云录制未开启 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.22.0 </dd></dl>
+
+</div>
+</div>
+<a id="a08ea17ec69ff2a5db8d8b63fc3861cc4" name="a08ea17ec69ff2a5db8d8b63fc3861cc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ea17ec69ff2a5db8d8b63fc3861cc4">&#9670;&#160;</a></span>isInWaitingRoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomContext::isInWaitingRoom </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取房间是否在等候室 </p>
+<dl class="section return"><dt>返回</dt><dd>bool true 在等候室，false 不在等候室 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+</div>
+</div>
+<a id="afdcd585f2d8dd4b36bcacc8a8e86ce53" name="afdcd585f2d8dd4b36bcacc8a8e86ce53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdcd585f2d8dd4b36bcacc8a8e86ce53">&#9670;&#160;</a></span>isRoomBlacklistEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomContext::isRoomBlacklistEnabled </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>房间是否开启了黑名单 </p>
+<dl class="section return"><dt>返回</dt><dd>bool true 开启了黑名单，false 未开启 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.26.0 </dd></dl>
+
+</div>
+</div>
+<a id="a221b3a8683b1bb2b33961c9755166e46" name="a221b3a8683b1bb2b33961c9755166e46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a221b3a8683b1bb2b33961c9755166e46">&#9670;&#160;</a></span>isRoomLocked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomContext::isRoomLocked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取房间是否已锁定 </p>
+<dl class="section return"><dt>返回</dt><dd>bool true 已锁定，false 未锁定 </dd></dl>
+
+</div>
+</div>
+<a id="a10c021288a4eeb8992b0196d07d9cd62" name="a10c021288a4eeb8992b0196d07d9cd62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10c021288a4eeb8992b0196d07d9cd62">&#9670;&#160;</a></span>isRoomMultiDeviceEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INERoomContext::isRoomMultiDeviceEnabled </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>房间是否开启了多设备 </p>
+<dl class="section since"><dt>自从</dt><dd>v1.43.0 </dd></dl>
+
+</div>
+</div>
+<a id="a1e965047f0dfa14e702d9cdc09f928f3" name="a1e965047f0dfa14e702d9cdc09f928f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e965047f0dfa14e702d9cdc09f928f3">&#9670;&#160;</a></span>kickMemberOut() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::kickMemberOut </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>toBlacklist</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移除成员，可选择是否加入黑名单 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>用户uuid </td></tr>
+    <tr><td class="paramname">toBlacklist</td><td>是否加入黑名单 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.27.0 </dd></dl>
+
+</div>
+</div>
+<a id="a47751a03adbbaf99a2922a91fc8bf854" name="a47751a03adbbaf99a2922a91fc8bf854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47751a03adbbaf99a2922a91fc8bf854">&#9670;&#160;</a></span>kickMemberOut() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::kickMemberOut </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移除成员 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>用户uuid </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aea6781e2adf0624d36e0941358173731" name="aea6781e2adf0624d36e0941358173731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea6781e2adf0624d36e0941358173731">&#9670;&#160;</a></span>leaveRoom() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::leaveRoom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>离开房间 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ae61f659e919b6ca07660db34447f225a" name="ae61f659e919b6ca07660db34447f225a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae61f659e919b6ca07660db34447f225a">&#9670;&#160;</a></span>leaveRoom() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::leaveRoom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceneroom.html#a4a90c94317bf7fc8eea4ee63c1e0e50a">NERoomLeaveRoomType</a></td>          <td class="paramname"><span class="paramname"><em>leaveRoomType</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>离开房间 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">leaveRoomType</td><td>离开类型 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a94090f2702cb391c6682474e0544d09b" name="a94090f2702cb391c6682474e0544d09b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94090f2702cb391c6682474e0544d09b">&#9670;&#160;</a></span>lockRoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::lockRoom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>锁定房间，锁定后成员无法加入房间 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a372403821cd5a51cf3995e33d3003734" name="a372403821cd5a51cf3995e33d3003734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372403821cd5a51cf3995e33d3003734">&#9670;&#160;</a></span>rejoinAfterAdmittedToRoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::rejoinAfterAdmittedToRoom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当房间管理员同意您从等候室加入房间时，您需要调用此方法重新加入房间 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调。如果加入失败或成员未被授权加入，则会回调失败。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+</div>
+</div>
+<a id="a07a1f497c1d709c92d8131d210ffcc55" name="a07a1f497c1d709c92d8131d210ffcc55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07a1f497c1d709c92d8131d210ffcc55">&#9670;&#160;</a></span>removeRoomListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::removeRoomListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classneroom_1_1_i_n_e_room_listener.html">INERoomListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>反注册房间事件监听 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>房间事件监听对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a78c8b16808d416cdbc57a037e54346b8" name="a78c8b16808d416cdbc57a037e54346b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78c8b16808d416cdbc57a037e54346b8">&#9670;&#160;</a></span>removeRtcStatsListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::removeRtcStatsListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classneroom_1_1_i_n_e_room_rtc_stats_listener.html">INERoomRtcStatsListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移除Rtc统计数据监听 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>Rtc统计数据监听对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a15e93a8cbfaa5842fc01b31f86ed51e9" name="a15e93a8cbfaa5842fc01b31f86ed51e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15e93a8cbfaa5842fc01b31f86ed51e9">&#9670;&#160;</a></span>startCloudRecord() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::startCloudRecord </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>开启云录制 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.22.0 </dd></dl>
+
+</div>
+</div>
+<a id="ac11e31ed1bd50960922123374e509839" name="ac11e31ed1bd50960922123374e509839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac11e31ed1bd50960922123374e509839">&#9670;&#160;</a></span>startCloudRecord() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::startCloudRecord </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a470205cb3f8ed37d2ce043b3608312cb">NERoomRecordConfig</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>recordConfig</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>开启云录制 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">recordConfig</td><td>录制配置 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.34.0 </dd></dl>
+
+</div>
+</div>
+<a id="a574b5a92be9c2b288c98951f2d90460c" name="a574b5a92be9c2b288c98951f2d90460c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a574b5a92be9c2b288c98951f2d90460c">&#9670;&#160;</a></span>stopCloudRecord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::stopCloudRecord </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>停止云录制 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="namespaceneroom.html#ab6dc40babcb5f933419e683221cd272c">NEEmptyCallback</a> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.22.0 </dd></dl>
+
+</div>
+</div>
+<a id="a728759130aae1548d6c2b8e32aa34119" name="a728759130aae1548d6c2b8e32aa34119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a728759130aae1548d6c2b8e32aa34119">&#9670;&#160;</a></span>unlockRoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::unlockRoom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>解除锁定房间，解除锁定后成员可以加入房间 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a7804673a215fe1e9396bcad40a308d34" name="a7804673a215fe1e9396bcad40a308d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7804673a215fe1e9396bcad40a308d34">&#9670;&#160;</a></span>updateMemberProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::updateMemberProperty </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新房间属性 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>用户id </td></tr>
+    <tr><td class="paramname">key</td><td>属性key值 </td></tr>
+    <tr><td class="paramname">value</td><td>属性value值 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a819561734eb550fba786e93513a0ba6d" name="a819561734eb550fba786e93513a0ba6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a819561734eb550fba786e93513a0ba6d">&#9670;&#160;</a></span>updateRoomProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomContext::updateRoomProperty </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>associatedUserUuid</em><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#a2eff61e67ba14ade4b35cbbec90cd6b1">NERoomContextCallback</a>()</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新房间属性 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>属性key值 </td></tr>
+    <tr><td class="paramname">value</td><td>属性value值 </td></tr>
+    <tr><td class="paramname">associatedUserUuid</td><td>属性关联用户ID，当关联用户离开房间，属性自动删除 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="room__context__interface_8h_source.html">room_context_interface.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

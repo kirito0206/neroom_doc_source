@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['handovermyrole_0',['handOverMyRole',['../classneroom_1_1_i_n_e_room_context.html#a9dec89119f084d93fd7546fb895ee5c8',1,'neroom::INERoomContext::handOverMyRole(const std::string &amp;userUuid, const NERoomContextCallback &amp;callback)=0'],['../classneroom_1_1_i_n_e_room_context.html#afb039ab23167797d4a26f8dbb7f43d67',1,'neroom::INERoomContext::handOverMyRole(const std::string &amp;userUuid, bool resign, const NERoomContextCallback &amp;callback)=0']]],
+  ['handshaketype_1',['handShakeType',['../structneroom_1_1tag_n_e_i_m_server_config.html#a4aa312e33e283d9635654613eb999b64',1,'neroom::tagNEIMServerConfig']]],
+  ['hangupcall_2',['hangUpCall',['../classneroom_1_1_i_n_e_room_app_invite_controller.html#ab3af69be27bfb3b25df8e71c53541766',1,'neroom::INERoomAppInviteController::hangUpCall()'],['../classneroom_1_1_i_n_e_room_s_i_p_controller.html#a3551e5679316fea432f8ca5da8a0815c',1,'neroom::INERoomSIPController::hangUpCall()']]],
+  ['height_3',['height',['../structneroom_1_1tag_n_e_room_live_stream_image_info.html#ab65eb603ef618ae759acac1fc03c8cb8',1,'neroom::tagNERoomLiveStreamImageInfo::height'],['../structneroom_1_1tag_n_e_room_live_stream_user_transcoding.html#a0ef116a16e688298c139b9d9ffff18fb',1,'neroom::tagNERoomLiveStreamUserTranscoding::height'],['../structneroom_1_1tag_n_e_room_live_stream_layout.html#ad66de3c05705f6f64be78f2791063cd4',1,'neroom::tagNERoomLiveStreamLayout::height'],['../classneroom_1_1_i_n_e_room_chat_image_message.html#ae2cf7bda8a6051f85a354d52beb5c314',1,'neroom::INERoomChatImageMessage::height()']]],
+  ['httpdnsserverinterface_4',['httpDnsServerInterface',['../structneroom_1_1tag_n_e_i_m_server_config.html#a10143a0f9a8a11a681404f0d00cadf65',1,'neroom::tagNEIMServerConfig']]],
+  ['httpsenabled_5',['httpsEnabled',['../structneroom_1_1tag_n_e_i_m_server_config.html#a6c16243451b5eb10943d50341d58d8ad',1,'neroom::tagNEIMServerConfig']]]
+];

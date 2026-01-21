@@ -1,0 +1,862 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERoom SDK: neroom::INERoomService类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERoom SDK<span id="projectnumber">&#160;V1.44.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceneroom.html">neroom</a></li><li class="navelem"><a class="el" href="classneroom_1_1_i_n_e_room_service.html">INERoomService</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classneroom_1_1_i_n_e_room_service-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">neroom::INERoomService类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>房间服务  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="room__service__interface_8h_source.html">room_service_interface.h</a>&gt;</code></p>
+<div class="dynheader">
+类 neroom::INERoomService 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classneroom_1_1_i_n_e_room_service__inherit__graph.png" border="0" usemap="#aneroom_1_1_i_n_e_room_service_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+neroom::INERoomService 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classneroom_1_1_i_n_e_room_service__coll__graph.png" border="0" usemap="#aneroom_1_1_i_n_e_room_service_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ae7af91111e2835387a8dad9137322261" id="r_ae7af91111e2835387a8dad9137322261"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7af91111e2835387a8dad9137322261">NERoomCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt;</td></tr>
+<tr class="memdesc:ae7af91111e2835387a8dad9137322261"><td class="mdescLeft">&#160;</td><td class="mdescRight">房间服务回调  <br /></td></tr>
+<tr class="separator:ae7af91111e2835387a8dad9137322261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9681e99aab4ac4431fa3d542ec2ca004" id="r_a9681e99aab4ac4431fa3d542ec2ca004"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9681e99aab4ac4431fa3d542ec2ca004">NERoomTemplateCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;<a class="el" href="namespaceneroom.html#a451f7b1665a8ca0194e6348b1a096268">NERoomTemplate</a>&gt;</td></tr>
+<tr class="memdesc:a9681e99aab4ac4431fa3d542ec2ca004"><td class="mdescLeft">&#160;</td><td class="mdescRight">房间服务获取模板回调  <br /></td></tr>
+<tr class="separator:a9681e99aab4ac4431fa3d542ec2ca004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2ec9a389a126226e8a585493e8a24c" id="r_a1e2ec9a389a126226e8a585493e8a24c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e2ec9a389a126226e8a585493e8a24c">NEJoinRoomCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;<a class="el" href="classneroom_1_1_i_n_e_room_context.html">INERoomContext</a>*&gt;</td></tr>
+<tr class="memdesc:a1e2ec9a389a126226e8a585493e8a24c"><td class="mdescLeft">&#160;</td><td class="mdescRight">加入房间回调  <br /></td></tr>
+<tr class="separator:a1e2ec9a389a126226e8a585493e8a24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a412566bc94281d905fd7befaca674c69" id="r_a412566bc94281d905fd7befaca674c69"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a412566bc94281d905fd7befaca674c69">NEPreviewRoomCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;<a class="el" href="classneroom_1_1_i_n_e_preview_room_context.html">INEPreviewRoomContext</a>&gt;</td></tr>
+<tr class="memdesc:a412566bc94281d905fd7befaca674c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">房间预览回调  <br /></td></tr>
+<tr class="separator:a412566bc94281d905fd7befaca674c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dcc379f3f2ec66f0b68830c0224e1d9" id="r_a5dcc379f3f2ec66f0b68830c0224e1d9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dcc379f3f2ec66f0b68830c0224e1d9">NEGetRecordsCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;std::list&lt;<a class="el" href="structneroom_1_1_n_e_room_record.html">NERoomRecord</a>&gt;&gt;</td></tr>
+<tr class="memdesc:a5dcc379f3f2ec66f0b68830c0224e1d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间录制信息回调  <br /></td></tr>
+<tr class="separator:a5dcc379f3f2ec66f0b68830c0224e1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51b3aae62922960f9e98d67a9f03e8bd" id="r_a51b3aae62922960f9e98d67a9f03e8bd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51b3aae62922960f9e98d67a9f03e8bd">NERoomFetchChatRoomMessageCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;std::list&lt;<a class="el" href="namespaceneroom.html#a3c948472dc53e494cb7972c985a229be">SharedChatMessagePtr</a>&gt;&gt;</td></tr>
+<tr class="memdesc:a51b3aae62922960f9e98d67a9f03e8bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">检索聊天室消息回调  <br /></td></tr>
+<tr class="separator:a51b3aae62922960f9e98d67a9f03e8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bc5d1e042e6f1b6428d2a6a00934136" id="r_a0bc5d1e042e6f1b6428d2a6a00934136"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bc5d1e042e6f1b6428d2a6a00934136">NEInRoomDeviceListItemCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;std::list&lt;<a class="el" href="structneroom_1_1_n_e_in_room_device_list_item.html">NEInRoomDeviceListItem</a>&gt;&gt;</td></tr>
+<tr class="memdesc:a0bc5d1e042e6f1b6428d2a6a00934136"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取本端所有在房的已连接设备列表回调  <br /></td></tr>
+<tr class="separator:a0bc5d1e042e6f1b6428d2a6a00934136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aaf895a1a28722eda6d0c267102103aa7" id="r_aaf895a1a28722eda6d0c267102103aa7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf895a1a28722eda6d0c267102103aa7">INERoomService</a> ()=default</td></tr>
+<tr class="memdesc:aaf895a1a28722eda6d0c267102103aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:aaf895a1a28722eda6d0c267102103aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3d48f90e8c1a968b5be7b989746db0" id="r_a1d3d48f90e8c1a968b5be7b989746db0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d3d48f90e8c1a968b5be7b989746db0">~INERoomService</a> ()=default</td></tr>
+<tr class="memdesc:a1d3d48f90e8c1a968b5be7b989746db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:a1d3d48f90e8c1a968b5be7b989746db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a278eb05b6ec4dfa80b4adc93e9d3d8a3" id="r_a278eb05b6ec4dfa80b4adc93e9d3d8a3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a278eb05b6ec4dfa80b4adc93e9d3d8a3">createRoom</a> (const <a class="el" href="namespaceneroom.html#a01c08f0ace5a978dc5f86f1239b3ce56">NECreateRoomParams</a> &amp;params, const <a class="el" href="namespaceneroom.html#a5a515d7f513110b8da62521bfe1ffa86">NECreateRoomOptions</a> &amp;options, const <a class="el" href="#ae7af91111e2835387a8dad9137322261">NERoomCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a278eb05b6ec4dfa80b4adc93e9d3d8a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个房间，不会加入房间  <br /></td></tr>
+<tr class="separator:a278eb05b6ec4dfa80b4adc93e9d3d8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa37144805c2df789c839fd125acbcb37" id="r_aa37144805c2df789c839fd125acbcb37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa37144805c2df789c839fd125acbcb37">fetchRoomTemplate</a> (const std::string &amp;roomUuid, const <a class="el" href="#a9681e99aab4ac4431fa3d542ec2ca004">NERoomTemplateCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:aa37144805c2df789c839fd125acbcb37"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间模板  <br /></td></tr>
+<tr class="separator:aa37144805c2df789c839fd125acbcb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97e0c48bd80db08ec31bb2f68643d87" id="r_aa97e0c48bd80db08ec31bb2f68643d87"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa97e0c48bd80db08ec31bb2f68643d87">joinRoom</a> (const <a class="el" href="namespaceneroom.html#aff3312cefdd981ef7827895e9c964027">NEJoinRoomParams</a> &amp;params, const <a class="el" href="namespaceneroom.html#a1d2517dfca21731bc1ed528a561d9a24">NEJoinRoomOptions</a> &amp;options, const <a class="el" href="#a1e2ec9a389a126226e8a585493e8a24c">NEJoinRoomCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:aa97e0c48bd80db08ec31bb2f68643d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">加入房间  <br /></td></tr>
+<tr class="separator:aa97e0c48bd80db08ec31bb2f68643d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b721fc3530f8af0bcbf1e3e18cbd97" id="r_af5b721fc3530f8af0bcbf1e3e18cbd97"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5b721fc3530f8af0bcbf1e3e18cbd97">joinRoomByInvite</a> (const <a class="el" href="namespaceneroom.html#aff3312cefdd981ef7827895e9c964027">NEJoinRoomParams</a> &amp;params, const <a class="el" href="namespaceneroom.html#a1d2517dfca21731bc1ed528a561d9a24">NEJoinRoomOptions</a> &amp;options, const <a class="el" href="#a1e2ec9a389a126226e8a585493e8a24c">NEJoinRoomCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:af5b721fc3530f8af0bcbf1e3e18cbd97"><td class="mdescLeft">&#160;</td><td class="mdescRight">加入房间通过邀请  <br /></td></tr>
+<tr class="separator:af5b721fc3530f8af0bcbf1e3e18cbd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad27921227518935d9bbc2fc18794f99f" id="r_ad27921227518935d9bbc2fc18794f99f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad27921227518935d9bbc2fc18794f99f">previewRoom</a> (const <a class="el" href="namespaceneroom.html#aa934baf34f267c6096d56424b8992435">NEPreviewRoomParams</a> &amp;params, const <a class="el" href="namespaceneroom.html#ac8db24802b543729b0e9b609964eb6ec">NEPreviewRoomOptions</a> &amp;options, const <a class="el" href="#a412566bc94281d905fd7befaca674c69">NEPreviewRoomCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ad27921227518935d9bbc2fc18794f99f"><td class="mdescLeft">&#160;</td><td class="mdescRight">房间预览  <br /></td></tr>
+<tr class="separator:ad27921227518935d9bbc2fc18794f99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc236451ad8b012c4c4b2242c515905" id="r_a4dc236451ad8b012c4c4b2242c515905"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classneroom_1_1_i_n_e_room_context.html">INERoomContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dc236451ad8b012c4c4b2242c515905">getRoomContext</a> (const std::string &amp;roomUuid)=0</td></tr>
+<tr class="memdesc:a4dc236451ad8b012c4c4b2242c515905"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间上下文  <br /></td></tr>
+<tr class="separator:a4dc236451ad8b012c4c4b2242c515905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af06f7192f8dec98b9944a95a89dcc64f" id="r_af06f7192f8dec98b9944a95a89dcc64f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classneroom_1_1_i_n_e_preview_room_context.html">INEPreviewRoomContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af06f7192f8dec98b9944a95a89dcc64f">getPreviewRoomContext</a> ()=0</td></tr>
+<tr class="memdesc:af06f7192f8dec98b9944a95a89dcc64f"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间预览上下文  <br /></td></tr>
+<tr class="separator:af06f7192f8dec98b9944a95a89dcc64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85cc630b19024fb7e295ca0b065bcd9a" id="r_a85cc630b19024fb7e295ca0b065bcd9a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85cc630b19024fb7e295ca0b065bcd9a">getRoomCloudRecordList</a> (const std::string &amp;roomArchiveId, const <a class="el" href="#a5dcc379f3f2ec66f0b68830c0224e1d9">NEGetRecordsCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a85cc630b19024fb7e295ca0b065bcd9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取房间录制信息  <br /></td></tr>
+<tr class="separator:a85cc630b19024fb7e295ca0b065bcd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd63b308ca234bdf71a72a19b16eb55" id="r_adbd63b308ca234bdf71a72a19b16eb55"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbd63b308ca234bdf71a72a19b16eb55">fetchChatroomHistoryMessages</a> (const std::string &amp;roomArchiveId, <a class="el" href="structneroom_1_1_n_e_history_message_search_option.html">NEHistoryMessageSearchOption</a> option, const <a class="el" href="#a51b3aae62922960f9e98d67a9f03e8bd">NERoomFetchChatRoomMessageCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:adbd63b308ca234bdf71a72a19b16eb55"><td class="mdescLeft">&#160;</td><td class="mdescRight">会议外获取指定会议聊天室内的消息  <br /></td></tr>
+<tr class="separator:adbd63b308ca234bdf71a72a19b16eb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c08d9357d10a1f70abee39666aacbf4" id="r_a0c08d9357d10a1f70abee39666aacbf4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c08d9357d10a1f70abee39666aacbf4">exportChatroomHistoryMessages</a> (const std::string &amp;roomArchiveId, const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt; std::string &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a0c08d9357d10a1f70abee39666aacbf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">导出指定会议聊天室内的消息  <br /></td></tr>
+<tr class="separator:a0c08d9357d10a1f70abee39666aacbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238258ac4a5f93dd06c033f6b9defa83" id="r_a238258ac4a5f93dd06c033f6b9defa83"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a238258ac4a5f93dd06c033f6b9defa83">rejectInvite</a> (const std::string &amp;roomUuid, const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt; std::string &gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a238258ac4a5f93dd06c033f6b9defa83"><td class="mdescLeft">&#160;</td><td class="mdescRight">挂断正在进行的呼叫，无论是正在响铃还是等待响铃都可以使用  <br /></td></tr>
+<tr class="separator:a238258ac4a5f93dd06c033f6b9defa83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91603652b9a8995096af64d00a165db5" id="r_a91603652b9a8995096af64d00a165db5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91603652b9a8995096af64d00a165db5">getMyInRoomDeviceList</a> (const std::string &amp;roomUuid, const <a class="el" href="#a0bc5d1e042e6f1b6428d2a6a00934136">NEInRoomDeviceListItemCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:a91603652b9a8995096af64d00a165db5"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取本端所有在房的已连接设备列表  <br /></td></tr>
+<tr class="separator:a91603652b9a8995096af64d00a165db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classneroom_1_1_i_n_e_base_service"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classneroom_1_1_i_n_e_base_service')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classneroom_1_1_i_n_e_base_service.html">neroom::INEBaseService</a></td></tr>
+<tr class="memitem:ab69d6bc825372d84a6b060d5496e599d inherit pub_methods_classneroom_1_1_i_n_e_base_service" id="r_ab69d6bc825372d84a6b060d5496e599d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_base_service.html#ab69d6bc825372d84a6b060d5496e599d">INEBaseService</a> ()=default</td></tr>
+<tr class="memdesc:ab69d6bc825372d84a6b060d5496e599d inherit pub_methods_classneroom_1_1_i_n_e_base_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:ab69d6bc825372d84a6b060d5496e599d inherit pub_methods_classneroom_1_1_i_n_e_base_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec287ff1cd4bd1df4f53760268928579 inherit pub_methods_classneroom_1_1_i_n_e_base_service" id="r_aec287ff1cd4bd1df4f53760268928579"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_base_service.html#aec287ff1cd4bd1df4f53760268928579">~INEBaseService</a> ()=default</td></tr>
+<tr class="memdesc:aec287ff1cd4bd1df4f53760268928579 inherit pub_methods_classneroom_1_1_i_n_e_base_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:aec287ff1cd4bd1df4f53760268928579 inherit pub_methods_classneroom_1_1_i_n_e_base_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>房间服务 </p>
+
+<p class="definition">在文件 <a class="el" href="room__service__interface_8h_source.html">room_service_interface.h</a> 第 <a class="el" href="room__service__interface_8h_source.html#l00025">25</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a5dcc379f3f2ec66f0b68830c0224e1d9" name="a5dcc379f3f2ec66f0b68830c0224e1d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dcc379f3f2ec66f0b68830c0224e1d9">&#9670;&#160;</a></span>NEGetRecordsCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a5dcc379f3f2ec66f0b68830c0224e1d9">neroom::INERoomService::NEGetRecordsCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;std::list&lt;<a class="el" href="structneroom_1_1_n_e_room_record.html">NERoomRecord</a>&gt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取房间录制信息回调 </p>
+
+<p class="definition">在文件 <a class="el" href="room__service__interface_8h_source.html">room_service_interface.h</a> 第 <a class="el" href="room__service__interface_8h_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0bc5d1e042e6f1b6428d2a6a00934136" name="a0bc5d1e042e6f1b6428d2a6a00934136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bc5d1e042e6f1b6428d2a6a00934136">&#9670;&#160;</a></span>NEInRoomDeviceListItemCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a0bc5d1e042e6f1b6428d2a6a00934136">neroom::INERoomService::NEInRoomDeviceListItemCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;std::list&lt;<a class="el" href="structneroom_1_1_n_e_in_room_device_list_item.html">NEInRoomDeviceListItem</a>&gt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取本端所有在房的已连接设备列表回调 </p>
+
+<p class="definition">在文件 <a class="el" href="room__service__interface_8h_source.html">room_service_interface.h</a> 第 <a class="el" href="room__service__interface_8h_source.html#l00055">55</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1e2ec9a389a126226e8a585493e8a24c" name="a1e2ec9a389a126226e8a585493e8a24c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e2ec9a389a126226e8a585493e8a24c">&#9670;&#160;</a></span>NEJoinRoomCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a1e2ec9a389a126226e8a585493e8a24c">neroom::INERoomService::NEJoinRoomCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;<a class="el" href="classneroom_1_1_i_n_e_room_context.html">INERoomContext</a>*&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加入房间回调 </p>
+
+<p class="definition">在文件 <a class="el" href="room__service__interface_8h_source.html">room_service_interface.h</a> 第 <a class="el" href="room__service__interface_8h_source.html#l00038">38</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a412566bc94281d905fd7befaca674c69" name="a412566bc94281d905fd7befaca674c69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a412566bc94281d905fd7befaca674c69">&#9670;&#160;</a></span>NEPreviewRoomCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a412566bc94281d905fd7befaca674c69">neroom::INERoomService::NEPreviewRoomCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;<a class="el" href="classneroom_1_1_i_n_e_preview_room_context.html">INEPreviewRoomContext</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>房间预览回调 </p>
+
+<p class="definition">在文件 <a class="el" href="room__service__interface_8h_source.html">room_service_interface.h</a> 第 <a class="el" href="room__service__interface_8h_source.html#l00042">42</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae7af91111e2835387a8dad9137322261" name="ae7af91111e2835387a8dad9137322261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7af91111e2835387a8dad9137322261">&#9670;&#160;</a></span>NERoomCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ae7af91111e2835387a8dad9137322261">neroom::INERoomService::NERoomCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>房间服务回调 </p>
+
+<p class="definition">在文件 <a class="el" href="room__service__interface_8h_source.html">room_service_interface.h</a> 第 <a class="el" href="room__service__interface_8h_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a51b3aae62922960f9e98d67a9f03e8bd" name="a51b3aae62922960f9e98d67a9f03e8bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51b3aae62922960f9e98d67a9f03e8bd">&#9670;&#160;</a></span>NERoomFetchChatRoomMessageCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a51b3aae62922960f9e98d67a9f03e8bd">neroom::INERoomService::NERoomFetchChatRoomMessageCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;std::list&lt;<a class="el" href="namespaceneroom.html#a3c948472dc53e494cb7972c985a229be">SharedChatMessagePtr</a>&gt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>检索聊天室消息回调 </p>
+
+<p class="definition">在文件 <a class="el" href="room__service__interface_8h_source.html">room_service_interface.h</a> 第 <a class="el" href="room__service__interface_8h_source.html#l00050">50</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9681e99aab4ac4431fa3d542ec2ca004" name="a9681e99aab4ac4431fa3d542ec2ca004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9681e99aab4ac4431fa3d542ec2ca004">&#9670;&#160;</a></span>NERoomTemplateCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a9681e99aab4ac4431fa3d542ec2ca004">neroom::INERoomService::NERoomTemplateCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;<a class="el" href="namespaceneroom.html#a451f7b1665a8ca0194e6348b1a096268">NERoomTemplate</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>房间服务获取模板回调 </p>
+
+<p class="definition">在文件 <a class="el" href="room__service__interface_8h_source.html">room_service_interface.h</a> 第 <a class="el" href="room__service__interface_8h_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aaf895a1a28722eda6d0c267102103aa7" name="aaf895a1a28722eda6d0c267102103aa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf895a1a28722eda6d0c267102103aa7">&#9670;&#160;</a></span>INERoomService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">neroom::INERoomService::INERoomService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+
+</div>
+</div>
+<a id="a1d3d48f90e8c1a968b5be7b989746db0" name="a1d3d48f90e8c1a968b5be7b989746db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3d48f90e8c1a968b5be7b989746db0">&#9670;&#160;</a></span>~INERoomService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual neroom::INERoomService::~INERoomService </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a278eb05b6ec4dfa80b4adc93e9d3d8a3" name="a278eb05b6ec4dfa80b4adc93e9d3d8a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a278eb05b6ec4dfa80b4adc93e9d3d8a3">&#9670;&#160;</a></span>createRoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomService::createRoom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a01c08f0ace5a978dc5f86f1239b3ce56">NECreateRoomParams</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a5a515d7f513110b8da62521bfe1ffa86">NECreateRoomOptions</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>options</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#ae7af91111e2835387a8dad9137322261">NERoomCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建一个房间，不会加入房间 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>创建房间参数 <code><a class="el" href="namespaceneroom.html#a01c08f0ace5a978dc5f86f1239b3ce56">NECreateRoomParams</a></code> </td></tr>
+    <tr><td class="paramname">options</td><td>创建房间参数 <code><a class="el" href="namespaceneroom.html#a5a515d7f513110b8da62521bfe1ffa86">NECreateRoomOptions</a></code> </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a0c08d9357d10a1f70abee39666aacbf4" name="a0c08d9357d10a1f70abee39666aacbf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c08d9357d10a1f70abee39666aacbf4">&#9670;&#160;</a></span>exportChatroomHistoryMessages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomService::exportChatroomHistoryMessages </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>roomArchiveId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>导出指定会议聊天室内的消息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roomArchiveId</td><td>会议唯一的存档 ID </td></tr>
+    <tr><td class="paramname">callback</td><td>回调包含导出数据的 csv 格式字符串 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adbd63b308ca234bdf71a72a19b16eb55" name="adbd63b308ca234bdf71a72a19b16eb55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbd63b308ca234bdf71a72a19b16eb55">&#9670;&#160;</a></span>fetchChatroomHistoryMessages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomService::fetchChatroomHistoryMessages </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>roomArchiveId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structneroom_1_1_n_e_history_message_search_option.html">NEHistoryMessageSearchOption</a></td>          <td class="paramname"><span class="paramname"><em>option</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a51b3aae62922960f9e98d67a9f03e8bd">NERoomFetchChatRoomMessageCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>会议外获取指定会议聊天室内的消息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roomArchiveId</td><td>会议唯一的存档 ID </td></tr>
+    <tr><td class="paramname">option</td><td>检索选项 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="structneroom_1_1_n_e_history_message_search_option.html">NEHistoryMessageSearchOption</a> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="#a51b3aae62922960f9e98d67a9f03e8bd" title="检索聊天室消息回调">NERoomFetchChatRoomMessageCallback</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa37144805c2df789c839fd125acbcb37" name="aa37144805c2df789c839fd125acbcb37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa37144805c2df789c839fd125acbcb37">&#9670;&#160;</a></span>fetchRoomTemplate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomService::fetchRoomTemplate </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>roomUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a9681e99aab4ac4431fa3d542ec2ca004">NERoomTemplateCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取房间模板 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roomUuid</td><td>房间uuid </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a91603652b9a8995096af64d00a165db5" name="a91603652b9a8995096af64d00a165db5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91603652b9a8995096af64d00a165db5">&#9670;&#160;</a></span>getMyInRoomDeviceList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomService::getMyInRoomDeviceList </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>roomUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a0bc5d1e042e6f1b6428d2a6a00934136">NEInRoomDeviceListItemCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取本端所有在房的已连接设备列表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roomUuid</td><td>房间uuid </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="#a0bc5d1e042e6f1b6428d2a6a00934136" title="获取本端所有在房的已连接设备列表回调">NEInRoomDeviceListItemCallback</a> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.43.0 </dd></dl>
+
+</div>
+</div>
+<a id="af06f7192f8dec98b9944a95a89dcc64f" name="af06f7192f8dec98b9944a95a89dcc64f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af06f7192f8dec98b9944a95a89dcc64f">&#9670;&#160;</a></span>getPreviewRoomContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classneroom_1_1_i_n_e_preview_room_context.html">INEPreviewRoomContext</a> * neroom::INERoomService::getPreviewRoomContext </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取房间预览上下文 </p>
+<dl class="section return"><dt>返回</dt><dd>INEPreviewRoomContext* 预览房间上下文 </dd></dl>
+
+</div>
+</div>
+<a id="a85cc630b19024fb7e295ca0b065bcd9a" name="a85cc630b19024fb7e295ca0b065bcd9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85cc630b19024fb7e295ca0b065bcd9a">&#9670;&#160;</a></span>getRoomCloudRecordList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomService::getRoomCloudRecordList </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>roomArchiveId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a5dcc379f3f2ec66f0b68830c0224e1d9">NEGetRecordsCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取房间录制信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roomArchiveId</td><td>房间对应的唯一 Archive ID </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="#a5dcc379f3f2ec66f0b68830c0224e1d9" title="获取房间录制信息回调">NEGetRecordsCallback</a> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.22.0 </dd></dl>
+
+</div>
+</div>
+<a id="a4dc236451ad8b012c4c4b2242c515905" name="a4dc236451ad8b012c4c4b2242c515905"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dc236451ad8b012c4c4b2242c515905">&#9670;&#160;</a></span>getRoomContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classneroom_1_1_i_n_e_room_context.html">INERoomContext</a> * neroom::INERoomService::getRoomContext </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>roomUuid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取房间上下文 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roomUuid</td><td>房间uuid </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>INERoomContext* 房间上下文 </dd></dl>
+
+</div>
+</div>
+<a id="aa97e0c48bd80db08ec31bb2f68643d87" name="aa97e0c48bd80db08ec31bb2f68643d87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa97e0c48bd80db08ec31bb2f68643d87">&#9670;&#160;</a></span>joinRoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomService::joinRoom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#aff3312cefdd981ef7827895e9c964027">NEJoinRoomParams</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a1d2517dfca21731bc1ed528a561d9a24">NEJoinRoomOptions</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>options</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a1e2ec9a389a126226e8a585493e8a24c">NEJoinRoomCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>加入房间 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>加入房间参数 <code><a class="el" href="namespaceneroom.html#aff3312cefdd981ef7827895e9c964027">NEJoinRoomParams</a></code> </td></tr>
+    <tr><td class="paramname">options</td><td>加入房间选项 <code><a class="el" href="namespaceneroom.html#a1d2517dfca21731bc1ed528a561d9a24">NEJoinRoomOptions</a></code> </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="af5b721fc3530f8af0bcbf1e3e18cbd97" name="af5b721fc3530f8af0bcbf1e3e18cbd97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5b721fc3530f8af0bcbf1e3e18cbd97">&#9670;&#160;</a></span>joinRoomByInvite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomService::joinRoomByInvite </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#aff3312cefdd981ef7827895e9c964027">NEJoinRoomParams</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a1d2517dfca21731bc1ed528a561d9a24">NEJoinRoomOptions</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>options</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a1e2ec9a389a126226e8a585493e8a24c">NEJoinRoomCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>加入房间通过邀请 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>加入房间参数 <code><a class="el" href="namespaceneroom.html#aff3312cefdd981ef7827895e9c964027">NEJoinRoomParams</a></code> </td></tr>
+    <tr><td class="paramname">options</td><td>加入房间选项 <code><a class="el" href="namespaceneroom.html#a1d2517dfca21731bc1ed528a561d9a24">NEJoinRoomOptions</a></code> </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ad27921227518935d9bbc2fc18794f99f" name="ad27921227518935d9bbc2fc18794f99f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad27921227518935d9bbc2fc18794f99f">&#9670;&#160;</a></span>previewRoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomService::previewRoom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#aa934baf34f267c6096d56424b8992435">NEPreviewRoomParams</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#ac8db24802b543729b0e9b609964eb6ec">NEPreviewRoomOptions</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>options</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a412566bc94281d905fd7befaca674c69">NEPreviewRoomCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>房间预览 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>预览房间参数 <code><a class="el" href="namespaceneroom.html#aa934baf34f267c6096d56424b8992435">NEPreviewRoomParams</a></code> </td></tr>
+    <tr><td class="paramname">options</td><td>预览房间选项 <code><a class="el" href="namespaceneroom.html#ac8db24802b543729b0e9b609964eb6ec">NEPreviewRoomOptions</a></code> </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a238258ac4a5f93dd06c033f6b9defa83" name="a238258ac4a5f93dd06c033f6b9defa83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a238258ac4a5f93dd06c033f6b9defa83">&#9670;&#160;</a></span>rejectInvite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INERoomService::rejectInvite </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>roomUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>挂断正在进行的呼叫，无论是正在响铃还是等待响铃都可以使用 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roomUuid</td><td>房间uuid </td></tr>
+    <tr><td class="paramname">callback</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.28.0 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="room__service__interface_8h_source.html">room_service_interface.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

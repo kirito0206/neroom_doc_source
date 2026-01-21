@@ -1,0 +1,631 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>NERoom-web-SDK</title><meta name="description" content="Documentation for NERoom-web-SDK"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base=".">
+<div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
+<div class="field">
+<div id="tsd-toolbar-links"></div></div>
+<ul class="results">
+<li class="state loading">Preparing search index...</li>
+<li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">NERoom-web-SDK</a></div>
+<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
+<div class="container container-main">
+<div class="col-content">
+<div class="tsd-page-title">
+<h2>NERoom-web-SDK</h2></div>
+<div class="tsd-panel tsd-typography"><a id="md:网易云信-neroom-web-sdk" class="tsd-anchor"></a><h1><a href="#md:网易云信-neroom-web-sdk">网易云信 NERoom Web SDK</a></h1><a id="md:简介" class="tsd-anchor"></a><h2><a href="#md:简介">简介</a></h2><p>网易云信 NERoom SDK 以房间为基础，提供网易云信全系列能力，包括即时消息、音视频通话、直播、互动白板等，并提供易接入、强扩展、高效部署且覆盖多场景的服务。NERoom 通过组件与 UI kit，助力您快速搭建业务场景，例如多人语聊房、秀场直播、电商直播、在线教育、企业培训、活动直播等。</p>
+<a id="md:neroom" class="tsd-anchor"></a><h2><a href="#md:neroom">NERoom</a></h2><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="./classes/platform_web.default.html#initialize">initialize</a></td>
+<td>NERoom 初始化</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./classes/platform_web.default.html#release">release</a></td>
+<td>NERoom 销毁</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./classes/platform_web.default.html#authService">authService</a></td>
+<td>获取鉴权服务，提供登录、登出能力</td>
+<td>V1.3.0</td>
+</tr>
+<tr>
+<td><a href="./classes/platform_web.default.html#roomService">roomService</a></td>
+<td>获取房间服务，提供创建、加入房间能力</td>
+<td>V1.3.0</td>
+</tr>
+<tr>
+<td><a href="./classes/platform_web.default.html#messageChannelService">messageChannelService</a></td>
+<td>获取消息通道服务，提供房间内发送自定义消息能力</td>
+<td>V1.3.0</td>
+</tr>
+<tr>
+<td><a href="./classes/platform_web.default.html#messageChannelService">switchLanguage</a></td>
+<td>切换语言</td>
+<td>V1.10.0</td>
+</tr>
+<tr>
+<td><a href="./classes/platform_web.default.html#getInstance">getInstance</a></td>
+<td>NERoom 获取实例</td>
+<td>V1.7.0</td>
+</tr>
+</tbody></table>
+<a id="md:房间管理" class="tsd-anchor"></a><h2><a href="#md:房间管理">房间管理</a></h2><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="./interfaces/index.NERoomService.html#createRoom">createRoom</a></td>
+<td>创建房间</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomService.html#joinRoom">joinRoom</a></td>
+<td>进入房间</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomContext.html#leaveRoom">leaveRoom</a></td>
+<td>离开房间</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomContext.html#endRoom">endRoom</a></td>
+<td>删除房间</td>
+<td>V1.0.0</td>
+</tr>
+</tbody></table>
+<a id="md:房间事件" class="tsd-anchor"></a><h2><a href="#md:房间事件">房间事件</a></h2><table>
+<thead>
+<tr>
+<th>事件</th>
+<th>描述</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="./interfaces/index.NERoomListener.html#onMemberAudioMuteChanged">onMemberAudioMuteChanged</a></td>
+<td>成员音频状态回调</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onMemberJoinChatroom">onMemberJoinChatroom</a></td>
+<td>成员加入聊天室回调</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onMemberJoinRoom">onMemberJoinRoom</a></td>
+<td>成员进入房间回调</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onMemberJoinRtcChannel">onMemberJoinRtcChannel</a></td>
+<td>成员加入 RTC 频道回调</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onMemberLeaveChatroom">onMemberLeaveChatroom</a></td>
+<td>成员离开聊天室回调</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onMemberLeaveRoom">onMemberLeaveRoom</a></td>
+<td>成员离开房间回调</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onMemberLeaveRtcChannel">onMemberLeaveRtcChannel</a></td>
+<td>成员离开 RTC 频道回调</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onMemberRoleChanged">onMemberRoleChanged</a></td>
+<td>成员角色变更回调</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onMemberScreenShareStateChanged">onMemberScreenShareStateChanged</a></td>
+<td>成员屏幕共享状态回调</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onMemberVideoMuteChanged">onMemberVideoMuteChanged</a></td>
+<td>成员视频状态回调</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onReceiveChatroomMessages">onReceiveChatroomMessages</a></td>
+<td>聊天室消息回调</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onRoomEnded">onRoomEnded</a></td>
+<td>房间结束回调</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onRtcChannelError">onRtcChannelError</a></td>
+<td>RTC 频道错误回调</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onRoomPropertiesChanged">onRoomPropertiesChanged</a></td>
+<td>房间属性变更回调</td>
+<td>V1.1.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onRoomPropertiesDeleted">onRoomPropertiesDeleted</a></td>
+<td>房间属性删除回调</td>
+<td>V1.1.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onMemberNameChanged">onMemberNameChanged</a></td>
+<td>成员属性变更回调</td>
+<td>V1.1.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onMemberPropertiesChanged">onMemberPropertiesChanged</a></td>
+<td>成员昵称修改回调</td>
+<td>V1.1.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onMemberPropertiesDeleted">onMemberPropertiesDeleted</a></td>
+<td>成员属性删除回调</td>
+<td>V1.1.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onRtcActiveSpeakerChanged">onRtcActiveSpeakerChanged</a></td>
+<td>当前房间成员音量最大者回调</td>
+<td>V1.1.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onRtcAudioVolumeIndication">onRtcAudioVolumeIndication</a></td>
+<td>当前房间成员说话者瞬时音量回调</td>
+<td>V1.1.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onRoomLockStateChanged">onRoomLockStateChanged</a></td>
+<td>房间锁定状态变更事件回调</td>
+<td>V1.1.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onRoomConnectStateChanged">onRoomConnectStateChanged</a></td>
+<td>网络状态变更回调</td>
+<td>V1.1.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onRtcNetworkQuality">onRtcNetworkQuality</a></td>
+<td>网络状态变更回调</td>
+<td>V1.1.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onCameraDeviceChanged">onCameraDeviceChanged</a></td>
+<td>摄像头设备变更回调</td>
+<td>V1.1.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onPlayoutDeviceChanged">onPlayoutDeviceChanged</a></td>
+<td>扬声器设备变更回调</td>
+<td>V1.1.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onCameraDeviceChanged">onRecordDeviceChanged</a></td>
+<td>麦克风设备变更回调</td>
+<td>V1.1.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onChatroomMessageAttachmentProgress">onChatroomMessageAttachmentProgress</a></td>
+<td>远端用户开启音频辅流回调</td>
+<td>V1.9.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomListener.html#onRtcUserAudioSubStreamStop">onRtcUserAudioSubStreamStop</a></td>
+<td>远端用户关闭音频辅流回调</td>
+<td>V1.8.0</td>
+</tr>
+</tbody></table>
+<a id="md:成员管理" class="tsd-anchor"></a><h2><a href="#md:成员管理">成员管理</a></h2><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="./interfaces/index.NERoomContext.html#localMember">NERoomContext#localMember</a></td>
+<td>本端成员信息</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomContext.html#remoteMembers">NERoomContext#remoteMembers</a></td>
+<td>远端成员信息</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomContext.html#kickMemberOut">NERoomContext#kickMemberOut</a></td>
+<td>移除成员</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomContext.html#changeMemberRole">NERoomContext#changeMemberRole</a></td>
+<td>修改成员角色</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomContext.html#handOverMyRole">NERoomContext#handOverMyRole</a></td>
+<td>移交角色</td>
+<td>V1.1.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomContext.html#updateMemberProperty">NERoomContext#updateMemberProperty</a></td>
+<td>更新成员属性</td>
+<td>V1.1.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomContext.html#deleteMemberProperty">NERoomContext#deleteMemberProperty</a></td>
+<td>删除成员属性</td>
+<td>V1.1.0</td>
+</tr>
+</tbody></table>
+<a id="md:音视频通话" class="tsd-anchor"></a><h2><a href="#md:音视频通话">音视频通话</a></h2><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#joinRtcChannel">NERtcController#joinRtcChannel</a></td>
+<td>加入音视频房间</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#leaveRtcChannel">NERtcController#leaveRtcChannel</a></td>
+<td>退出音视频房间</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#unmuteMyVideo">NERtcController#unmuteMyVideo</a></td>
+<td>打开本地视频</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#muteMyVideo">NERtcController#muteMyVideo</a></td>
+<td>关闭本地视频</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#muteMemberVideo">NERtcController#muteMemberVideo</a></td>
+<td>关闭成员视频</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#unmuteMemberVideo">NERtcController#unmuteMemberVideo</a></td>
+<td>打开成员视频</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#unmuteMyAudio">NERtcController#unmuteMyAudio</a></td>
+<td>打开本地音频</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#muteMyAudio">NERtcController#muteMyAudio</a></td>
+<td>关闭本地音频</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#muteMemberAudio">NERtcController#muteMemberAudio</a></td>
+<td>关闭成员音频</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#unmuteMemberAudio">NERtcController#unmuteMemberAudio</a></td>
+<td>打开成员音频</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#adjustRecordingSignalVolume">NERtcController#adjustRecordingSignalVolume</a></td>
+<td>调节本端采集音量</td>
+<td>V1.9.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#pauseAllEffects">NERtcController#pauseAllEffects</a></td>
+<td>暂停播放所有音效文件</td>
+<td>V1.9.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#pauseEffect">NERtcController#pauseEffect</a></td>
+<td>暂停播放指定音效文件</td>
+<td>V1.9.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#resumeEffect">NERtcController#resumeEffect</a></td>
+<td>恢复播放指定音效文件</td>
+<td>V1.9.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#resumeAllEffects">NERtcController#resumeAllEffects</a></td>
+<td>恢复播放所有音效文件</td>
+<td>V1.9.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#getEffectDuration">NERtcController#getEffectDuration</a></td>
+<td>获取音效文件时长</td>
+<td>V1.9.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#setChannelProfile">NERtcController#setChannelProfile</a></td>
+<td>设置房间场景</td>
+<td>V1.9.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#setAudioProfile">NERtcController#setAudioProfile</a></td>
+<td>设置音频编码属性</td>
+<td>V1.9.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#enableLocalSubstreamAudio">NERtcController#enableLocalSubstreamAudio</a></td>
+<td>开启音频辅流</td>
+<td>V1.9.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#disableLocalSubstreamAudio">NERtcController#disableLocalSubstreamAudio</a></td>
+<td>关闭音频辅流</td>
+<td>V1.9.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#pauseLocalAudioRecording">NERtcController#pauseLocalAudioRecording</a></td>
+<td>暂停本地麦克风采集</td>
+<td>V1.12.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#resumeLocalAudioRecording">NERtcController#resumeLocalAudioRecording</a></td>
+<td>恢复本地麦克风采集</td>
+<td>V1.12.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#pauseLocalVideoCapture">NERtcController#pauseLocalVideoCapture</a></td>
+<td>暂停本地视频采集</td>
+<td>V1.12.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#resumeLocalVideoCapture">NERtcController#resumeLocalVideoCapture</a></td>
+<td>恢复本地视频采集</td>
+<td>V1.12.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomRtcController.html#adjustPlaybackSignalVolume">NERtcController#adjustPlaybackSignalVolume</a></td>
+<td>调节所有远端用户的音量</td>
+<td>V1.12.0</td>
+</tr>
+</tbody></table>
+<a id="md:即时消息" class="tsd-anchor"></a><h2><a href="#md:即时消息">即时消息</a></h2><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="./interfaces/types_roomChatController.NERoomChatController.html#joinChatroom">NEChatController#joinChatroom</a></td>
+<td>进入聊天室</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/types_roomChatController.NERoomChatController.html#leaveChatroom">NEChatController#leaveChatroom</a></td>
+<td>离开聊天室</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/types_roomChatController.NERoomChatController.html#sendBroadcastTextMessage">NEChatController#sendBroadcastTextMessage</a></td>
+<td>发送广播消息</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/types_roomChatController.NERoomChatController.html#sendDirectTextMessage">NEChatController#sendDirectTextMessage</a></td>
+<td>发送定向消息（单人）</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/types_roomChatController.NERoomChatController.html#sendGroupTextMessage">NEChatController#sendGroupTextMessage</a></td>
+<td>发送多人消息</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/types_roomChatController.NERoomChatController.html#sendImageMessage">NEChatController#sendImageMessage</a></td>
+<td>发送图片消息</td>
+<td>V1.8.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/types_roomChatController.NERoomChatController.html#sendFileMessage">NEChatController#sendFileMessage</a></td>
+<td>发送文件消息</td>
+<td>V1.8.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/types_roomChatController.NERoomChatController.html#cancelSendFileMessage">NEChatController#cancelSendFileMessage</a></td>
+<td>取消发送文件消息</td>
+<td>V1.8.0</td>
+</tr>
+</tbody></table>
+<a id="md:互动白板" class="tsd-anchor"></a><h2><a href="#md:互动白板">互动白板</a></h2><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="./interfaces/index.NERoomWhiteboardController.html#initWhiteboard">NEWhiteboardController#initWhiteboard</a></td>
+<td>初始化白板</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomWhiteboardController.html#startWhiteboardShare">NEWhiteboardController#startWhiteboardShare</a></td>
+<td>开始共享白板</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomWhiteboardController.html#setupWhiteboardCanvas">NEWhiteboardController#setupWhiteboardCanvas</a></td>
+<td>绑定白板视图</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomWhiteboardController.html#setEnableDraw">NEWhiteboardController#setEnableDraw</a></td>
+<td>设置白板是否可绘制</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomWhiteboardController.html#getWhiteboardSharingUserUuid">NEWhiteboardController#getWhiteboardSharingUserUuid</a></td>
+<td>查询白板共享者的 userUuid</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomWhiteboardController.html#stopWhiteboardShare">NEWhiteboardController#stopWhiteboardShare</a></td>
+<td>停止共享白板</td>
+<td>V1.0.0</td>
+</tr>
+<tr>
+<td><a href="./interfaces/index.NERoomWhiteboardController.html#stopMemberWhiteboardShare">NEWhiteboardController#stopMemberWhiteboardShare</a></td>
+<td>停止成员共享白板</td>
+<td>V1.0.0</td>
+</tr>
+</tbody></table>
+<a id="md:错误码" class="tsd-anchor"></a><h2><a href="#md:错误码">错误码</a></h2><p>在调用 SDK API 的过程中，SDK 可能会返回错误码或状态码，您可以根据错误码或状态码判断当前 SDK 或任务的状态。如果遇到未知的错误码，请联系技术支持排查。
+当前 SDK API 的错误码如下：</p>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>Success</td>
+</tr>
+<tr>
+<td>-1</td>
+<td>NERoom SDK 通用错误</td>
+</tr>
+<tr>
+<td>400</td>
+<td>参数非法</td>
+</tr>
+<tr>
+<td>401</td>
+<td>鉴权失败 未认证</td>
+</tr>
+<tr>
+<td>402</td>
+<td>鉴权失败 token 错误</td>
+</tr>
+<tr>
+<td>403</td>
+<td>房间操作权限禁止</td>
+</tr>
+<tr>
+<td>404</td>
+<td>房间操作权限未找到</td>
+</tr>
+<tr>
+<td>406</td>
+<td>鉴权失败 token 过期</td>
+</tr>
+<tr>
+<td>409</td>
+<td>创建房间时，房间号已经存在</td>
+</tr>
+<tr>
+<td>1001</td>
+<td>房间内操作时，房间 configId 不存在，或者 configId 对应的 config 不存在</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>加入房间时，角色数量超限</td>
+</tr>
+<tr>
+<td>1003</td>
+<td>指定角色未定义</td>
+</tr>
+<tr>
+<td>1004</td>
+<td>找不到房间</td>
+</tr>
+<tr>
+<td>1005</td>
+<td>config 不存在或无法使用</td>
+</tr>
+<tr>
+<td>1006</td>
+<td>房间属性已经存在</td>
+</tr>
+<tr>
+<td>1007</td>
+<td>成员属性已经存在</td>
+</tr>
+<tr>
+<td>1015</td>
+<td>被操作的成员不存在</td>
+</tr>
+<tr>
+<td>1017</td>
+<td>创建房间时房间已经存在且 config 冲突</td>
+</tr>
+</tbody></table>
+</div></div>
+<div class="col-sidebar">
+<div class="page-menu">
+<div class="tsd-navigation settings">
+<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)" id="icon-chevronDown"></path></svg>Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility">
+<h4 class="uppercase">Member Visibility</h4><form>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div>
+<div class="tsd-theme-toggle">
+<h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<details open class="tsd-index-accordion tsd-page-navigation"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg>On This Page</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li>
+<ul>
+<li><a href="#md:网易云信-neroom-web-sdk"><span>网易云信 NERoom <wbr/>Web SDK</span></a></li>
+<li>
+<ul>
+<li><a href="#md:简介"><span>简介</span></a></li>
+<li><a href="#md:neroom"><span>NERoom</span></a></li>
+<li><a href="#md:房间管理"><span>房间管理</span></a></li>
+<li><a href="#md:房间事件"><span>房间事件</span></a></li>
+<li><a href="#md:成员管理"><span>成员管理</span></a></li>
+<li><a href="#md:音视频通话"><span>音视频通话</span></a></li>
+<li><a href="#md:即时消息"><span>即时消息</span></a></li>
+<li><a href="#md:互动白板"><span>互动白板</span></a></li>
+<li><a href="#md:错误码"><span>错误码</span></a></li></ul></li></ul></li></ul></div></details></div>
+<div class="site-menu">
+<nav class="tsd-navigation"><a href="index.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)"></path></g></svg><span>NERoom-<wbr/>web-<wbr/>SDK</span></a>
+<ul class="tsd-small-nested-navigation">
+<li><a href="modules/index.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>index</span></a></li>
+<li><a href="modules/platform_web.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>platform/web</span></a></li>
+<li><a href="modules/types_type.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>types/type</span></a></li></ul></nav></div></div></div>
+<div class="overlay"></div></body></html>

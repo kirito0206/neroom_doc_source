@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['name_0',['name',['../structneroom_1_1_n_e_room_s_i_p_call_info.html#ae09277cca2c21ef04f6d17847572fd30',1,'neroom::NERoomSIPCallInfo::name'],['../structneroom_1_1_n_e_room_system_device.html#a3819665dd5f4320f47283a83578f8be2',1,'neroom::NERoomSystemDevice::name'],['../structneroom_1_1_n_e_room_app_invite_call_info.html#a863c83618f8535d92019b216037f27e4',1,'neroom::NERoomAppInviteCallInfo::name']]],
+  ['needtranslatesamelanguage_1',['needTranslateSameLanguage',['../structneroom_1_1_n_e_room_caption_translation_config.html#a3cd0946aca467ba50ee82a32af6cee3d',1,'neroom::NERoomCaptionTranslationConfig']]],
+  ['negokeyneca_2',['negoKeyNeca',['../structneroom_1_1tag_n_e_i_m_server_config.html#a04c4f3e6085d3e288a53cfa6bcf14562',1,'neroom::tagNEIMServerConfig']]],
+  ['negokeynecakeyparta_3',['negoKeyNecaKeyParta',['../structneroom_1_1tag_n_e_i_m_server_config.html#a212737d19088fcd0a2d167a38a350fe6',1,'neroom::tagNEIMServerConfig']]],
+  ['negokeynecakeypartb_4',['negoKeyNecaKeyPartb',['../structneroom_1_1tag_n_e_i_m_server_config.html#ab9819ffb58d98855ab8150767ca182d8',1,'neroom::tagNEIMServerConfig']]],
+  ['negokeynecakeyversion_5',['negoKeyNecaKeyVersion',['../structneroom_1_1tag_n_e_i_m_server_config.html#a7b1ccf19b5bd22bdc6bbc5b39d2c51c3',1,'neroom::tagNEIMServerConfig']]],
+  ['nickname_6',['nickname',['../structneroom_1_1_n_e_record_file_info.html#aaa37ec7a3acbbe7fa118ea370018e35c',1,'neroom::NERecordFileInfo']]],
+  ['nosaccelerate_7',['nosAccelerate',['../structneroom_1_1tag_n_e_i_m_server_config.html#aefae17a5ccb1e566f3246e8cc1ec4a35',1,'neroom::tagNEIMServerConfig']]],
+  ['nosacceleratehostlist_8',['nosAccelerateHostList',['../structneroom_1_1tag_n_e_i_m_server_config.html#a379d34fde761a9b42599bb6e6052840d',1,'neroom::tagNEIMServerConfig']]],
+  ['nosantileech_9',['nosAntiLeech',['../structneroom_1_1tag_n_e_white_board_app_config.html#ac15d9ffd543982b62c53b319a9bee91e',1,'neroom::tagNEWhiteBoardAppConfig']]],
+  ['nosantileechexpire_10',['nosAntiLeechExpire',['../structneroom_1_1tag_n_e_white_board_app_config.html#a6527ee5e9ccb86acf78386952a6265f5',1,'neroom::tagNEWhiteBoardAppConfig']]],
+  ['nosdownloader_11',['nosDownloader',['../structneroom_1_1tag_n_e_i_m_server_config.html#aeea368c56c19b62ec45d1f3d3420626a',1,'neroom::tagNEIMServerConfig']]],
+  ['noslbs_12',['nosLbs',['../structneroom_1_1tag_n_e_i_m_server_config.html#a6a70e4ff9650ac3b92d1350d1cc7eb51',1,'neroom::tagNEIMServerConfig']]],
+  ['noslbsserver_13',['nosLbsServer',['../structneroom_1_1tag_n_e_rtc_server_config.html#ac5126791cd3f12f4800289f9598b2672',1,'neroom::tagNERtcServerConfig']]],
+  ['nostokenserver_14',['nosTokenServer',['../structneroom_1_1tag_n_e_rtc_server_config.html#a2fb7052a7fd801bac99567ed20e6aa9e',1,'neroom::tagNERtcServerConfig']]],
+  ['nosuploader_15',['nosUploader',['../structneroom_1_1tag_n_e_i_m_server_config.html#a66d36219d8080991a87a1cb1a4c8df06',1,'neroom::tagNEIMServerConfig']]],
+  ['nosuploaderhost_16',['nosUploaderHost',['../structneroom_1_1tag_n_e_i_m_server_config.html#a5beae2f7c2651e74797a9310e53a763a',1,'neroom::tagNEIMServerConfig']]],
+  ['nosuploadsever_17',['nosUploadSever',['../structneroom_1_1tag_n_e_rtc_server_config.html#aad924a445e6222e039f78e65e5716eaa',1,'neroom::tagNERtcServerConfig']]]
+];

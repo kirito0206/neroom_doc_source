@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['nechatroomtype_0',['NEChatroomType',['../namespaceneroom.html#aa157ab355c95e431862da032b30f5215',1,'neroom']]],
+  ['neencryptiontype_1',['NEEncryptionType',['../namespaceneroom.html#a36913bd6c13a40fbfc59818cb0735735',1,'neroom']]],
+  ['neloglevel_2',['NELogLevel',['../namespaceneroom.html#a516cc3c458fdac86f7a058c69f808b54',1,'neroom']]],
+  ['nemessagesearchorder_3',['NEMessageSearchOrder',['../namespaceneroom.html#adc31ef87a5dde0f4932b2509ddd61a82',1,'neroom']]],
+  ['nerecordfiletype_4',['NERecordFileType',['../namespaceneroom.html#ad8438055f779b99631efc01b0a02d9db',1,'neroom']]],
+  ['neroomchatmessagenotificationtype_5',['NERoomChatMessageNotificationType',['../namespaceneroom.html#aa66ccb3b8cefb661da8f552bc586ddd4',1,'neroom']]],
+  ['neroomchatmessagetype_6',['NERoomChatMessageType',['../namespaceneroom.html#a7644c325b0f241af94c9be5b14ac1688',1,'neroom']]],
+  ['neroomcloudrecordstate_7',['NERoomCloudRecordState',['../namespaceneroom.html#a208efafa2f7f7d0280a79e5f8a091bb8',1,'neroom']]],
+  ['neroomscreencapturesourcetype_8',['NERoomScreenCaptureSourceType',['../namespaceneroom.html#ac5f7d2f8633f8e34e2d1460cbdca53a0',1,'neroom']]],
+  ['neroomsessiontype_9',['NERoomSessionType',['../namespaceneroom.html#a45663ba7b2959136adc78c26fe4b1b2c',1,'neroom']]],
+  ['neroomsipdeviceinviteprotocoltype_10',['NERoomSipDeviceInviteProtocolType',['../namespaceneroom.html#a6d425020e7c0d6f0a0f2eb34e1e6426c',1,'neroom']]],
+  ['neroomvideocolorspacematrix_11',['NERoomVideoColorSpaceMatrix',['../namespaceneroom.html#ac01a314eee51bf21d0780f1f1c6ad168',1,'neroom']]],
+  ['neroomvideocolorspaceprimary_12',['NERoomVideoColorSpacePrimary',['../namespaceneroom.html#ae271bedcf5f0053f0c3d2677c7e5dd90',1,'neroom']]],
+  ['neroomvideocolorspacerange_13',['NERoomVideoColorSpaceRange',['../namespaceneroom.html#a8e5addc697ada37ae0bb8652968e0d21',1,'neroom']]],
+  ['neroomvideocolorspacetransfer_14',['NERoomVideoColorSpaceTransfer',['../namespaceneroom.html#ab9ed95d7561542bd8edeb7438ed09e48',1,'neroom']]],
+  ['neroomvoicebeautifiertype_15',['NERoomVoiceBeautifierType',['../namespaceneroom.html#a2a988c1fe958686c945039c1e8a7b2d7',1,'neroom']]],
+  ['neroomvoicechangertype_16',['NERoomVoiceChangerType',['../namespaceneroom.html#a5a569328e80ea85d83fc6f0d31b0bee4',1,'neroom']]],
+  ['newaitingroommemberstatechangereason_17',['NEWaitingRoomMemberStateChangeReason',['../namespaceneroom.html#a7d805ec8980d8839fe6554b27711bc00',1,'neroom']]],
+  ['newaitingroomstate_18',['NEWaitingRoomState',['../namespaceneroom.html#a8fda837e747e3b59b57183b6fe0db63b',1,'neroom']]]
+];

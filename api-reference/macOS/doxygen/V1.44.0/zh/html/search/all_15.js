@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['unbanmemberchat_0',['unbanMemberChat',['../classneroom_1_1_i_n_e_room_chat_controller.html#a53639f28c381fe823307aa8cd5f91d56',1,'neroom::INERoomChatController']]],
+  ['unlockroom_1',['unlockRoom',['../classneroom_1_1_i_n_e_room_context.html#a728759130aae1548d6c2b8e32aa34119',1,'neroom::INERoomContext']]],
+  ['unmutememberaudio_2',['unmuteMemberAudio',['../classneroom_1_1_i_n_e_room_rtc_controller.html#a52db0a08d07132642bfbed4f6068c7a7',1,'neroom::INERoomRtcController']]],
+  ['unmutemembervideo_3',['unmuteMemberVideo',['../classneroom_1_1_i_n_e_room_rtc_controller.html#ad2ef991bb1b6b0c7d5d8f28f1aab346b',1,'neroom::INERoomRtcController']]],
+  ['unmutemyaudio_4',['unmuteMyAudio',['../classneroom_1_1_i_n_e_room_rtc_controller.html#a8eef5bdde209d9612f871b7358115577',1,'neroom::INERoomRtcController::unmuteMyAudio(const NERtcCallback &amp;callback=NERtcCallback())=0'],['../classneroom_1_1_i_n_e_room_rtc_controller.html#acac824cd7ffc81650d2e123a0ad240ae',1,'neroom::INERoomRtcController::unmuteMyAudio(bool enableMediaPub=false, const NERtcCallback &amp;callback=NERtcCallback())=0']]],
+  ['unmutemyvideo_5',['unmuteMyVideo',['../classneroom_1_1_i_n_e_room_rtc_controller.html#a571b3148f55e14c34a2820516b85eef8',1,'neroom::INERoomRtcController']]],
+  ['unreadcount_6',['unreadCount',['../structneroom_1_1_n_e_room_recent_session.html#acbe4b6c6726deb506c75ea976163b8fc',1,'neroom::NERoomRecentSession']]],
+  ['unsubscriberemotevideostream_7',['unsubscribeRemoteVideoStream',['../classneroom_1_1_i_n_e_room_rtc_controller.html#a3bc7776c6acaa70a56f2ba145a81e6a7',1,'neroom::INERoomRtcController']]],
+  ['unsubscriberemotevideosubstream_8',['unsubscribeRemoteVideoSubStream',['../classneroom_1_1_i_n_e_room_rtc_controller.html#aa531781411066cc44db3115a24877fce',1,'neroom::INERoomRtcController']]],
+  ['updatebackgroundinfo_9',['updateBackgroundInfo',['../classneroom_1_1_i_n_e_room_live_controller.html#a1168365cfc8770edc652940d6020756c',1,'neroom::INERoomLiveController']]],
+  ['updatelive_10',['updateLive',['../classneroom_1_1_i_n_e_room_live_controller.html#ab1edc209ffa2d7e3f47e23cfc46c51fa',1,'neroom::INERoomLiveController']]],
+  ['updatelivestreamtask_11',['updateLiveStreamTask',['../classneroom_1_1_i_n_e_room_live_controller.html#a79ca14b6b439cf9c044582cd9dc6176e',1,'neroom::INERoomLiveController']]],
+  ['updatelocalrecordlayouts_12',['updateLocalRecordLayouts',['../classneroom_1_1_i_n_e_preview_room_rtc_controller.html#a28ce433ac4ed1a0f7daf09cce6ac72e1',1,'neroom::INEPreviewRoomRtcController']]],
+  ['updatememberproperty_13',['updateMemberProperty',['../classneroom_1_1_i_n_e_room_context.html#a7804673a215fe1e9396bcad40a308d34',1,'neroom::INERoomContext']]],
+  ['updateroomproperty_14',['updateRoomProperty',['../classneroom_1_1_i_n_e_room_context.html#a819561734eb550fba786e93513a0ba6d',1,'neroom::INERoomContext']]],
+  ['updatetime_15',['updateTime',['../structneroom_1_1tag_n_e_domain_info.html#a530a405fc04d9c8c51a31d52baed0305',1,'neroom::tagNEDomainInfo']]],
+  ['uploadlog_16',['uploadLog',['../classneroom_1_1_i_n_e_room_kit.html#a479c32992b831a5a6f49f52b1db2b2f2',1,'neroom::INERoomKit']]],
+  ['uploadresource_17',['uploadResource',['../classneroom_1_1_i_n_e_nos_service.html#ab117ff176a5fc0862256c28d275aacbe',1,'neroom::INENosService']]],
+  ['url_18',['url',['../structneroom_1_1_n_e_record_file_info.html#a324ad044362f6e24aecafdfde6641d4a',1,'neroom::NERecordFileInfo::url'],['../structneroom_1_1tag_n_e_room_live_stream_image_info.html#a3aff7d6747f3cb415932081b7b0e68aa',1,'neroom::tagNERoomLiveStreamImageInfo::url'],['../classneroom_1_1_i_n_e_room_chat_file_message.html#a5cb09a920a23128bc38551fd525d77fb',1,'neroom::INERoomChatFileMessage::url()']]],
+  ['useassetserverconfig_19',['useAssetServerConfig',['../structneroom_1_1tag_n_e_room_kit_options.html#af2bb43acb85ea69f326b64e457f6221c',1,'neroom::tagNERoomKitOptions']]],
+  ['useinternalvideorender_20',['useInternalVideoRender',['../structneroom_1_1tag_n_e_room_kit_options.html#aa4a242827211031e61a741e12ad54375',1,'neroom::tagNERoomKitOptions']]],
+  ['useipv6_21',['useIPv6',['../structneroom_1_1tag_n_e_rtc_server_config.html#af873ba37ae1cff6e2c61aa246d26c884',1,'neroom::tagNERtcServerConfig']]],
+  ['username_22',['userName',['../structneroom_1_1_n_e_my_waiting_room_state.html#acf10a7d6092e56268dd0abd561e1d39c',1,'neroom::NEMyWaitingRoomState']]],
+  ['usertranscodinglist_23',['userTranscodingList',['../structneroom_1_1tag_n_e_room_live_stream_layout.html#a2db14612ca69f7fca05950447df682f3',1,'neroom::tagNERoomLiveStreamLayout']]],
+  ['useruuid_24',['userUuid',['../structneroom_1_1_n_e_record_file_info.html#a787498c33b1f4fd9378eec5f826d3a5d',1,'neroom::NERecordFileInfo::userUuid'],['../structneroom_1_1_n_e_my_waiting_room_state.html#a10284154f5bdfa24995f8c6a0c470b0f',1,'neroom::NEMyWaitingRoomState::userUuid'],['../structneroom_1_1_n_e_room_s_i_p_call_info.html#a6a22dda71855e50fe3e4a8c85902c65b',1,'neroom::NERoomSIPCallInfo::userUuid'],['../structneroom_1_1_n_e_room_app_invite_call_info.html#a49fb8a090d42c2f8440e8c86e83f4db8',1,'neroom::NERoomAppInviteCallInfo::userUuid'],['../structneroom_1_1tag_n_e_room_live_stream_user_transcoding.html#af6fc23201d95727c8971bf92f96dbf95',1,'neroom::tagNERoomLiveStreamUserTranscoding::userUuid']]]
+];

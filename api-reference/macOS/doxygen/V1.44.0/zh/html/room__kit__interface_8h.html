@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERoom SDK: room_kit_interface.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERoom SDK<span id="projectnumber">&#160;V1.44.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">room_kit_interface.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>roomkit组件接口头文件  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &quot;<a class="el" href="auth__service__interface_8h_source.html">auth_service_interface.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base__type__defines_8h_source.html">base_type_defines.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="message__service__interface_8h_source.html">message_service_interface.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="nos__service__interface_8h_source.html">nos_service_interface.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="room__kit__listener_8h_source.html">room_kit_listener.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="room__service__interface_8h_source.html">room_service_interface.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="extension__service__interface_8h_source.html">extension_service_interface.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+room_kit_interface.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="room__kit__interface_8h__incl.png" border="0" usemap="#aroom__kit__interface_8h" alt=""/></div>
+</div>
+</div>
+<p><a href="room__kit__interface_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structneroom_1_1tag_n_e_room_kit_server_config.html">neroom::tagNERoomKitServerConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RoomKit 服务器配置  <a href="structneroom_1_1tag_n_e_room_kit_server_config.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structneroom_1_1tag_n_e_i_m_server_config.html">neroom::tagNEIMServerConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM 服务器配置  <a href="structneroom_1_1tag_n_e_i_m_server_config.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structneroom_1_1tag_n_e_rtc_server_config.html">neroom::tagNERtcServerConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rtc 服务器配置  <a href="structneroom_1_1tag_n_e_rtc_server_config.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structneroom_1_1tag_n_e_whiteboard_server_config.html">neroom::tagNEWhiteboardServerConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">白板服务器配置  <a href="structneroom_1_1tag_n_e_whiteboard_server_config.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structneroom_1_1tag_n_e_server_config.html">neroom::tagNEServerConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">私有化配置  <a href="structneroom_1_1tag_n_e_server_config.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structneroom_1_1tag_n_e_white_board_app_config.html">neroom::tagNEWhiteBoardAppConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">白板初始化配置  <a href="structneroom_1_1tag_n_e_white_board_app_config.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structneroom_1_1tag_n_e_room_kit_options.html">neroom::tagNERoomKitOptions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">组件初始化配置  <a href="structneroom_1_1tag_n_e_room_kit_options.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structneroom_1_1tag_n_e_domain_item.html">neroom::tagNEDomainItem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">域名条目  <a href="structneroom_1_1tag_n_e_domain_item.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structneroom_1_1tag_n_e_domain_info.html">neroom::tagNEDomainInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">可用域名结果  <a href="structneroom_1_1tag_n_e_domain_info.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structneroom_1_1tag_n_e_domain_info_result.html">neroom::tagNEDomainInfoResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">可用域名查询结果  <a href="structneroom_1_1tag_n_e_domain_info_result.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_room_kit.html">neroom::INERoomKit</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">组件接口类  <a href="classneroom_1_1_i_n_e_room_kit.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:namespaceneroom" id="r_namespaceneroom"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneroom.html">neroom</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a6ac1e4dbf74d2124c5164dca52001879" id="r_a6ac1e4dbf74d2124c5164dca52001879"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structneroom_1_1tag_n_e_room_kit_server_config.html">neroom::tagNERoomKitServerConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneroom.html#a6ac1e4dbf74d2124c5164dca52001879">neroom::NERoomKitServerConfig</a></td></tr>
+<tr class="memdesc:a6ac1e4dbf74d2124c5164dca52001879"><td class="mdescLeft">&#160;</td><td class="mdescRight">RoomKit 服务器配置  <br /></td></tr>
+<tr class="separator:a6ac1e4dbf74d2124c5164dca52001879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a960f53f27a3937594005cd2554d30d09" id="r_a960f53f27a3937594005cd2554d30d09"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structneroom_1_1tag_n_e_i_m_server_config.html">neroom::tagNEIMServerConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneroom.html#a960f53f27a3937594005cd2554d30d09">neroom::NEIMServerConfig</a></td></tr>
+<tr class="memdesc:a960f53f27a3937594005cd2554d30d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM 服务器配置  <br /></td></tr>
+<tr class="separator:a960f53f27a3937594005cd2554d30d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade167790bfa55e93951521f4e281bc66" id="r_ade167790bfa55e93951521f4e281bc66"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structneroom_1_1tag_n_e_rtc_server_config.html">neroom::tagNERtcServerConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneroom.html#ade167790bfa55e93951521f4e281bc66">neroom::NERtcServerConfig</a></td></tr>
+<tr class="memdesc:ade167790bfa55e93951521f4e281bc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rtc 服务器配置  <br /></td></tr>
+<tr class="separator:ade167790bfa55e93951521f4e281bc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a426dd18b050724b3af668e131c940433" id="r_a426dd18b050724b3af668e131c940433"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structneroom_1_1tag_n_e_whiteboard_server_config.html">neroom::tagNEWhiteboardServerConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneroom.html#a426dd18b050724b3af668e131c940433">neroom::NEWhiteboardServerConfig</a></td></tr>
+<tr class="memdesc:a426dd18b050724b3af668e131c940433"><td class="mdescLeft">&#160;</td><td class="mdescRight">白板服务器配置  <br /></td></tr>
+<tr class="separator:a426dd18b050724b3af668e131c940433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c2d7f102a2abcca5b3c8d665426497" id="r_a26c2d7f102a2abcca5b3c8d665426497"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structneroom_1_1tag_n_e_server_config.html">neroom::tagNEServerConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneroom.html#a26c2d7f102a2abcca5b3c8d665426497">neroom::NEServerConfig</a></td></tr>
+<tr class="memdesc:a26c2d7f102a2abcca5b3c8d665426497"><td class="mdescLeft">&#160;</td><td class="mdescRight">私有化配置  <br /></td></tr>
+<tr class="separator:a26c2d7f102a2abcca5b3c8d665426497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb5d56846a16198c247a19848f5fc620" id="r_afb5d56846a16198c247a19848f5fc620"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structneroom_1_1tag_n_e_white_board_app_config.html">neroom::tagNEWhiteBoardAppConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneroom.html#afb5d56846a16198c247a19848f5fc620">neroom::NEWhiteBoardAppConfig</a></td></tr>
+<tr class="memdesc:afb5d56846a16198c247a19848f5fc620"><td class="mdescLeft">&#160;</td><td class="mdescRight">白板初始化配置  <br /></td></tr>
+<tr class="separator:afb5d56846a16198c247a19848f5fc620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff408d7668e89774089b16e4a782141" id="r_a1ff408d7668e89774089b16e4a782141"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structneroom_1_1tag_n_e_room_kit_options.html">neroom::tagNERoomKitOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneroom.html#a1ff408d7668e89774089b16e4a782141">neroom::NERoomKitOptions</a></td></tr>
+<tr class="memdesc:a1ff408d7668e89774089b16e4a782141"><td class="mdescLeft">&#160;</td><td class="mdescRight">组件初始化配置  <br /></td></tr>
+<tr class="separator:a1ff408d7668e89774089b16e4a782141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430fefb8c1decde8b1bc9c3946b8b09a" id="r_a430fefb8c1decde8b1bc9c3946b8b09a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structneroom_1_1tag_n_e_domain_item.html">neroom::tagNEDomainItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneroom.html#a430fefb8c1decde8b1bc9c3946b8b09a">neroom::NEDomainItem</a></td></tr>
+<tr class="memdesc:a430fefb8c1decde8b1bc9c3946b8b09a"><td class="mdescLeft">&#160;</td><td class="mdescRight">域名条目  <br /></td></tr>
+<tr class="separator:a430fefb8c1decde8b1bc9c3946b8b09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63839dc4575de4e3b7ed3fe54db238b8" id="r_a63839dc4575de4e3b7ed3fe54db238b8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structneroom_1_1tag_n_e_domain_info.html">neroom::tagNEDomainInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneroom.html#a63839dc4575de4e3b7ed3fe54db238b8">neroom::NEDomainInfo</a></td></tr>
+<tr class="memdesc:a63839dc4575de4e3b7ed3fe54db238b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">可用域名结果  <br /></td></tr>
+<tr class="separator:a63839dc4575de4e3b7ed3fe54db238b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6b78db403ac3fe58a35df42c2db85d" id="r_add6b78db403ac3fe58a35df42c2db85d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structneroom_1_1tag_n_e_domain_info_result.html">neroom::tagNEDomainInfoResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneroom.html#add6b78db403ac3fe58a35df42c2db85d">neroom::NEDomainInfoResult</a></td></tr>
+<tr class="memdesc:add6b78db403ac3fe58a35df42c2db85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">可用域名查询结果  <br /></td></tr>
+<tr class="separator:add6b78db403ac3fe58a35df42c2db85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a516cc3c458fdac86f7a058c69f808b54" id="r_a516cc3c458fdac86f7a058c69f808b54"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneroom.html#a516cc3c458fdac86f7a058c69f808b54">neroom::NELogLevel</a> { <br />
+&#160;&#160;<a class="el" href="namespaceneroom.html#a516cc3c458fdac86f7a058c69f808b54aadf8b89d42e5fd20f5caa15c075d6f06">neroom::NEVERBOSE</a>
+, <a class="el" href="namespaceneroom.html#a516cc3c458fdac86f7a058c69f808b54a66bc61fc5c43fd2e4d38c4b3e195f2b1">neroom::NEDEBUG</a>
+, <a class="el" href="namespaceneroom.html#a516cc3c458fdac86f7a058c69f808b54a750559ff896caf5f6b642f970d24e306">neroom::NEINFO</a>
+, <a class="el" href="namespaceneroom.html#a516cc3c458fdac86f7a058c69f808b54a85765bcd0478b5f22fa2e3424193c743">neroom::NEWARNING</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceneroom.html#a516cc3c458fdac86f7a058c69f808b54a51828754d2633b2557395eab0141a3ad">neroom::NEERROR</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a516cc3c458fdac86f7a058c69f808b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志等级  <a href="namespaceneroom.html#a516cc3c458fdac86f7a058c69f808b54">更多...</a><br /></td></tr>
+<tr class="separator:a516cc3c458fdac86f7a058c69f808b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a43793228ebd7f16ec09d82fd5b1270c4" id="r_a43793228ebd7f16ec09d82fd5b1270c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceneroom.html#a43793228ebd7f16ec09d82fd5b1270c4">neroom::__declspec</a> (dllimport) <a class="el" href="classneroom_1_1_i_n_e_room_kit.html">INERoomKit</a> *createNERoomKit()</td></tr>
+<tr class="memdesc:a43793228ebd7f16ec09d82fd5b1270c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建组件实例  <br /></td></tr>
+<tr class="separator:a43793228ebd7f16ec09d82fd5b1270c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>roomkit组件接口头文件 </p>
+<dl class="section copyright"><dt>版权所有</dt><dd>(c) 2014-2022, NetEase Inc. All rights reserved </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="room__kit__interface_8h_source.html">room_kit_interface.h</a> 中定义.</p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

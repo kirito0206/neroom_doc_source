@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['samplerate_0',['sampleRate',['../structneroom_1_1tag_n_e_room_live_config.html#a9cf36e148d22a307e47747f473a4b497',1,'neroom::tagNERoomLiveConfig']]],
+  ['sdklognosserver_1',['sdkLogNosServer',['../structneroom_1_1tag_n_e_whiteboard_server_config.html#aaf9c94e0334017edfdc242dbeff93e6b',1,'neroom::tagNEWhiteboardServerConfig']]],
+  ['searchorder_2',['searchOrder',['../structneroom_1_1_n_e_room_get_session_messages_history_param.html#a93497c3f62af66edbd51aac07e068edb',1,'neroom::NERoomGetSessionMessagesHistoryParam']]],
+  ['serverconfig_3',['serverConfig',['../structneroom_1_1tag_n_e_room_kit_options.html#ae0ce9ce667e5c0368a53a25aefce3718',1,'neroom::tagNERoomKitOptions']]],
+  ['serverrecordenabled_4',['serverRecordEnabled',['../structneroom_1_1tag_n_e_room_live_stream_task_info.html#a827493962c8d181a42f09d954f8d6e6b',1,'neroom::tagNERoomLiveStreamTaskInfo']]],
+  ['serverurl_5',['serverUrl',['../structneroom_1_1tag_n_e_room_kit_options.html#af7dacc1bcd830cf3e3b559c726686917',1,'neroom::tagNERoomKitOptions']]],
+  ['sessionid_6',['sessionID',['../structneroom_1_1_n_e_custom_session_message.html#abaecbc5638e074ac1dcb904e8b73c885',1,'neroom::NECustomSessionMessage::sessionID'],['../structneroom_1_1_n_e_room_get_session_messages_history_param.html#aada83179c5afdd06c7f2600dbda4fb93',1,'neroom::NERoomGetSessionMessagesHistoryParam::sessionID'],['../structneroom_1_1_n_e_room_recent_session.html#aa1a3fc96eaf629ffe70d606e11ec8044',1,'neroom::NERoomRecentSession::sessionID']]],
+  ['sessiontype_7',['sessionType',['../structneroom_1_1_n_e_custom_session_message.html#a8ee40a3f09ee4c74340b1ae6f6ea9cb1',1,'neroom::NECustomSessionMessage::sessionType'],['../structneroom_1_1_n_e_room_get_session_messages_history_param.html#aa0c482e74251ed6b9da78c56d3063b00',1,'neroom::NERoomGetSessionMessagesHistoryParam::sessionType'],['../structneroom_1_1_n_e_room_recent_session.html#a706eddc0e4e1e207f1c1890ba06a5ed1',1,'neroom::NERoomRecentSession::sessionType']]],
+  ['singlevideopassthrough_8',['singleVideoPassThrough',['../structneroom_1_1tag_n_e_room_live_config.html#a24ace7179d63a6dd66e32fd9f94a17a4',1,'neroom::tagNERoomLiveConfig']]],
+  ['size_9',['size',['../structneroom_1_1_n_e_record_file_info.html#ad63e884baa30697f3c85b98a5a30922a',1,'neroom::NERecordFileInfo']]],
+  ['srclanguage_10',['srcLanguage',['../structneroom_1_1_n_e_room_caption_translation_config.html#adaafb7497a420df996e43bfb8c9e4b6a',1,'neroom::NERoomCaptionTranslationConfig']]],
+  ['srclanguagearr_11',['srcLanguageArr',['../structneroom_1_1_n_e_room_caption_translation_config.html#a5e4fc4fe16c49775a3cc0fd27d080849',1,'neroom::NERoomCaptionTranslationConfig']]],
+  ['starttime_12',['startTime',['../structneroom_1_1_n_e_history_message_search_option.html#a9bf1408ee746c81b9b317444d65527f8',1,'neroom::NEHistoryMessageSearchOption::startTime'],['../structneroom_1_1_n_e_room_record.html#ac5fff6142e2c953b364f86e348af174e',1,'neroom::NERoomRecord::startTime']]],
+  ['state_13',['state',['../structneroom_1_1_n_e_my_waiting_room_state.html#a2ae1a109d28fd2f7be90bef4dfe9b48d',1,'neroom::NEMyWaitingRoomState']]],
+  ['statisticsbackupserver_14',['statisticsBackupServer',['../structneroom_1_1tag_n_e_rtc_server_config.html#a1e816d3e1190d0a701bbcd9c58a7bbf7',1,'neroom::tagNERtcServerConfig']]],
+  ['statisticsdispatchserver_15',['statisticsDispatchServer',['../structneroom_1_1tag_n_e_rtc_server_config.html#ad7787ed1610b1e6c861dd4ed066071c3',1,'neroom::tagNERtcServerConfig']]],
+  ['statisticsserver_16',['statisticsServer',['../structneroom_1_1tag_n_e_rtc_server_config.html#a7745cecd9362a5596da10d2a590be430',1,'neroom::tagNERtcServerConfig']]],
+  ['streamurl_17',['streamUrl',['../structneroom_1_1tag_n_e_room_live_stream_task_info.html#a11afb248721f221fb0316fcb415901c6',1,'neroom::tagNERoomLiveStreamTaskInfo']]],
+  ['supportcolorspace_18',['supportColorSpace',['../structneroom_1_1tag_n_e_room_kit_options.html#add2198d03ea7d743bbaefab40ea07596',1,'neroom::tagNERoomKitOptions']]],
+  ['switchtimeout_19',['switchTimeout',['../structneroom_1_1tag_n_e_domain_info.html#a3f4ae83b9fd4b2c95a8813f7f714df52',1,'neroom::tagNEDomainInfo']]]
+];

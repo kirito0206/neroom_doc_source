@@ -1,0 +1,884 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERoom SDK: neroom::INEWaitingRoomController类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERoom SDK<span id="projectnumber">&#160;V1.44.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceneroom.html">neroom</a></li><li class="navelem"><a class="el" href="classneroom_1_1_i_n_e_waiting_room_controller.html">INEWaitingRoomController</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classneroom_1_1_i_n_e_waiting_room_controller-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">neroom::INEWaitingRoomController类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>等候室控制器  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="waiting__room__ctrl__interface_8h_source.html">waiting_room_ctrl_interface.h</a>&gt;</code></p>
+<div class="dynheader">
+类 neroom::INEWaitingRoomController 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classneroom_1_1_i_n_e_waiting_room_controller__inherit__graph.png" border="0" usemap="#aneroom_1_1_i_n_e_waiting_room_controller_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+neroom::INEWaitingRoomController 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classneroom_1_1_i_n_e_waiting_room_controller__coll__graph.png" border="0" usemap="#aneroom_1_1_i_n_e_waiting_room_controller_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a7cec4ea507d0178a6c0572c86585a200" id="r_a7cec4ea507d0178a6c0572c86585a200"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cec4ea507d0178a6c0572c86585a200">GetMemberListCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;std::list&lt;<a class="el" href="namespaceneroom.html#a96d4be4ce1aeed0277b096532ad90d65">NEWaitingRoomMemberPtr</a>&gt;&gt;</td></tr>
+<tr class="memdesc:a7cec4ea507d0178a6c0572c86585a200"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取成员列表回调  <br /></td></tr>
+<tr class="separator:a7cec4ea507d0178a6c0572c86585a200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a26219495bc567d184849adfd1fdca" id="r_af8a26219495bc567d184849adfd1fdca"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8a26219495bc567d184849adfd1fdca">GetWaitingRoomManagerListCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;std::list&lt;<a class="el" href="namespaceneroom.html#a8241d9fea23e2159c0f5df03048c25d1">NEWaitingRoomManagerPtr</a>&gt;&gt;</td></tr>
+<tr class="memdesc:af8a26219495bc567d184849adfd1fdca"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取主持人成员列表回调  <br /></td></tr>
+<tr class="separator:af8a26219495bc567d184849adfd1fdca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717ec91ca7d3c5b2576731e780c699e5" id="r_a717ec91ca7d3c5b2576731e780c699e5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a717ec91ca7d3c5b2576731e780c699e5">GetMyStateCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;<a class="el" href="structneroom_1_1_n_e_my_waiting_room_state.html">NEMyWaitingRoomState</a>&gt;</td></tr>
+<tr class="memdesc:a717ec91ca7d3c5b2576731e780c699e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取自己的等候室状态回调  <br /></td></tr>
+<tr class="separator:a717ec91ca7d3c5b2576731e780c699e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a91afa53df823346be9ceaafe868b7833" id="r_a91afa53df823346be9ceaafe868b7833"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91afa53df823346be9ceaafe868b7833">~INEWaitingRoomController</a> ()=default</td></tr>
+<tr class="separator:a91afa53df823346be9ceaafe868b7833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04e01d7ae8249d56415592d3a89d6ba" id="r_ab04e01d7ae8249d56415592d3a89d6ba"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structneroom_1_1_n_e_waiting_room_info.html">NEWaitingRoomInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab04e01d7ae8249d56415592d3a89d6ba">getWaitingRoomInfo</a> () const =0</td></tr>
+<tr class="memdesc:ab04e01d7ae8249d56415592d3a89d6ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取等候室信息  <br /></td></tr>
+<tr class="separator:ab04e01d7ae8249d56415592d3a89d6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5c71a404e345b0bb16f947b421f776a" id="r_ab5c71a404e345b0bb16f947b421f776a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5c71a404e345b0bb16f947b421f776a">addListener</a> (<a class="el" href="classneroom_1_1_i_n_e_waiting_room_listener.html">INEWaitingRoomListener</a> *listener)=0</td></tr>
+<tr class="memdesc:ab5c71a404e345b0bb16f947b421f776a"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加等候室事件监听  <br /></td></tr>
+<tr class="separator:ab5c71a404e345b0bb16f947b421f776a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8fb248486e7a977e958c8c924b5e6fe" id="r_af8fb248486e7a977e958c8c924b5e6fe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8fb248486e7a977e958c8c924b5e6fe">removeListener</a> (<a class="el" href="classneroom_1_1_i_n_e_waiting_room_listener.html">INEWaitingRoomListener</a> *listener)=0</td></tr>
+<tr class="memdesc:af8fb248486e7a977e958c8c924b5e6fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除等候室事件监听  <br /></td></tr>
+<tr class="separator:af8fb248486e7a977e958c8c924b5e6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5369a8aaebd772d2377758335deebc24" id="r_a5369a8aaebd772d2377758335deebc24"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5369a8aaebd772d2377758335deebc24">changeMemberName</a> (const std::string &amp;userUuid, const std::string &amp;userName, const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a5369a8aaebd772d2377758335deebc24"><td class="mdescLeft">&#160;</td><td class="mdescRight">修改自己的名称  <br /></td></tr>
+<tr class="separator:a5369a8aaebd772d2377758335deebc24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4de46202f01a1f2179d3ba2bcda3be" id="r_abd4de46202f01a1f2179d3ba2bcda3be"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd4de46202f01a1f2179d3ba2bcda3be">enableWaitingRoomOnEntry</a> (const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:abd4de46202f01a1f2179d3ba2bcda3be"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否开启等候室  <br /></td></tr>
+<tr class="separator:abd4de46202f01a1f2179d3ba2bcda3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0cde57a7b60afcb8fd3b65e591ab7b5" id="r_ac0cde57a7b60afcb8fd3b65e591ab7b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0cde57a7b60afcb8fd3b65e591ab7b5">disableWaitingRoomOnEntry</a> (bool admitAll, const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:ac0cde57a7b60afcb8fd3b65e591ab7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭等候室入口  <br /></td></tr>
+<tr class="separator:ac0cde57a7b60afcb8fd3b65e591ab7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15786168d9bd6b871543dde09b09753" id="r_af15786168d9bd6b871543dde09b09753"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af15786168d9bd6b871543dde09b09753">isWaitingRoomEnabledOnEntry</a> () const =0</td></tr>
+<tr class="memdesc:af15786168d9bd6b871543dde09b09753"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否已经开启了等候室功能  <br /></td></tr>
+<tr class="separator:af15786168d9bd6b871543dde09b09753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8db908b2fb2020a2d54f71501e9af53" id="r_ac8db908b2fb2020a2d54f71501e9af53"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8db908b2fb2020a2d54f71501e9af53">getMemberList</a> (time_t joinTime, uint32_t limit, <a class="el" href="namespaceneroom.html#a38068887a3c5a294d45c7f2f34182b55">GetMemberOrientation</a> orderBy, const <a class="el" href="#a7cec4ea507d0178a6c0572c86585a200">GetMemberListCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ac8db908b2fb2020a2d54f71501e9af53"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取等候室成员列表  <br /></td></tr>
+<tr class="separator:ac8db908b2fb2020a2d54f71501e9af53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37f765903171de727ea9bd6dd404930" id="r_ae37f765903171de727ea9bd6dd404930"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae37f765903171de727ea9bd6dd404930">admitMember</a> (const std::string &amp;userUuid, const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:ae37f765903171de727ea9bd6dd404930"><td class="mdescLeft">&#160;</td><td class="mdescRight">同意成员加入  <br /></td></tr>
+<tr class="separator:ae37f765903171de727ea9bd6dd404930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65dabc8d6130d877b59de55547bcf922" id="r_a65dabc8d6130d877b59de55547bcf922"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65dabc8d6130d877b59de55547bcf922">admitMember</a> (const std::string &amp;userUuid, bool autoAdmit, const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a65dabc8d6130d877b59de55547bcf922"><td class="mdescLeft">&#160;</td><td class="mdescRight">同意成员加入，允许控制是否在相同一个房间中是否允许自动加入  <br /></td></tr>
+<tr class="separator:a65dabc8d6130d877b59de55547bcf922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60511d74c899e97a8dfeac0aa5ea42a" id="r_ae60511d74c899e97a8dfeac0aa5ea42a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae60511d74c899e97a8dfeac0aa5ea42a">admitAllMembers</a> (const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:ae60511d74c899e97a8dfeac0aa5ea42a"><td class="mdescLeft">&#160;</td><td class="mdescRight">同意所有成员加入  <br /></td></tr>
+<tr class="separator:ae60511d74c899e97a8dfeac0aa5ea42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3341a52b8ddeefacb0f6c261e4259a02" id="r_a3341a52b8ddeefacb0f6c261e4259a02"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3341a52b8ddeefacb0f6c261e4259a02">expelMember</a> (const std::string &amp;userUuid, const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a3341a52b8ddeefacb0f6c261e4259a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">将成员移出等候室  <br /></td></tr>
+<tr class="separator:a3341a52b8ddeefacb0f6c261e4259a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05cebcae97b845b2404d1a398197e46f" id="r_a05cebcae97b845b2404d1a398197e46f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05cebcae97b845b2404d1a398197e46f">expelMember</a> (const std::string &amp;userUuid, bool disallowRejoin, const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a05cebcae97b845b2404d1a398197e46f"><td class="mdescLeft">&#160;</td><td class="mdescRight">将成员移出等候室  <br /></td></tr>
+<tr class="separator:a05cebcae97b845b2404d1a398197e46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979205bdfdb2be26a6690f9433ab0b11" id="r_a979205bdfdb2be26a6690f9433ab0b11"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a979205bdfdb2be26a6690f9433ab0b11">expelAllMembers</a> (bool disallowRejoin, const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:a979205bdfdb2be26a6690f9433ab0b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">将成员移出等候室  <br /></td></tr>
+<tr class="separator:a979205bdfdb2be26a6690f9433ab0b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75bd1a50e93b4b65eef1354e0e6541e" id="r_aa75bd1a50e93b4b65eef1354e0e6541e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa75bd1a50e93b4b65eef1354e0e6541e">putInWaitingRoom</a> (const std::string &amp;userUuid, const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;callback)=0</td></tr>
+<tr class="memdesc:aa75bd1a50e93b4b65eef1354e0e6541e"><td class="mdescLeft">&#160;</td><td class="mdescRight">将成员移入等候室  <br /></td></tr>
+<tr class="separator:aa75bd1a50e93b4b65eef1354e0e6541e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70cee585706ed026a6e8bb06f8f0977" id="r_ac70cee585706ed026a6e8bb06f8f0977"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac70cee585706ed026a6e8bb06f8f0977">getWaitingRoomManagerList</a> (const <a class="el" href="#af8a26219495bc567d184849adfd1fdca">GetWaitingRoomManagerListCallback</a> &amp;callback)=0</td></tr>
+<tr class="memdesc:ac70cee585706ed026a6e8bb06f8f0977"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前会议的主持人列表，包含主持人和联席主持人  <br /></td></tr>
+<tr class="separator:ac70cee585706ed026a6e8bb06f8f0977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classneroom_1_1_i_n_e_base_controller"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classneroom_1_1_i_n_e_base_controller')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classneroom_1_1_i_n_e_base_controller.html">neroom::INEBaseController</a></td></tr>
+<tr class="memitem:ad173bfaf8ba2c6ff692f26b298333076 inherit pub_methods_classneroom_1_1_i_n_e_base_controller" id="r_ad173bfaf8ba2c6ff692f26b298333076"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_base_controller.html#ad173bfaf8ba2c6ff692f26b298333076">INEBaseController</a> ()=default</td></tr>
+<tr class="memdesc:ad173bfaf8ba2c6ff692f26b298333076 inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:ad173bfaf8ba2c6ff692f26b298333076 inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b910876c22d9281cf46f64ebfc339d inherit pub_methods_classneroom_1_1_i_n_e_base_controller" id="r_a32b910876c22d9281cf46f64ebfc339d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_base_controller.html#a32b910876c22d9281cf46f64ebfc339d">~INEBaseController</a> ()=default</td></tr>
+<tr class="memdesc:a32b910876c22d9281cf46f64ebfc339d inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:a32b910876c22d9281cf46f64ebfc339d inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0915c4408553b65960f0ca9e53b4fc2c inherit pub_methods_classneroom_1_1_i_n_e_base_controller" id="r_a0915c4408553b65960f0ca9e53b4fc2c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classneroom_1_1_i_n_e_base_controller.html#a0915c4408553b65960f0ca9e53b4fc2c">isSupported</a> () const =0</td></tr>
+<tr class="memdesc:a0915c4408553b65960f0ca9e53b4fc2c inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">功能是否支持  <br /></td></tr>
+<tr class="separator:a0915c4408553b65960f0ca9e53b4fc2c inherit pub_methods_classneroom_1_1_i_n_e_base_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>等候室控制器 </p>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="waiting__room__ctrl__interface_8h_source.html">waiting_room_ctrl_interface.h</a> 第 <a class="el" href="waiting__room__ctrl__interface_8h_source.html#l00033">33</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="a7cec4ea507d0178a6c0572c86585a200" name="a7cec4ea507d0178a6c0572c86585a200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cec4ea507d0178a6c0572c86585a200">&#9670;&#160;</a></span>GetMemberListCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a7cec4ea507d0178a6c0572c86585a200">neroom::INEWaitingRoomController::GetMemberListCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;std::list&lt;<a class="el" href="namespaceneroom.html#a96d4be4ce1aeed0277b096532ad90d65">NEWaitingRoomMemberPtr</a>&gt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取成员列表回调 </p>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="waiting__room__ctrl__interface_8h_source.html">waiting_room_ctrl_interface.h</a> 第 <a class="el" href="waiting__room__ctrl__interface_8h_source.html#l00039">39</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a717ec91ca7d3c5b2576731e780c699e5" name="a717ec91ca7d3c5b2576731e780c699e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a717ec91ca7d3c5b2576731e780c699e5">&#9670;&#160;</a></span>GetMyStateCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a717ec91ca7d3c5b2576731e780c699e5">neroom::INEWaitingRoomController::GetMyStateCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;<a class="el" href="structneroom_1_1_n_e_my_waiting_room_state.html">NEMyWaitingRoomState</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取自己的等候室状态回调 </p>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="waiting__room__ctrl__interface_8h_source.html">waiting_room_ctrl_interface.h</a> 第 <a class="el" href="waiting__room__ctrl__interface_8h_source.html#l00051">51</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af8a26219495bc567d184849adfd1fdca" name="af8a26219495bc567d184849adfd1fdca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a26219495bc567d184849adfd1fdca">&#9670;&#160;</a></span>GetWaitingRoomManagerListCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#af8a26219495bc567d184849adfd1fdca">neroom::INEWaitingRoomController::GetWaitingRoomManagerListCallback</a> = <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;std::list&lt;<a class="el" href="namespaceneroom.html#a8241d9fea23e2159c0f5df03048c25d1">NEWaitingRoomManagerPtr</a>&gt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取主持人成员列表回调 </p>
+<dl class="section since"><dt>自从</dt><dd>v1.29.0 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="waiting__room__ctrl__interface_8h_source.html">waiting_room_ctrl_interface.h</a> 第 <a class="el" href="waiting__room__ctrl__interface_8h_source.html#l00045">45</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a91afa53df823346be9ceaafe868b7833" name="a91afa53df823346be9ceaafe868b7833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91afa53df823346be9ceaafe868b7833">&#9670;&#160;</a></span>~INEWaitingRoomController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual neroom::INEWaitingRoomController::~INEWaitingRoomController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ab5c71a404e345b0bb16f947b421f776a" name="ab5c71a404e345b0bb16f947b421f776a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5c71a404e345b0bb16f947b421f776a">&#9670;&#160;</a></span>addListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomController::addListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classneroom_1_1_i_n_e_waiting_room_listener.html">INEWaitingRoomListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加等候室事件监听 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>监听对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+</div>
+</div>
+<a id="ae60511d74c899e97a8dfeac0aa5ea42a" name="ae60511d74c899e97a8dfeac0aa5ea42a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae60511d74c899e97a8dfeac0aa5ea42a">&#9670;&#160;</a></span>admitAllMembers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomController::admitAllMembers </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>同意所有成员加入 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调 「@Link NECallback} </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.27.0 </dd></dl>
+
+</div>
+</div>
+<a id="a65dabc8d6130d877b59de55547bcf922" name="a65dabc8d6130d877b59de55547bcf922"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65dabc8d6130d877b59de55547bcf922">&#9670;&#160;</a></span>admitMember() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomController::admitMember </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>autoAdmit</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>同意成员加入，允许控制是否在相同一个房间中是否允许自动加入 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>用户的 uuid </td></tr>
+    <tr><td class="paramname">autoAdmit</td><td>是否自动加入 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 「@Link NECallback} </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.27.0 </dd></dl>
+
+</div>
+</div>
+<a id="ae37f765903171de727ea9bd6dd404930" name="ae37f765903171de727ea9bd6dd404930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae37f765903171de727ea9bd6dd404930">&#9670;&#160;</a></span>admitMember() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomController::admitMember </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>同意成员加入 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>用户的 uuid </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 「@Link NECallback} </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+</div>
+</div>
+<a id="a5369a8aaebd772d2377758335deebc24" name="a5369a8aaebd772d2377758335deebc24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5369a8aaebd772d2377758335deebc24">&#9670;&#160;</a></span>changeMemberName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomController::changeMemberName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userName</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>修改自己的名称 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>用户的 uuid </td></tr>
+    <tr><td class="paramname">userName</td><td>用户的名称 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 「@Link NECallback} </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+</div>
+</div>
+<a id="ac0cde57a7b60afcb8fd3b65e591ab7b5" name="ac0cde57a7b60afcb8fd3b65e591ab7b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0cde57a7b60afcb8fd3b65e591ab7b5">&#9670;&#160;</a></span>disableWaitingRoomOnEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomController::disableWaitingRoomOnEntry </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>admitAll</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>关闭等候室入口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">admitAll</td><td>是否同意所有已经在等候室的成员 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 「@Link NECallback} </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+</div>
+</div>
+<a id="abd4de46202f01a1f2179d3ba2bcda3be" name="abd4de46202f01a1f2179d3ba2bcda3be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd4de46202f01a1f2179d3ba2bcda3be">&#9670;&#160;</a></span>enableWaitingRoomOnEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomController::enableWaitingRoomOnEntry </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否开启等候室 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调 「@Link NECallback} </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+</div>
+</div>
+<a id="a979205bdfdb2be26a6690f9433ab0b11" name="a979205bdfdb2be26a6690f9433ab0b11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a979205bdfdb2be26a6690f9433ab0b11">&#9670;&#160;</a></span>expelAllMembers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomController::expelAllMembers </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>disallowRejoin</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将成员移出等候室 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disallowRejoin</td><td>是否禁止用户重新加入 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 「@Link NECallback} </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.27.0 </dd></dl>
+
+</div>
+</div>
+<a id="a05cebcae97b845b2404d1a398197e46f" name="a05cebcae97b845b2404d1a398197e46f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05cebcae97b845b2404d1a398197e46f">&#9670;&#160;</a></span>expelMember() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomController::expelMember </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>disallowRejoin</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将成员移出等候室 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>用户的 uuid </td></tr>
+    <tr><td class="paramname">disallowRejoin</td><td>是否禁止用户重新加入 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 「@Link NECallback} </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+</div>
+</div>
+<a id="a3341a52b8ddeefacb0f6c261e4259a02" name="a3341a52b8ddeefacb0f6c261e4259a02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3341a52b8ddeefacb0f6c261e4259a02">&#9670;&#160;</a></span>expelMember() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomController::expelMember </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将成员移出等候室 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>用户的 uuid </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 「@Link NECallback} </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+</div>
+</div>
+<a id="ac8db908b2fb2020a2d54f71501e9af53" name="ac8db908b2fb2020a2d54f71501e9af53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8db908b2fb2020a2d54f71501e9af53">&#9670;&#160;</a></span>getMemberList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomController::getMemberList </td>
+          <td>(</td>
+          <td class="paramtype">time_t</td>          <td class="paramname"><span class="paramname"><em>joinTime</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>limit</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceneroom.html#a38068887a3c5a294d45c7f2f34182b55">GetMemberOrientation</a></td>          <td class="paramname"><span class="paramname"><em>orderBy</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a7cec4ea507d0178a6c0572c86585a200">GetMemberListCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取等候室成员列表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joinTime</td><td>起始时间戳，第一次传 0 </td></tr>
+    <tr><td class="paramname">limit</td><td>每次获取的数量 </td></tr>
+    <tr><td class="paramname">orderBy</td><td>获取列表时的查询方向 </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 「@Link GetMemberListCallback} </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+</div>
+</div>
+<a id="ab04e01d7ae8249d56415592d3a89d6ba" name="ab04e01d7ae8249d56415592d3a89d6ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04e01d7ae8249d56415592d3a89d6ba">&#9670;&#160;</a></span>getWaitingRoomInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="structneroom_1_1_n_e_waiting_room_info.html">NEWaitingRoomInfo</a> neroom::INEWaitingRoomController::getWaitingRoomInfo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取等候室信息 </p>
+<dl class="section return"><dt>返回</dt><dd>等候室信息 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+</div>
+</div>
+<a id="ac70cee585706ed026a6e8bb06f8f0977" name="ac70cee585706ed026a6e8bb06f8f0977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac70cee585706ed026a6e8bb06f8f0977">&#9670;&#160;</a></span>getWaitingRoomManagerList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomController::getWaitingRoomManagerList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#af8a26219495bc567d184849adfd1fdca">GetWaitingRoomManagerListCallback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取当前会议的主持人列表，包含主持人和联席主持人 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>回调 「@Link GetWaitingRoomManagerListCallback} </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.29.0 </dd></dl>
+
+</div>
+</div>
+<a id="af15786168d9bd6b871543dde09b09753" name="af15786168d9bd6b871543dde09b09753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af15786168d9bd6b871543dde09b09753">&#9670;&#160;</a></span>isWaitingRoomEnabledOnEntry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool neroom::INEWaitingRoomController::isWaitingRoomEnabledOnEntry </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否已经开启了等候室功能 </p>
+<dl class="section return"><dt>返回</dt><dd>true 已经开启，false 没有开启 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+</div>
+</div>
+<a id="aa75bd1a50e93b4b65eef1354e0e6541e" name="aa75bd1a50e93b4b65eef1354e0e6541e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa75bd1a50e93b4b65eef1354e0e6541e">&#9670;&#160;</a></span>putInWaitingRoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomController::putInWaitingRoom </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>userUuid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceneroom.html#a995982a9fd7493f2a6d7257216437945">NECallback</a>&lt;&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将成员移入等候室 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userUuid</td><td>用户的 uuid </td></tr>
+    <tr><td class="paramname">callback</td><td>回调 「@Link NECallback} </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+</div>
+</div>
+<a id="af8fb248486e7a977e958c8c924b5e6fe" name="af8fb248486e7a977e958c8c924b5e6fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8fb248486e7a977e958c8c924b5e6fe">&#9670;&#160;</a></span>removeListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void neroom::INEWaitingRoomController::removeListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classneroom_1_1_i_n_e_waiting_room_listener.html">INEWaitingRoomListener</a> *</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移除等候室事件监听 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>监听对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>v1.25.0 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="waiting__room__ctrl__interface_8h_source.html">waiting_room_ctrl_interface.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>
